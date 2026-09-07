@@ -12,7 +12,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "0 visualizaciones",
-      "when": "hace 56 minutos",
+      "when": "hace 1 hora",
       "category": "Actualidad"
     },
     {
@@ -252,7 +252,7 @@ window.T2P_DATA = {
     {
       "id": "hNacjO7KfcI",
       "title": "¡Todo lo que esperamos del próximo Nintendo Direct! #shorts",
-      "views": "0 visualizaciones"
+      "views": "4 visualizaciones"
     },
     {
       "id": "hXLeYZzj6Dw",
