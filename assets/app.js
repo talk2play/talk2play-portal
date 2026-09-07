@@ -98,5 +98,19 @@
       "<small>" + esc(s.views || "") + "</small></div></a>";
   }).join("");
 
+  /* ── lanzamientos (los publica el bot en data/lanzamientos.js) ── */
+  var L = window.T2P_LANZAMIENTOS;
+  if (L && L.items && L.items.length && $("lanzamientos")) {
+    $("lanzamientos").hidden = false;
+    $("launch-list").innerHTML = L.items.map(function (g) {
+      var price = g.price > 0 ? g.price.toFixed(2).replace(".", ",") + " €" : "Gratis";
+      return '<li><a href="' + esc(g.url) + '" target="_blank" rel="noopener">' +
+        '<span class="ln">' + esc(g.name) + "</span>" +
+        '<span class="lp">' + price +
+        (g.discount ? ' <b class="ld">−' + g.discount + "%</b>" : "") + "</span></a></li>";
+    }).join("");
+    $("launch-src").textContent = "Novedades en " + (L.source || "Steam") + " · " + L.updated;
+  }
+
   $("updated").textContent = "Contenido actualizado: " + D.updated;
 })();

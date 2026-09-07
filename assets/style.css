@@ -138,6 +138,19 @@ a:focus-visible{outline:2px solid var(--play);outline-offset:3px;border-radius:2
 .side{display:flex;flex-direction:column;gap:22px}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 20px 22px}
 .panel h2{margin:0 0 14px;font-size:1.02rem}
+.launch-list{list-style:none;margin:0;padding:0}
+.launch-list li{border-top:1px solid var(--line)}
+.launch-list li:first-child{border-top:0}
+.launch-list a{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:10px 0;text-decoration:none;
+}
+.launch-list .ln{font-size:.88rem;font-weight:600;line-height:1.35}
+.launch-list a:hover .ln{color:var(--talk)}
+.launch-list .lp{font-size:.82rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.launch-list .ld{color:var(--talk);font-weight:700}
+.hint-src{margin:12px 0 0;font-size:.72rem;color:var(--muted)}
+
 .shorts-strip{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .short-card{
   position:relative;border-radius:10px;overflow:hidden;aspect-ratio:9/14;

@@ -123,6 +123,25 @@ def check_sitio() -> None:
         err("sitio.js: videos.titulos debe ser un mapa id->titulo")
 
 
+def check_lanzamientos() -> None:
+    f = ROOT / "data" / "lanzamientos.js"
+    if not f.exists():
+        err("data/lanzamientos.js no existe — ejecuta scripts/lanzamientos.py")
+        return
+    m = re.match(r"window\.T2P_LANZAMIENTOS = ({.*});\s*$", f.read_text(encoding="utf-8"), re.S)
+    if not m:
+        err("data/lanzamientos.js no tiene el formato 'window.T2P_LANZAMIENTOS = {...};'")
+        return
+    try:
+        data = json.loads(m.group(1))
+    except json.JSONDecodeError as e:
+        err(f"data/lanzamientos.js no es JSON valido: {e}")
+        return
+    for i, g in enumerate(data.get("items", [])):
+        if not g.get("name") or not g.get("url", "").startswith("https://store.steampowered.com/"):
+            err(f"lanzamientos[{i}] sin nombre o con url que no es de Steam: {g.get('url')!r}")
+
+
 def check_paginas_estaticas() -> None:
     """Cada noticia debe tener su pagina pre-renderizada, y sitemap/rss al dia."""
     news_file = ROOT / "data" / "noticias.js"
@@ -171,6 +190,7 @@ def main() -> int:
     check_data()
     check_noticias()
     check_sitio()
+    check_lanzamientos()
     check_paginas_estaticas()
     check_references()
     check_admin()
