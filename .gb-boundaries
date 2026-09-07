@@ -1,0 +1,14 @@
+# Fronteras del portal. Sintaxis: `A => B` arista declarada (existe pero el AST
+# no puede verla), `A -/-> B` prohibicion (depender de B desde A es violacion).
+#
+# El acoplamiento real cruza lenguajes y el grafo de imports no lo ve:
+# app.js lee window.T2P_DATA, que lo escribe update.py via data/videos.js.
+
+# --- aristas declaradas (invisibles al analizador) ---
+assets.app     => data.videos
+scripts.update => data.videos
+
+# --- prohibiciones (ARCHITECTURE.md reglas 1 y 2) ---
+# la presentacion no conoce al scraper, y el scraper no conoce la presentacion
+scripts.update -/-> assets.app
+scripts.check  -/-> assets.app

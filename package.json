@@ -1,0 +1,11 @@
+{
+  "name": "talk2play-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal de noticias gamer del canal @Talk2PlayPodcast (estático, sin dependencias)",
+  "scripts": {
+    "test": "python -m unittest discover -s tests",
+    "gate": "python scripts/check.py",
+    "update": "python scripts/update.py"
+  }
+}
