@@ -66,23 +66,33 @@
       '<div class="meta">' + esc(a.date) + " · " + esc(a.author) + "</div></div></a>";
   };
 
+  /* Secciones: "Noticias" es SOLO la redacción; los vídeos viven en
+     Actualidad / Reacciones / Gameplays / Directos; Portada mezcla ambos. */
   var render = function (cat) {
-    var arts = ((window.T2P_NOTICIAS || {}).articles || []).filter(function (a) {
-      return cat === "Portada" || a.category === cat;
-    });
+    var allArts = (window.T2P_NOTICIAS || {}).articles || [];
+
+    if (cat === "Noticias") {
+      $("hero").innerHTML = "";
+      $("videos-block").hidden = true;
+      $("news-block").hidden = false;
+      $("news-grid").innerHTML = allArts.length
+        ? allArts.map(newsCard).join("")
+        : '<p class="empty">La redacción todavía no ha publicado noticias.</p>';
+      return;
+    }
+
     var vids = D.videos.filter(function (v) {
       return cat === "Portada" || v.category === cat;
     });
-    if (!vids.length && !arts.length) {
+    $("news-block").hidden = !(cat === "Portada" && allArts.length);
+    if (cat === "Portada") $("news-grid").innerHTML = allArts.map(newsCard).join("");
+    $("videos-block").hidden = false;
+    if (!vids.length) {
       $("hero").innerHTML = "";
-      $("news-block").hidden = true;
-      $("grid").innerHTML = '<p class="empty">No hay contenido en esta sección todavía.</p>';
+      $("grid").innerHTML = '<p class="empty">No hay vídeos en esta sección todavía.</p>';
       return;
     }
-    $("hero").innerHTML = vids.length ? heroCard(vids[0]) : "";
-    $("news-block").hidden = !arts.length;
-    $("news-grid").innerHTML = arts.map(newsCard).join("");
-    $("videos-block").hidden = vids.length < 2 && cat !== "Portada" && !vids.length;
+    $("hero").innerHTML = heroCard(vids[0]);
     $("videos-title").textContent = cat === "Portada" ? "Últimos vídeos" : "Vídeos de " + cat.toLowerCase();
     $("grid").innerHTML = vids.slice(1).map(gridCard).join("") ||
       '<p class="empty">El vídeo destacado de arriba es el único de esta sección.</p>';

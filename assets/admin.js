@@ -70,7 +70,6 @@
       var a = articles.find(function (x) { return x.id === id; });
       if (!a) return;
       f.title.value = a.title;
-      f.category.value = a.category;
       f.author.value = a.author;
       f.image.value = a.image || "";
       f.summary.value = a.summary || "";
@@ -94,7 +93,8 @@
     var data = {
       id: editingId || slugify(f.title.value),
       title: f.title.value.trim(),
-      category: f.category.value,
+      category: "Noticias", // todo lo de redaccion es Noticias
+
       date: new Date().toISOString().slice(0, 10),
       author: f.author.value.trim(),
       image: f.image.value.trim(),

@@ -25,8 +25,10 @@ class TestCategoria(unittest.TestCase):
     def test_reaccion(self):
         self.assertEqual(category("REACCIÓN TW3 SONGS OF THE PAST"), "Reacciones")
 
-    def test_noticias_por_defecto(self):
-        self.assertEqual(category("SEGA DEFIENDE EL FORMATO FÍSICO"), "Noticias")
+    def test_actualidad_por_defecto(self):
+        # la categoria "Noticias" es exclusiva de la redaccion; los episodios
+        # de comentario van a Actualidad
+        self.assertEqual(category("SEGA DEFIENDE EL FORMATO FÍSICO"), "Actualidad")
 
 
 class TestGate(unittest.TestCase):

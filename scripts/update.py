@@ -54,7 +54,9 @@ def category(title: str) -> str:
         return "Gameplays"
     if "REACCI" in t:
         return "Reacciones"
-    return "Noticias"
+    # los episodios de comentario de noticias son "Actualidad": la seccion
+    # "Noticias" del portal es solo para articulos de redaccion
+    return "Actualidad"
 
 
 def scrape_videos() -> list[dict]:

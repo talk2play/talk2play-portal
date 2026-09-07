@@ -37,7 +37,7 @@ window.T2P_DATA = {
       "duration": "14:38",
       "views": "10 visualizaciones",
       "when": "hace 4 días",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "roMrzXrUZH0",
@@ -45,7 +45,7 @@ window.T2P_DATA = {
       "duration": "23:58",
       "views": "25 visualizaciones",
       "when": "hace 4 días",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "XatKAuW_xCc",
@@ -61,7 +61,7 @@ window.T2P_DATA = {
       "duration": "24:46",
       "views": "15 visualizaciones",
       "when": "hace 5 días",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "19ycwmFz8a4",
@@ -109,7 +109,7 @@ window.T2P_DATA = {
       "duration": "22:10",
       "views": "13 visualizaciones",
       "when": "hace 2 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "RhT9e4UKNg0",
@@ -117,7 +117,7 @@ window.T2P_DATA = {
       "duration": "22:47",
       "views": "20 visualizaciones",
       "when": "hace 2 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "kx3jeUdyQ5U",
@@ -125,7 +125,7 @@ window.T2P_DATA = {
       "duration": "28:43",
       "views": "23 visualizaciones",
       "when": "hace 2 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "CFAs3TjrVGs",
@@ -133,7 +133,7 @@ window.T2P_DATA = {
       "duration": "9:22",
       "views": "29 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "sxazs3wZzyI",
@@ -157,7 +157,7 @@ window.T2P_DATA = {
       "duration": "42:06",
       "views": "15 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "W4kXN3UYzjM",
@@ -165,7 +165,7 @@ window.T2P_DATA = {
       "duration": "50:40",
       "views": "18 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "TXU5bxjFur4",
@@ -181,7 +181,7 @@ window.T2P_DATA = {
       "duration": "34:00",
       "views": "21 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "lSEKXROyU1g",
@@ -189,7 +189,7 @@ window.T2P_DATA = {
       "duration": "16:41",
       "views": "13 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "gle8Jc_sU2M",
@@ -197,7 +197,7 @@ window.T2P_DATA = {
       "duration": "24:29",
       "views": "29 visualizaciones",
       "when": "hace 3 semanas",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "hzRLuYWF1XM",
@@ -221,7 +221,7 @@ window.T2P_DATA = {
       "duration": "27:15",
       "views": "10 visualizaciones",
       "when": "hace 1 mes",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "2sRvY2SLoRw",
@@ -229,7 +229,7 @@ window.T2P_DATA = {
       "duration": "15:03",
       "views": "19 visualizaciones",
       "when": "hace 1 mes",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "BuTrsNJturI",
@@ -237,7 +237,7 @@ window.T2P_DATA = {
       "duration": "10:00",
       "views": "10 visualizaciones",
       "when": "hace 1 mes",
-      "category": "Noticias"
+      "category": "Actualidad"
     },
     {
       "id": "JxO2FZMeVfw",
@@ -245,7 +245,7 @@ window.T2P_DATA = {
       "duration": "31:25",
       "views": "16 visualizaciones",
       "when": "hace 1 mes",
-      "category": "Noticias"
+      "category": "Actualidad"
     }
   ],
   "shorts": [

@@ -9,7 +9,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CATEGORIES = {"Noticias", "Reacciones", "Gameplays", "Directos"}
+CATEGORIES = {"Actualidad", "Reacciones", "Gameplays", "Directos"}   # videos
+ARTICLE_CATEGORIES = {"Noticias"}  # la seccion Noticias es solo de redaccion
 errors: list[str] = []
 
 
@@ -72,7 +73,7 @@ def check_noticias() -> None:
         for field in ("id", "title", "date", "author", "body", "category"):
             if not a.get(field):
                 err(f"articles[{i}] sin campo '{field}'")
-        if a.get("category") and a["category"] not in CATEGORIES:
+        if a.get("category") and a["category"] not in ARTICLE_CATEGORIES:
             err(f"articles[{i}] con categoria desconocida: {a['category']!r}")
         if a.get("id") in seen:
             err(f"articles[{i}] con id duplicado: {a['id']!r}")
