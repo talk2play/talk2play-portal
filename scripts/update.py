@@ -105,13 +105,20 @@ def scrape_videos() -> list[dict]:
         for badge in find_key(lv, "thumbnailBadgeViewModel"):
             if badge.get("text"):
                 duration = badge["text"]
+        # YouTube alterna variantes de texto: "5 visualizaciones", "5 vistas",
+        # "5 views" y las abreviadas "5 visualiz." / "hace 1 h", asi que el
+        # keyword se casa sin exigir la palabra completa y, si aun asi no hay
+        # match, vale cualquier texto con digitos que no sea la fecha relativa.
+        when = next((i for i in info if i.startswith("hace") or "ago" in i), "")
+        views = next((i for i in info if re.search(r"\d", i) and re.search(r"visualiz|vista|view|reproducc", i, re.I)), "")
+        if not views:
+            views = next((i for i in info if i != when and re.search(r"\d", i)), "")
         videos.append({
             "id": vid,
             "title": title,
             "duration": duration,
-            # YouTube alterna variantes de texto ("5 visualizaciones", "5 vistas", "5 views")
-            "views": next((i for i in info if re.search(r"\d", i) and re.search(r"visualiza|vista|view", i, re.I)), ""),
-            "when": next((i for i in info if i.startswith("hace") or "ago" in i), ""),
+            "views": views,
+            "when": when,
             "category": category(title),
         })
     return videos
