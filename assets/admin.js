@@ -398,18 +398,19 @@
     var prev = hist.length > 1 ? hist[hist.length - 2] : null;
     var fmt = function (n) { return Number(n).toLocaleString("es-ES"); };
     var delta = function (key) {
-      if (!prev) return "";
+      if (!prev || typeof prev[key] !== "number" || typeof last[key] !== "number") return "";
       var d = last[key] - prev[key];
       var cls = d > 0 ? "up" : d < 0 ? "down" : "flat";
       var sign = d > 0 ? "▲ +" : d < 0 ? "▼ " : "= ";
       return '<div class="d ' + cls + '">' + sign + fmt(d) + " vs. ayer</div>";
     };
     var tiles = [
-      ["subs", "Suscriptores"],
+      ["subs", "Suscriptores YouTube"],
+      ["twitch", "Seguidores Twitch"],
       ["videos", "Vídeos publicados"],
       ["views_recientes", "Visitas · 30 últimos vídeos"],
       ["views_shorts", "Visitas · Shorts"]
-    ];
+    ].filter(function (t) { return typeof last[t[0]] === "number"; });
     $("stat-row").innerHTML = tiles.map(function (t) {
       return '<div class="stat-tile"><div class="n">' + fmt(last[t[0]]) + "</div>" +
         '<div class="l">' + t[1] + "</div>" + delta(t[0]) + "</div>";
@@ -419,15 +420,17 @@
     // rejilla recesiva y último valor etiquetado (color validado #e62429)
     var lineChart = function (containerId, key) {
       var el = $(containerId);
-      if (hist.length < 2) {
+      // dias sin dato de esa fuente (p.ej. DecAPI caido) se saltan sin romper la serie
+      var serie = hist.filter(function (h) { return typeof h[key] === "number"; });
+      if (serie.length < 2) {
         el.innerHTML = '<p class="empty-chart">La tendencia se dibuja a partir del segundo día de datos.</p>';
         return;
       }
       var W = 320, H = 110, padL = 6, padR = 44, padT = 10, padB = 18;
-      var xs = hist.map(function (_, i) {
-        return padL + i * (W - padL - padR) / (hist.length - 1);
+      var xs = serie.map(function (_, i) {
+        return padL + i * (W - padL - padR) / (serie.length - 1);
       });
-      var values = hist.map(function (h) { return h[key] || 0; });
+      var values = serie.map(function (h) { return h[key]; });
       var lo = Math.min.apply(null, values), hi = Math.max.apply(null, values);
       if (hi === lo) { hi += 1; lo -= 1; }
       var y = function (v) { return padT + (H - padT - padB) * (1 - (v - lo) / (hi - lo)); };
@@ -441,9 +444,9 @@
       });
       svg += '<polyline points="' + pts.join(" ") + '" fill="none" stroke="#e62429" ' +
         'stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>';
-      hist.forEach(function (h, i) {
+      serie.forEach(function (h, i) {
         var cx = xs[i].toFixed(1), cy = y(values[i]).toFixed(1);
-        var lastPt = i === hist.length - 1;
+        var lastPt = i === serie.length - 1;
         svg += '<circle class="hit" cx="' + cx + '" cy="' + cy + '" r="9" fill="transparent">' +
           "<title>" + h.date + ": " + fmt(values[i]) + "</title></circle>" +
           '<g class="pt' + (lastPt ? " last" : "") + '">' +
@@ -452,12 +455,13 @@
             '" font-size="11" fill="var(--text)" style="font-variant-numeric:tabular-nums">' + fmt(values[i]) + "</text>" : "") +
           "</g>";
       });
-      var d0 = hist[0].date.slice(5), d1 = last.date.slice(5);
+      var d0 = serie[0].date.slice(5), d1 = serie[serie.length - 1].date.slice(5);
       svg += '<text x="' + padL + '" y="' + (H - 4) + '" font-size="10" fill="var(--muted)">' + d0 + "</text>" +
         '<text x="' + (W - padR) + '" y="' + (H - 4) + '" font-size="10" fill="var(--muted)" text-anchor="end">' + d1 + "</text></svg>";
       el.innerHTML = svg;
     };
     lineChart("chart-subs", "subs");
+    lineChart("chart-twitch", "twitch");
     lineChart("chart-shorts", "views_shorts");
     $("metrics-note").textContent = "Histórico: " + hist.length + " día(s) · última foto " + M.updated + ".";
   })();

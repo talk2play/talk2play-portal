@@ -29,6 +29,21 @@ pasaron a regex laxa (`visualiza|vista|view` + dígito para visitas; `hace…|ag
 antigüedad), y `check.py` ganó un canario: si ningún vídeo trae `views`, la gate se pone
 en rojo en vez de publicar una portada sin visitas en silencio.
 
+## 2026-09-07 · YouTube también A/B-testea el ENVOLTORIO de ytInitialData — PARSER REESCRITO
+
+**Montaje:** el bot de métricas falló en `/shorts` con "No se encontró ytInitialData";
+gb capturó el estado (`gb show 20260907T213651-7bf315`): la página llegó completa
+(1,09 M chars, es-ES) pero la regex estricta `var ytInitialData = ({...});</script>`
+devolvió None.
+
+**Resultado:** además del texto de los metadatos (entrada anterior), YouTube varía el
+wrapper del JSON entre peticiones (`var x = ...;`, `window["ytInitialData"] = ...;`,
+con o sin `</script>` pegado). Cualquier regex que case el cierre es frágil.
+
+**Consecuencia:** `initial_data()` ya no casa el cierre: localiza la primera llave y
+balancea llaves respetando strings JSON. Cubierto con 4 tests unitarios (wrappers
+clásico y window, llaves dentro de strings, fallo claro sin datos).
+
 ## 2026-09-07 · Vistazo único renderizado (Edge headless, 1280px) — VERDE CON UN HALLAZGO
 
 **Montaje:** captura del `index.html` con `msedge --headless --screenshot` tras generar

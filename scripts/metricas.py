@@ -13,6 +13,17 @@ from pathlib import Path
 from update import CHANNEL, fetch, find_key, initial_data
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "metricas.js"
+TWITCH_USER = "talk2play"
+
+
+def twitch_followers() -> int | None:
+    """Seguidores via DecAPI (api publica sin clave). None si falla: una caida
+    de DecAPI no debe tumbar la foto diaria de YouTube."""
+    try:
+        return int(fetch(f"https://decapi.me/twitch/followcount/{TWITCH_USER}").strip())
+    except Exception as e:
+        print(f"aviso: Twitch sin dato hoy ({e})")
+        return None
 
 
 def view_count(text: str) -> float:
@@ -53,13 +64,17 @@ def snapshot() -> dict:
         if secondary and secondary[0].get("content"):
             views_shorts += int(view_count(secondary[0]["content"]))
 
-    return {
+    snap = {
         "date": date.today().isoformat(),
         "subs": subs,
         "videos": videos_total,
         "views_recientes": views_recent,
         "views_shorts": views_shorts,
     }
+    twitch = twitch_followers()
+    if twitch is not None:
+        snap["twitch"] = twitch
+    return snap
 
 
 def main():

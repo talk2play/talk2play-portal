@@ -11,7 +11,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from update import category  # noqa: E402
+from update import category, initial_data  # noqa: E402
+
+
+class TestInitialData(unittest.TestCase):
+    # YouTube A/B-testea el envoltorio de ytInitialData (evidencia 2026-09-07)
+    def test_wrapper_clasico(self):
+        html = 'x<script>var ytInitialData = {"a": 1};</script>y'
+        self.assertEqual(initial_data(html), {"a": 1})
+
+    def test_wrapper_window(self):
+        html = 'x<script>window["ytInitialData"] = {"a": {"b": 2}}; var otro = 1;</script>'
+        self.assertEqual(initial_data(html), {"a": {"b": 2}})
+
+    def test_llaves_dentro_de_strings(self):
+        html = 'var ytInitialData = {"t": "cierra };</scr\\"ipt> falso", "n": 3};</script>'
+        self.assertEqual(initial_data(html)["n"], 3)
+
+    def test_sin_datos_falla_claro(self):
+        with self.assertRaises(RuntimeError):
+            initial_data("<html>pagina de consentimiento</html>")
 
 
 class TestCategoria(unittest.TestCase):

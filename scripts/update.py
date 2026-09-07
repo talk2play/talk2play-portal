@@ -27,10 +27,37 @@ def fetch(url: str) -> str:
 
 
 def initial_data(html: str) -> dict:
-    m = re.search(r"var ytInitialData = ({.*?});</script>", html, re.S)
+    """Extrae el JSON de ytInitialData sea cual sea el envoltorio.
+
+    YouTube A/B-testea el wrapper (var x = ...; / window["ytInitialData"] = ...;
+    con o sin </script> pegado), asi que no se casa el cierre con regex: se
+    localiza la primera llave y se balancea respetando strings JSON.
+    """
+    m = re.search(r"ytInitialData[\"'\]]*\s*=\s*{", html)
     if not m:
         raise RuntimeError("No se encontró ytInitialData; YouTube pudo cambiar el formato de la página.")
-    return json.loads(m.group(1))
+    start = html.index("{", m.start())
+    depth = 0
+    in_string = False
+    escaped = False
+    for i in range(start, len(html)):
+        c = html[i]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif c == "\\":
+                escaped = True
+            elif c == '"':
+                in_string = False
+        elif c == '"':
+            in_string = True
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                return json.loads(html[start:i + 1])
+    raise RuntimeError("ytInitialData aparece pero su JSON no cierra; pagina truncada.")
 
 
 def find_key(obj, key):
