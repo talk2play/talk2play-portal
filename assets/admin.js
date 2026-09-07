@@ -217,10 +217,22 @@
     log("Textos guardados en borrador.", "ok");
   });
 
-  /* ── ficheros que hay que publicar (los que tengan cambios) ── */
+  /* ── ficheros que hay que publicar (los que tengan cambios) ──
+     Al cambiar noticias se regeneran también sus páginas estáticas
+     (SEO/Open Graph), el sitemap y el RSS con la plantilla compartida. */
   var pendingFiles = function () {
     var files = [];
-    if (dirty) files.push({ path: "data/noticias.js", name: "noticias.js", content: serialize() });
+    var tpl = window.T2P_PLANTILLA;
+    if (dirty) {
+      files.push({ path: "data/noticias.js", name: "noticias.js", content: serialize() });
+      if (tpl) {
+        articles.forEach(function (a) {
+          files.push({ path: "noticias/" + a.id + ".html", name: a.id + ".html", content: tpl.articleHtml(a) });
+        });
+        files.push({ path: "sitemap.xml", name: "sitemap.xml", content: tpl.sitemapXml(articles) });
+        files.push({ path: "rss.xml", name: "rss.xml", content: tpl.rssXml(articles) });
+      }
+    }
     if (siteDirty) files.push({ path: "data/sitio.js", name: "sitio.js", content: serializeSite() });
     return files;
   };
@@ -271,46 +283,83 @@
     $("btn-publish").disabled = true;
     log("Publicando…");
 
-    var publishOne = function (file) {
-      return gh(cfg, "/contents/" + file.path + "?ref=" + encodeURIComponent(cfg.branch || "main"))
-        .then(function (r) {
-          if (r.status === 404) return { sha: undefined };
-          if (!r.ok) throw new Error("GitHub respondió " + r.status + " al leer " + file.name + " (¿owner/repo/token correctos?)");
-          return r.json();
-        })
-        .then(function (cur) {
-          return gh(cfg, "/contents/" + file.path, {
-            method: "PUT",
-            body: JSON.stringify({
-              message: "Publica " + file.name + " desde el panel de redacción",
-              content: b64utf8(file.content),
-              sha: cur.sha,
-              branch: cfg.branch || "main"
-            })
-          });
-        })
-        .then(function (r) {
-          if (!r.ok) return r.json().then(function (e) {
-            throw new Error("GitHub rechazó el commit de " + file.name + " (" + r.status + "): " + (e.message || ""));
-          });
-          return r.json();
+    var branch = cfg.branch || "main";
+    var ghJson = function (path, opts, what) {
+      return gh(cfg, path, opts).then(function (r) {
+        if (!r.ok) return r.json().catch(function () { return {}; }).then(function (e) {
+          throw new Error("GitHub respondió " + r.status + " en " + what + ": " + (e.message || ""));
         });
+        return r.json();
+      });
     };
 
-    // en serie, para que el segundo commit no pise el sha del primero
     var files = pendingFiles();
-    var results = [];
-    files.reduce(function (chain, file) {
-      return chain.then(function () {
-        return publishOne(file).then(function (res) { results.push(res); });
-      });
-    }, Promise.resolve())
-      .then(function () {
+    var deletions = [];
+
+    // páginas de noticias borradas: se quitan del repo en el mismo commit
+    var findOrphans = dirty
+      ? gh(cfg, "/contents/noticias?ref=" + encodeURIComponent(branch)).then(function (r) {
+          if (!r.ok) return []; // 404 = la carpeta aún no existe
+          return r.json();
+        }).then(function (list) {
+          var keep = {};
+          articles.forEach(function (a) { keep[a.id + ".html"] = true; });
+          (list || []).forEach(function (f) {
+            if (f.type === "file" && /\.html$/.test(f.name) && !keep[f.name]) {
+              deletions.push({ path: "noticias/" + f.name, mode: "100644", type: "blob", sha: null });
+            }
+          });
+        })
+      : Promise.resolve();
+
+    // un único commit con todo, via API de árboles de git
+    var headSha, baseTree;
+    findOrphans
+      .then(function () { return ghJson("/git/ref/heads/" + branch, {}, "leer la rama"); })
+      .then(function (ref) {
+        headSha = ref.object.sha;
+        return ghJson("/git/commits/" + headSha, {}, "leer el commit");
+      })
+      .then(function (commit) {
+        baseTree = commit.tree.sha;
+        return Promise.all(files.map(function (file) {
+          return ghJson("/git/blobs", {
+            method: "POST",
+            body: JSON.stringify({ content: b64utf8(file.content), encoding: "base64" })
+          }, "subir " + file.name).then(function (blob) {
+            return { path: file.path, mode: "100644", type: "blob", sha: blob.sha };
+          });
+        }));
+      })
+      .then(function (entries) {
+        return ghJson("/git/trees", {
+          method: "POST",
+          body: JSON.stringify({ base_tree: baseTree, tree: entries.concat(deletions) })
+        }, "crear el árbol");
+      })
+      .then(function (tree) {
+        return ghJson("/git/commits", {
+          method: "POST",
+          body: JSON.stringify({
+            message: "Publica desde el panel de redacción (" + (currentUser || "admin") + ")",
+            tree: tree.sha,
+            parents: [headSha]
+          })
+        }, "crear el commit");
+      })
+      .then(function (commit) {
+        return ghJson("/git/refs/heads/" + branch, {
+          method: "PATCH",
+          body: JSON.stringify({ sha: commit.sha })
+        }, "mover la rama").then(function () { return commit; });
+      })
+      .then(function (commit) {
         dirty = false;
         siteDirty = false;
         renderList();
-        log("Publicado — " + results.map(function (r) { return r.commit.sha.slice(0, 7); }).join(", ") +
-          ". GitHub Pages tarda ~1 minuto en redesplegar.", "ok");
+        log("Publicado — commit " + commit.sha.slice(0, 7) + " (" + files.length + " fichero(s)" +
+          (deletions.length ? ", " + deletions.length + " borrado(s)" : "") +
+          "). GitHub Pages tarda ~1 minuto en redesplegar.", "ok");
       })
       .catch(function (e) {
         $("btn-publish").disabled = false;

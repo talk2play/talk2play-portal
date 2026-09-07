@@ -14,9 +14,13 @@ Lo de esta seccion se EJECUTA, asi que no puede pudrirse en silencio: si miente,
 
 ```bash
 python -m unittest discover -s tests   # tests (categorias + gate), <1 s, sin red
-python scripts/check.py                # gate: valida data/videos.js y referencias de index.html
+python scripts/check.py                # gate: datos, referencias y paginas estaticas al dia
 python scripts/update.py               # refresca data/videos.js desde YouTube (red, ~5 s)
+node scripts/build.js                  # regenera noticias/*.html + sitemap.xml + rss.xml
 ```
+
+La plantilla de las paginas estaticas de noticia vive SOLO en
+`assets/plantilla-noticia.js` (la comparten build.js y el panel al publicar).
 
 (Los mismos, via npm: `npm test`, `npm run gate`, `npm run update` — package.json es
 solo manifiesto de comandos, no hay node_modules.)

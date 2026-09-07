@@ -78,7 +78,7 @@
     var thumbHtml = a.image
       ? '<div class="thumb"><img src="' + esc(a.image) + '" alt="" loading="lazy"></div>'
       : '<div class="thumb ph">Talk2Play</div>';
-    return '<a class="card news" href="noticia.html?id=' + encodeURIComponent(a.id) + '">' +
+    return '<a class="card news" href="noticias/' + encodeURIComponent(a.id) + '.html">' +
       thumbHtml +
       '<div class="body"><span class="chip Noticias">Noticias</span>' +
       ' <span class="byline">Redacción</span>' +

@@ -10,7 +10,10 @@ assets.app     => data.noticias
 assets.app     => data.sitio
 assets.admin   => data.noticias
 assets.admin   => data.sitio
+assets.admin   => assets.plantilla-noticia
 assets.editor  => data.sitio
+scripts.build  => assets.plantilla-noticia
+scripts.build  => data.noticias
 scripts.update => data.videos
 
 # --- prohibiciones (ARCHITECTURE.md reglas 1 y 2) ---

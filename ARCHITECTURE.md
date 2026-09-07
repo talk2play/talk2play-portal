@@ -17,9 +17,10 @@ Una regla entra aqui solo si alguna vez vas a poder decir que algo la incumple.
    `.js` con `window.T2P_DATA`, no un `.json` fetcheado).
 4. **Cero dependencias:** `update.py` solo stdlib, el frontend solo vanilla. La única
    excepción son las fuentes de Google Fonts, con fallback de sistema declarado.
-5. **Los ficheros de `data/` no se editan a mano.** `videos.js` lo genera `update.py`;
-   `noticias.js` lo escribe el panel de redacción (o su botón de descarga). Lo que esté
-   mal ahí se arregla en su escritor y se regenera.
+5. **Lo generado no se edita a mano.** `data/videos.js` lo genera `update.py`;
+   `data/noticias.js` lo escribe el panel; `noticias/*.html`, `sitemap.xml` y `rss.xml`
+   salen de la plantilla única `assets/plantilla-noticia.js` (vía el panel al publicar
+   o `node scripts/build.js` en local). Lo que esté mal se arregla en su generador.
 6. **Todo texto visible en español**, incluida la salida de los scripts.
 7. **La identidad es negro/blanco/rojo** (tokens en `:root` de `style.css`); un color
    nuevo entra como token o no entra.

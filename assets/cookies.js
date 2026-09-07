@@ -16,7 +16,7 @@
     "<p>Este sitio <strong>no usa cookies propias ni de seguimiento</strong>. " +
     "Empleamos almacenamiento local técnico y cargamos recursos de terceros " +
     "(Google Fonts, miniaturas de YouTube) que pueden ver tu dirección IP. " +
-    '<a href="terminos.html#cookies">Más información</a>.</p>' +
+    '<a href="' + (window.T2P_BASE || "") + 'terminos.html#cookies">Más información</a>.</p>' +
     "<button type=\"button\">Entendido</button>";
   bar.querySelector("button").addEventListener("click", function () {
     try { localStorage.setItem(KEY, new Date().toISOString()); } catch (e) { /* ok */ }

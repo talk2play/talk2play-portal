@@ -178,8 +178,8 @@
     var news = e.target.closest("a.card.news");
     if (news) {
       e.preventDefault();
-      var id = new URL(news.href).searchParams.get("id");
-      location.href = "admin.html#editar=" + encodeURIComponent(id);
+      var m = new URL(news.href).pathname.match(/noticias\/(.+)\.html$/);
+      if (m) location.href = "admin.html#editar=" + m[1];
       return;
     }
     var card = e.target.closest("a.card");

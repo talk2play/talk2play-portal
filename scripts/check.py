@@ -123,6 +123,38 @@ def check_sitio() -> None:
         err("sitio.js: videos.titulos debe ser un mapa id->titulo")
 
 
+def check_paginas_estaticas() -> None:
+    """Cada noticia debe tener su pagina pre-renderizada, y sitemap/rss al dia."""
+    news_file = ROOT / "data" / "noticias.js"
+    if not news_file.exists():
+        return  # ya avisado en check_noticias
+    m = re.match(r"window\.T2P_NOTICIAS = ({.*});\s*$", news_file.read_text(encoding="utf-8"), re.S)
+    if not m:
+        return
+    try:
+        ids = [a["id"] for a in json.loads(m.group(1)).get("articles", []) if a.get("id")]
+    except json.JSONDecodeError:
+        return
+    for aid in ids:
+        page = ROOT / "noticias" / f"{aid}.html"
+        if not page.exists():
+            err(f"falta la pagina estatica noticias/{aid}.html — ejecuta node scripts/build.js")
+    for fname in ("sitemap.xml", "rss.xml"):
+        f = ROOT / fname
+        if not f.exists():
+            err(f"falta {fname} — ejecuta node scripts/build.js")
+            continue
+        content = f.read_text(encoding="utf-8")
+        for aid in ids:
+            if f"noticias/{aid}.html" not in content:
+                err(f"{fname} no incluye la noticia '{aid}' — regenera con node scripts/build.js")
+    noticias_dir = ROOT / "noticias"
+    if noticias_dir.exists():
+        for page in noticias_dir.glob("*.html"):
+            if page.stem not in ids:
+                err(f"pagina huerfana noticias/{page.name} de una noticia borrada — regenera con node scripts/build.js")
+
+
 def check_admin() -> None:
     for page in ("admin.html", "noticia.html", "terminos.html", "contacto.html"):
         f = ROOT / page
@@ -139,6 +171,7 @@ def main() -> int:
     check_data()
     check_noticias()
     check_sitio()
+    check_paginas_estaticas()
     check_references()
     check_admin()
     if errors:
