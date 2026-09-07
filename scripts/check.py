@@ -94,7 +94,7 @@ def check_references() -> None:
 
 
 def check_admin() -> None:
-    for page in ("admin.html", "noticia.html"):
+    for page in ("admin.html", "noticia.html", "terminos.html", "contacto.html"):
         f = ROOT / page
         if not f.exists():
             err(f"{page} no existe")

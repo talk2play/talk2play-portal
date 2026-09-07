@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — Talk2Play</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .contact-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:26px}
+  .ccard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none;display:block}
+  .ccard:hover{border-color:var(--talk)}
+  .ccard h2{margin:0 0 6px;font-size:1.05rem}
+  .ccard p{margin:0;font-size:.88rem}
+  .mailform{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .mailform h2{margin:0 0 6px}
+  .mailform label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin:14px 0 0}
+  .mailform input,.mailform textarea{
+    display:block;width:100%;box-sizing:border-box;margin-top:6px;
+    background:var(--bg);border:1px solid var(--line);border-radius:8px;
+    color:var(--text);font:inherit;font-size:.95rem;padding:10px 12px;
+  }
+  .mailform input:focus,.mailform textarea:focus{outline:2px solid var(--talk);border-color:var(--talk)}
+  .mailform button{
+    margin-top:16px;background:var(--talk);border:0;color:#fff;font:inherit;
+    font-weight:600;font-size:.9rem;padding:11px 24px;border-radius:8px;cursor:pointer;
+  }
+  .mailform button:hover{background:#f5393e}
+  .mailform .note{font-size:.78rem;color:var(--muted);margin:10px 0 0}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="index.html" aria-label="Talk2Play, portada">
+      <span class="t">Talk</span><span>2</span><span class="p">Play</span>
+      <small>PORTAL GAMER</small>
+    </a>
+    <nav class="cats" aria-label="Páginas">
+      <a href="index.html">Portada</a>
+      <a href="terminos.html">Términos</a>
+      <a href="admin.html">Redacción</a>
+    </nav>
+    <a class="btn-sub" href="https://www.youtube.com/@Talk2PlayPodcast?sub_confirmation=1" target="_blank" rel="noopener">▶ Suscríbete</a>
+  </div>
+</header>
+
+<main class="prose">
+  <a class="back" href="index.html">← Volver a la portada</a>
+  <h1>Contacto</h1>
+  <p>¿Una noticia que deberíamos cubrir, una colaboración, o simplemente quieres debatir
+  la última barbaridad de la industria? Estos son los canales:</p>
+
+  <div class="contact-cards">
+    <a class="ccard" href="https://www.youtube.com/@Talk2PlayPodcast" target="_blank" rel="noopener">
+      <h2>▶ YouTube</h2>
+      <p>El canal del podcast. Los comentarios de los vídeos son la vía más rápida: los leemos todos.</p>
+    </a>
+    <a class="ccard" href="https://www.youtube.com/@Talk2PlayPodcast/community" target="_blank" rel="noopener">
+      <h2>💬 Comunidad</h2>
+      <p>La pestaña de publicaciones del canal, para encuestas y debates entre episodios.</p>
+    </a>
+  </div>
+
+  <form class="mailform" id="mailform" hidden>
+    <h2>Escríbenos</h2>
+    <label>Asunto <input id="mf-subject" required maxlength="120"></label>
+    <label>Mensaje <textarea id="mf-body" rows="6" required></textarea></label>
+    <button type="submit">Abrir en tu correo</button>
+    <p class="note">El botón abre tu aplicación de correo con el mensaje preparado: este
+    sitio no envía ni almacena nada (no tiene servidor).</p>
+  </form>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© 2026 Talk2Play · Portal de noticias gamer</span>
+    <span><a href="terminos.html">Términos</a> · <a href="contacto.html">Contacto</a></span>
+    <a href="https://www.youtube.com/@Talk2PlayPodcast" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script>
+// Pon aquí el email público del podcast para activar el formulario.
+// Vacío = el bloque "Escríbenos" queda oculto y solo se muestran YouTube y Comunidad.
+var EMAIL_CONTACTO = "";
+
+(function () {
+  if (!EMAIL_CONTACTO) return;
+  var form = document.getElementById("mailform");
+  form.hidden = false;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var s = encodeURIComponent(document.getElementById("mf-subject").value);
+    var b = encodeURIComponent(document.getElementById("mf-body").value);
+    location.href = "mailto:" + EMAIL_CONTACTO + "?subject=" + s + "&body=" + b;
+  });
+})();
+</script>
+<script src="assets/cookies.js"></script>
+</body>
+</html>

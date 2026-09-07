@@ -84,7 +84,7 @@
     var a = e.target.closest("a");
     if (!a) return;
     var cat = a.dataset.cat;
-    if (cat === "_shorts") return; // ancla normal al panel de shorts
+    if (cat === "_shorts" || cat === "_page") return; // ancla o navegación normal
     e.preventDefault();
     nav.querySelectorAll("a").forEach(function (x) { x.classList.remove("active"); });
     a.classList.add("active");
