@@ -1,5 +1,5 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-07 19:41 UTC",
+  "updated": "2026-09-07 19:44 UTC",
   "temas": [
     {
       "title": "Onimusha: Way of the Sword vendió más de un millón de copias en su día de lanzamiento",

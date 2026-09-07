@@ -6,7 +6,7 @@ window.T2P_METRICAS = {
       "subs": 35,
       "videos": 243,
       "views_recientes": 435,
-      "views_shorts": 14093,
+      "views_shorts": 14091,
       "twitch": 39
     }
   ]

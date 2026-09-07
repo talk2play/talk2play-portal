@@ -92,7 +92,7 @@ window.T2P_DATA = {
       "title": "GAMEPLAY DE FABLE 😱Y MÁS DE GOW E-DAY💀 | XBOX DIA 1 GAMESCOM 2026",
       "duration": "2:59:55",
       "views": "16 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Directos"
     },
     {
