@@ -55,7 +55,9 @@
 
   var site = {
     textos: Object.assign({}, ((window.T2P_SITIO || {}).textos || {})),
-    imagenes: Object.assign({}, ((window.T2P_SITIO || {}).imagenes || {}))
+    imagenes: Object.assign({}, ((window.T2P_SITIO || {}).imagenes || {})),
+    // ajustes de vídeos hechos desde el modo edición visual: se conservan tal cual
+    videos: (window.T2P_SITIO || {}).videos || {}
   };
   var anyDirty = function () { return dirty || siteDirty; };
 
@@ -80,7 +82,8 @@
     var payload = {
       updated: new Date().toISOString().slice(0, 10),
       textos: site.textos,
-      imagenes: site.imagenes
+      imagenes: site.imagenes,
+      videos: site.videos
     };
     return "window.T2P_SITIO = " + JSON.stringify(payload, null, 2) + ";\n";
   };

@@ -18,6 +18,9 @@
   var SITE = window.T2P_SITIO || {};
   SITE.textos = SITE.textos || {};
   SITE.imagenes = SITE.imagenes || {};
+  SITE.videos = SITE.videos || {};
+  SITE.videos.ocultos = SITE.videos.ocultos || [];
+  SITE.videos.titulos = SITE.videos.titulos || {};
   var changes = 0;
   var bump = function () { changes++; updateBar(); };
 
@@ -39,7 +42,23 @@
     ".t2p-bar .out{background:transparent;border:1px solid var(--line);color:var(--text)}" +
     ".t2p-toast{position:fixed;bottom:86px;left:50%;transform:translateX(-50%);z-index:60;" +
     "background:var(--surface2);color:var(--text);border:1px solid var(--line);border-radius:8px;" +
-    "padding:9px 16px;font-size:.85rem;max-width:90vw}";
+    "padding:9px 16px;font-size:.85rem;max-width:90vw}" +
+    "#t2p-vdlg{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.7);display:flex;" +
+    "align-items:center;justify-content:center;padding:20px}" +
+    ".t2p-vbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;" +
+    "padding:24px;max-width:460px;width:100%}" +
+    ".t2p-vbox h3{margin:0 0 8px;font-size:1.05rem}" +
+    ".t2p-vbox .orig{font-size:.78rem;color:var(--muted);margin:0 0 14px;overflow-wrap:anywhere}" +
+    ".t2p-vbox label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin:0 0 12px}" +
+    ".t2p-vbox input[type=text],.t2p-vbox input:not([type]){display:block;width:100%;box-sizing:border-box;" +
+    "margin-top:6px;background:var(--bg);border:1px solid var(--line);border-radius:8px;" +
+    "color:var(--text);font:inherit;font-size:.95rem;padding:10px 12px}" +
+    ".t2p-vbox .chk{display:flex;align-items:center;gap:8px;color:var(--text);font-weight:500}" +
+    ".t2p-vbox .note{font-size:.76rem;color:var(--muted)}" +
+    ".t2p-vbox .btns{display:flex;gap:10px;margin-top:14px}" +
+    ".t2p-vbox button{font:inherit;font-weight:600;font-size:.85rem;padding:9px 18px;border-radius:8px;cursor:pointer}" +
+    ".t2p-vbox .pub{background:var(--talk);border:0;color:#fff}" +
+    ".t2p-vbox .out{background:transparent;border:1px solid var(--line);color:var(--text)}";
   document.head.appendChild(css);
 
   var toast = function (msg) {
@@ -106,8 +125,56 @@
     });
   }
 
-  /* ── noticias: clic lleva a su editor; vídeos: no editables ── */
+  /* ── vídeos: diálogo de ajustes de portada ── */
+  var videoDialog = function (videoId) {
+    var video = ((window.T2P_DATA || {}).videos || []).find(function (v) { return v.id === videoId; });
+    if (!video) return;
+    var old = document.getElementById("t2p-vdlg");
+    if (old) old.remove();
+    var isHero = SITE.videos.destacado === videoId;
+    var isHidden = SITE.videos.ocultos.indexOf(videoId) !== -1;
+    var dlg = document.createElement("div");
+    dlg.id = "t2p-vdlg";
+    dlg.innerHTML =
+      '<div class="t2p-vbox">' +
+      "<h3>Ajustes del vídeo en la portada</h3>" +
+      '<p class="orig"></p>' +
+      "<label>Título en el portal (vacío = el de YouTube)" +
+      '<input id="t2p-vtitle" maxlength="140"></label>' +
+      '<label class="chk"><input type="checkbox" id="t2p-vhero"> Destacar como vídeo principal</label>' +
+      '<label class="chk"><input type="checkbox" id="t2p-vhide"> Ocultar de la portada</label>' +
+      '<p class="note">Esto solo cambia cómo se ve en el portal; el vídeo en YouTube no se toca.</p>' +
+      '<div class="btns"><button class="pub" id="t2p-vok">Aplicar</button>' +
+      '<button class="out" id="t2p-vcancel">Cancelar</button></div></div>';
+    dlg.querySelector(".orig").textContent = "YouTube: " + video.title;
+    document.body.appendChild(dlg);
+    var $d = function (id) { return dlg.querySelector("#" + id); };
+    $d("t2p-vtitle").value = SITE.videos.titulos[videoId] || "";
+    $d("t2p-vtitle").placeholder = video.title;
+    $d("t2p-vhero").checked = isHero;
+    $d("t2p-vhide").checked = isHidden;
+    $d("t2p-vcancel").addEventListener("click", function () { dlg.remove(); });
+    $d("t2p-vok").addEventListener("click", function () {
+      var newTitle = $d("t2p-vtitle").value.trim();
+      if (newTitle) SITE.videos.titulos[videoId] = newTitle;
+      else delete SITE.videos.titulos[videoId];
+      if ($d("t2p-vhide").checked) {
+        if (SITE.videos.ocultos.indexOf(videoId) === -1) SITE.videos.ocultos.push(videoId);
+        if (SITE.videos.destacado === videoId) delete SITE.videos.destacado;
+      } else {
+        SITE.videos.ocultos = SITE.videos.ocultos.filter(function (x) { return x !== videoId; });
+        if ($d("t2p-vhero").checked) SITE.videos.destacado = videoId;
+        else if (SITE.videos.destacado === videoId) delete SITE.videos.destacado;
+      }
+      dlg.remove();
+      if (window.T2P_RENDER_VIDEOS) window.T2P_RENDER_VIDEOS();
+      bump();
+    });
+  };
+
+  /* ── clics en cartas durante la edición ── */
   document.addEventListener("click", function (e) {
+    if (e.target.closest("#t2p-vdlg, .t2p-bar")) return;
     var news = e.target.closest("a.card.news");
     if (news) {
       e.preventDefault();
@@ -115,10 +182,16 @@
       location.href = "admin.html#editar=" + encodeURIComponent(id);
       return;
     }
-    var card = e.target.closest("a.card, a.short-card");
+    var card = e.target.closest("a.card");
     if (card) {
       e.preventDefault();
-      toast("Los vídeos y Shorts vienen del canal de YouTube: no se editan aquí.");
+      var vid = new URL(card.href).searchParams.get("v");
+      if (vid) videoDialog(vid);
+      return;
+    }
+    if (e.target.closest("a.short-card")) {
+      e.preventDefault();
+      toast("Los Shorts vienen del canal de YouTube: no se editan aquí.");
     }
   }, true);
 
@@ -153,7 +226,8 @@
     return "window.T2P_SITIO = " + JSON.stringify({
       updated: new Date().toISOString().slice(0, 10),
       textos: SITE.textos,
-      imagenes: SITE.imagenes
+      imagenes: SITE.imagenes,
+      videos: SITE.videos
     }, null, 2) + ";\n";
   };
 

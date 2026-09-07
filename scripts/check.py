@@ -116,6 +116,11 @@ def check_sitio() -> None:
     email = (textos.get("email_contacto") or "").strip()
     if email and not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", email):
         err(f"sitio.js: email_contacto no parece un email: {email!r}")
+    videos = data.get("videos", {})
+    if not isinstance(videos.get("ocultos", []), list):
+        err("sitio.js: videos.ocultos debe ser una lista de ids")
+    if not isinstance(videos.get("titulos", {}), dict):
+        err("sitio.js: videos.titulos debe ser un mapa id->titulo")
 
 
 def check_admin() -> None:

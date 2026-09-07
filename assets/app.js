@@ -41,18 +41,36 @@
     $("site-lateral-imagen").src = SI.lateral;
   }
 
-  /* ── héroe: el último vídeo ── */
-  var v0 = D.videos[0];
-  if (v0) {
-    $("hero").innerHTML =
+  /* ── vídeos: el scrape de YouTube + los ajustes del editor (sitio.js) ──
+     overrides en T2P_SITIO.videos: destacado (id del héroe), ocultos (ids
+     fuera de portada) y titulos (id -> título reescrito para el portal). */
+  var renderVideos = function () {
+    var SV = (window.T2P_SITIO || {}).videos || {};
+    var hidden = SV.ocultos || [];
+    var titleOf = function (v) { return (SV.titulos || {})[v.id] || v.title; };
+    var list = D.videos.filter(function (v) { return hidden.indexOf(v.id) === -1; });
+    var v0 = list.find(function (v) { return v.id === SV.destacado; }) || list[0];
+
+    $("hero").innerHTML = v0 ?
       '<a class="card hero-card" href="' + watch(v0.id) + '" target="_blank" rel="noopener">' +
       '<div class="thumb"><img src="' + thumb(v0.id, "maxresdefault") + '" alt="" loading="eager" ' +
       "onerror=\"this.onerror=null;this.src='" + thumb(v0.id) + "'\">" +
       (v0.duration ? '<span class="dur">' + esc(v0.duration) + "</span>" : "") + "</div>" +
       '<div class="body"><span class="chip ' + esc(v0.category) + '">' + esc(v0.category) + "</span>" +
-      "<h1>" + esc(v0.title) + "</h1>" +
-      '<div class="meta">' + esc(v0.when || "") + "</div></div></a>";
-  }
+      "<h1>" + esc(titleOf(v0)) + "</h1>" +
+      '<div class="meta">' + esc(v0.when || "") + "</div></div></a>" : "";
+
+    $("grid").innerHTML = list.filter(function (v) { return v !== v0; }).slice(0, 9).map(function (v) {
+      return '<a class="card" href="' + watch(v.id) + '" target="_blank" rel="noopener">' +
+        '<div class="thumb"><img src="' + thumb(v.id) + '" alt="" loading="lazy">' +
+        (v.duration ? '<span class="dur">' + esc(v.duration) + "</span>" : "") + "</div>" +
+        '<div class="body"><span class="chip ' + esc(v.category) + '">' + esc(v.category) + "</span>" +
+        "<h3>" + esc(titleOf(v)) + "</h3>" +
+        '<div class="meta">' + esc(v.when || "") + "</div></div></a>";
+    }).join("");
+  };
+  renderVideos();
+  window.T2P_RENDER_VIDEOS = renderVideos; // lo usa el modo edición para refrescar en vivo
 
   /* ── noticias de redacción ── */
   var arts = (window.T2P_NOTICIAS || {}).articles || [];
@@ -68,16 +86,6 @@
       (a.summary ? '<p class="sum">' + esc(a.summary) + "</p>" : "") +
       '<div class="meta">' + esc(a.date) + " · " + esc(a.author) + "</div></div></a>";
   }).join("") : '<p class="empty">La redacción todavía no ha publicado noticias.</p>';
-
-  /* ── 9 vídeos recientes (el resto vive en YouTube) ── */
-  $("grid").innerHTML = D.videos.slice(1, 10).map(function (v) {
-    return '<a class="card" href="' + watch(v.id) + '" target="_blank" rel="noopener">' +
-      '<div class="thumb"><img src="' + thumb(v.id) + '" alt="" loading="lazy">' +
-      (v.duration ? '<span class="dur">' + esc(v.duration) + "</span>" : "") + "</div>" +
-      '<div class="body"><span class="chip ' + esc(v.category) + '">' + esc(v.category) + "</span>" +
-      "<h3>" + esc(v.title) + "</h3>" +
-      '<div class="meta">' + esc(v.when || "") + "</div></div></a>";
-  }).join("");
 
   /* ── Shorts con más visitas (aquí los números sí suman) ── */
   var topShorts = D.shorts.slice().sort(function (a, b) {
