@@ -23,9 +23,24 @@
     return n;
   };
 
-  /* ── ticker: temas sacados de los títulos más recientes ── */
-  var topics = ["GTA 6", "Kingdom Hearts IV", "Gamescom 2026", "Black Myth: Zhong Kui",
-    "The Blood of Dawnwalker", "Formato físico", "Onimusha", "The Witcher 3"];
+  /* ── textos e imágenes editables desde el panel (data/sitio.js) ── */
+  var S = (window.T2P_SITIO || {}).textos || {};
+  var SI = (window.T2P_SITIO || {}).imagenes || {};
+  var setText = function (id, value) {
+    if (value && $(id)) $(id).textContent = value;
+  };
+  setText("site-lema", S.lema);
+  setText("site-sub-redaccion", S.sub_redaccion);
+  setText("site-lateral-texto", S.lateral_texto);
+  setText("site-footer", S.footer);
+  if (SI.lateral && $("site-lateral-figura")) {
+    $("site-lateral-figura").hidden = false;
+    $("site-lateral-imagen").src = SI.lateral;
+  }
+
+  /* ── ticker: temas configurables desde el panel ── */
+  var topics = (S.ticker && S.ticker.length) ? S.ticker :
+    ["GTA 6", "Kingdom Hearts IV", "Gamescom 2026", "Black Myth: Zhong Kui"];
   var reelHtml = topics.map(function (t) {
     return "<span>" + esc(t) + "</span><span class=\"sep\">◆</span>";
   }).join("");
@@ -93,7 +108,9 @@
       return;
     }
     $("hero").innerHTML = heroCard(vids[0]);
-    $("videos-title").textContent = cat === "Portada" ? "Últimos vídeos" : "Vídeos de " + cat.toLowerCase();
+    $("videos-title").textContent = cat === "Portada"
+      ? (S.titulo_videos || "Últimos vídeos")
+      : "Vídeos de " + cat.toLowerCase();
     $("grid").innerHTML = vids.slice(1).map(gridCard).join("") ||
       '<p class="empty">El vídeo destacado de arriba es el único de esta sección.</p>';
   };

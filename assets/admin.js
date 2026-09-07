@@ -48,8 +48,15 @@
   var articles = ((window.T2P_NOTICIAS || {}).articles || []).map(function (a) {
     return Object.assign({}, a);
   });
-  var dirty = false;
+  var dirty = false;      // noticias con cambios sin publicar
+  var siteDirty = false;  // textos/imágenes del sitio con cambios sin publicar
   var editingId = null;
+
+  var site = {
+    textos: Object.assign({}, ((window.T2P_SITIO || {}).textos || {})),
+    imagenes: Object.assign({}, ((window.T2P_SITIO || {}).imagenes || {}))
+  };
+  var anyDirty = function () { return dirty || siteDirty; };
 
   /* ── config de conexión ── */
   var CFG_KEY = "t2p-admin-config";
@@ -67,6 +74,14 @@
       articles: articles
     };
     return "window.T2P_NOTICIAS = " + JSON.stringify(payload, null, 2) + ";\n";
+  };
+  var serializeSite = function () {
+    var payload = {
+      updated: new Date().toISOString().slice(0, 10),
+      textos: site.textos,
+      imagenes: site.imagenes
+    };
+    return "window.T2P_SITIO = " + JSON.stringify(payload, null, 2) + ";\n";
   };
 
   var slugify = function (s) {
@@ -92,11 +107,14 @@
       b.addEventListener("click", function () { openEditor(a.id); });
       $("list").appendChild(b);
     });
-    $("draft-state").textContent = dirty
-      ? "Hay cambios sin publicar. Publica para que lleguen al portal."
+    var pending = [];
+    if (dirty) pending.push("noticias");
+    if (siteDirty) pending.push("textos del sitio");
+    $("draft-state").textContent = pending.length
+      ? "Cambios sin publicar: " + pending.join(" y ") + ". Publica para que lleguen al portal."
       : "Sin cambios pendientes.";
-    $("btn-publish").disabled = !dirty;
-    $("btn-download").disabled = !dirty;
+    $("btn-publish").disabled = !anyDirty();
+    $("btn-download").disabled = !anyDirty();
   };
 
   /* ── editor ── */
@@ -165,15 +183,59 @@
     renderList();
   });
 
+  /* ── formulario de textos e imágenes del sitio ── */
+  var siteForm = $("site-form");
+  var fillSiteForm = function () {
+    var f = siteForm;
+    f.lema.value = site.textos.lema || "";
+    f.titulo_videos.value = site.textos.titulo_videos || "";
+    f.sub_redaccion.value = site.textos.sub_redaccion || "";
+    f.ticker.value = (site.textos.ticker || []).join("\n");
+    f.lateral_texto.value = site.textos.lateral_texto || "";
+    f.imagen_lateral.value = site.imagenes.lateral || "";
+    f.footer.value = site.textos.footer || "";
+    f.contacto_intro.value = site.textos.contacto_intro || "";
+    f.email_contacto.value = site.textos.email_contacto || "";
+  };
+  fillSiteForm();
+  siteForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = siteForm;
+    site.textos.lema = f.lema.value.trim();
+    site.textos.titulo_videos = f.titulo_videos.value.trim();
+    site.textos.sub_redaccion = f.sub_redaccion.value.trim();
+    site.textos.ticker = f.ticker.value.split("\n")
+      .map(function (t) { return t.trim(); })
+      .filter(function (t) { return t; });
+    site.textos.lateral_texto = f.lateral_texto.value.trim();
+    site.imagenes.lateral = f.imagen_lateral.value.trim();
+    site.textos.footer = f.footer.value.trim();
+    site.textos.contacto_intro = f.contacto_intro.value.trim();
+    site.textos.email_contacto = f.email_contacto.value.trim().toLowerCase();
+    siteDirty = true;
+    renderList();
+    log("Textos guardados en borrador.", "ok");
+  });
+
+  /* ── ficheros que hay que publicar (los que tengan cambios) ── */
+  var pendingFiles = function () {
+    var files = [];
+    if (dirty) files.push({ path: "data/noticias.js", name: "noticias.js", content: serialize() });
+    if (siteDirty) files.push({ path: "data/sitio.js", name: "sitio.js", content: serializeSite() });
+    return files;
+  };
+
   /* ── descarga manual (alternativa sin token) ── */
   $("btn-download").addEventListener("click", function () {
-    var blob = new Blob([serialize()], { type: "text/javascript;charset=utf-8" });
-    var a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "noticias.js";
-    a.click();
-    URL.revokeObjectURL(a.href);
-    log("Descargado. Sustituye data/noticias.js en el repo y haz commit.", "ok");
+    pendingFiles().forEach(function (file) {
+      var blob = new Blob([file.content], { type: "text/javascript;charset=utf-8" });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = file.name;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    log("Descargado. Sustituye el/los fichero(s) en data/ del repo y haz commit.", "ok");
   });
 
   /* ── publicación via API de GitHub ── */
@@ -208,34 +270,46 @@
     }
     $("btn-publish").disabled = true;
     log("Publicando…");
-    var file = "data/noticias.js";
-    gh(cfg, "/contents/" + file + "?ref=" + encodeURIComponent(cfg.branch || "main"))
-      .then(function (r) {
-        if (r.status === 404) return { sha: undefined };
-        if (!r.ok) throw new Error("GitHub respondió " + r.status + " al leer el fichero (¿owner/repo/token correctos?)");
-        return r.json();
-      })
-      .then(function (cur) {
-        return gh(cfg, "/contents/" + file, {
-          method: "PUT",
-          body: JSON.stringify({
-            message: "Publica noticias desde el panel de redacción",
-            content: b64utf8(serialize()),
-            sha: cur.sha,
-            branch: cfg.branch || "main"
-          })
+
+    var publishOne = function (file) {
+      return gh(cfg, "/contents/" + file.path + "?ref=" + encodeURIComponent(cfg.branch || "main"))
+        .then(function (r) {
+          if (r.status === 404) return { sha: undefined };
+          if (!r.ok) throw new Error("GitHub respondió " + r.status + " al leer " + file.name + " (¿owner/repo/token correctos?)");
+          return r.json();
+        })
+        .then(function (cur) {
+          return gh(cfg, "/contents/" + file.path, {
+            method: "PUT",
+            body: JSON.stringify({
+              message: "Publica " + file.name + " desde el panel de redacción",
+              content: b64utf8(file.content),
+              sha: cur.sha,
+              branch: cfg.branch || "main"
+            })
+          });
+        })
+        .then(function (r) {
+          if (!r.ok) return r.json().then(function (e) {
+            throw new Error("GitHub rechazó el commit de " + file.name + " (" + r.status + "): " + (e.message || ""));
+          });
+          return r.json();
         });
-      })
-      .then(function (r) {
-        if (!r.ok) return r.json().then(function (e) {
-          throw new Error("GitHub rechazó el commit (" + r.status + "): " + (e.message || ""));
-        });
-        return r.json();
-      })
-      .then(function (res) {
+    };
+
+    // en serie, para que el segundo commit no pise el sha del primero
+    var files = pendingFiles();
+    var results = [];
+    files.reduce(function (chain, file) {
+      return chain.then(function () {
+        return publishOne(file).then(function (res) { results.push(res); });
+      });
+    }, Promise.resolve())
+      .then(function () {
         dirty = false;
+        siteDirty = false;
         renderList();
-        log("Publicado — commit " + res.commit.sha.slice(0, 7) +
+        log("Publicado — " + results.map(function (r) { return r.commit.sha.slice(0, 7); }).join(", ") +
           ". GitHub Pages tarda ~1 minuto en redesplegar.", "ok");
       })
       .catch(function (e) {

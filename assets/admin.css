@@ -13,7 +13,7 @@
   display:grid;grid-template-columns:340px 1fr;gap:22px;
   padding-top:28px;padding-bottom:64px;align-items:start;
 }
-.admin-layout .publish{grid-column:1 / -1}
+.admin-layout .publish,.admin-layout .site-panel{grid-column:1 / -1}
 @media (max-width:900px){.admin-layout{grid-template-columns:1fr}}
 
 .hint{font-size:.84rem;color:var(--muted);margin:0 0 14px}

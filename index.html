@@ -16,7 +16,7 @@
   <div class="wrap topbar-inner">
     <a class="logo" href="#" data-cat="Portada" aria-label="Talk2Play, portada">
       <span class="t">Talk</span><span>2</span><span class="p">Play</span>
-      <small>PORTAL GAMER</small>
+      <small id="site-lema">PORTAL GAMER</small>
     </a>
     <nav class="cats" id="nav-cats" aria-label="Secciones">
       <a href="#" class="active" data-cat="Portada">Portada</a>
@@ -44,7 +44,7 @@
     <section id="news-block" hidden>
       <div class="feed-head">
         <h2>Redacción</h2>
-        <span class="feed-sub">Las noticias firmadas por Talk2Play</span>
+        <span class="feed-sub" id="site-sub-redaccion">Las noticias firmadas por Talk2Play</span>
       </div>
       <div class="grid" id="news-grid"></div>
     </section>
@@ -70,7 +70,8 @@
     </section>
     <section class="panel sub-panel">
       <h2><span class="t">Talk</span>2<span class="p">Play</span></h2>
-      <p>El podcast donde comentamos, debatimos y analizamos las noticias del mundo gamer. Nuevo episodio cada fin de semana.</p>
+      <figure id="site-lateral-figura" hidden style="margin:12px 0 0"><img id="site-lateral-imagen" alt="Talk2Play" style="width:100%;border-radius:8px"></figure>
+      <p id="site-lateral-texto">El podcast donde comentamos, debatimos y analizamos las noticias del mundo gamer. Nuevo episodio cada fin de semana.</p>
       <a class="btn-sub big" href="https://www.youtube.com/@Talk2PlayPodcast?sub_confirmation=1" target="_blank" rel="noopener">▶ Suscríbete en YouTube</a>
     </section>
   </aside>
@@ -78,7 +79,7 @@
 
 <footer>
   <div class="wrap foot-inner">
-    <span>© 2026 Talk2Play · Portal de noticias gamer</span>
+    <span id="site-footer">© 2026 Talk2Play · Portal de noticias gamer</span>
     <span id="updated"></span>
     <span><a href="terminos.html">Términos</a> · <a href="contacto.html">Contacto</a> · <a href="https://www.youtube.com/@Talk2PlayPodcast" target="_blank" rel="noopener">YouTube</a></span>
   </div>
@@ -86,6 +87,7 @@
 
 <script src="data/videos.js"></script>
 <script src="data/noticias.js"></script>
+<script src="data/sitio.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/cookies.js"></script>
 </body>

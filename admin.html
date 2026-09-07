@@ -84,6 +84,46 @@
     </form>
   </section>
 
+  <section class="panel site-panel">
+    <h2>Textos e imágenes del sitio</h2>
+    <p class="hint">Cambia los textos de la web sin tocar código. Los cambios se guardan
+    en borrador y salen con el mismo botón <b>Publicar</b> de abajo.</p>
+    <form id="site-form">
+      <div class="row2">
+        <label>Lema de la cabecera
+          <input name="lema" maxlength="40">
+        </label>
+        <label>Título del bloque de vídeos
+          <input name="titulo_videos" maxlength="60">
+        </label>
+      </div>
+      <label>Subtítulo del bloque Redacción
+        <input name="sub_redaccion" maxlength="90">
+      </label>
+      <label>Cinta de temas (uno por línea)
+        <textarea name="ticker" rows="5"></textarea>
+      </label>
+      <label>Texto del panel lateral "Talk2Play"
+        <textarea name="lateral_texto" rows="3"></textarea>
+      </label>
+      <label>Imagen del panel lateral (URL, opcional)
+        <input name="imagen_lateral" type="url" placeholder="https://…/imagen.jpg">
+      </label>
+      <label>Línea del pie de página
+        <input name="footer" maxlength="90">
+      </label>
+      <label>Introducción de la página de contacto
+        <textarea name="contacto_intro" rows="2"></textarea>
+      </label>
+      <label>Email de contacto (vacío = formulario oculto)
+        <input name="email_contacto" type="email" placeholder="podcast@ejemplo.com">
+      </label>
+      <div class="actions">
+        <button class="btn-sub" type="submit">Guardar en borrador</button>
+      </div>
+    </form>
+  </section>
+
   <section class="panel publish">
     <h2>Publicar</h2>
     <p class="hint" id="draft-state">Sin cambios pendientes.</p>
@@ -111,6 +151,7 @@
 </dialog>
 
 <script src="data/noticias.js"></script>
+<script src="data/sitio.js"></script>
 <script src="assets/admin.js"></script>
 <script src="assets/cookies.js"></script>
 </body>

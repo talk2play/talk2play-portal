@@ -7,7 +7,9 @@
 # --- aristas declaradas (invisibles al analizador) ---
 assets.app     => data.videos
 assets.app     => data.noticias
+assets.app     => data.sitio
 assets.admin   => data.noticias
+assets.admin   => data.sitio
 scripts.update => data.videos
 
 # --- prohibiciones (ARCHITECTURE.md reglas 1 y 2) ---

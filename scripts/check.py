@@ -95,6 +95,32 @@ def check_references() -> None:
             err(f"index.html perdio el elemento id=\"{element_id}\" que app.js rellena")
 
 
+def check_sitio() -> None:
+    site_file = ROOT / "data" / "sitio.js"
+    if not site_file.exists():
+        err("data/sitio.js no existe")
+        return
+    raw = site_file.read_text(encoding="utf-8")
+    m = re.match(r"window\.T2P_SITIO = ({.*});\s*$", raw, re.S)
+    if not m:
+        err("data/sitio.js no tiene el formato 'window.T2P_SITIO = {...};'")
+        return
+    try:
+        data = json.loads(m.group(1))
+    except json.JSONDecodeError as e:
+        err(f"data/sitio.js no es JSON valido: {e}")
+        return
+    textos = data.get("textos", {})
+    for field in ("lema", "sub_redaccion", "titulo_videos", "lateral_texto", "footer"):
+        if not textos.get(field):
+            err(f"sitio.js: texto obligatorio vacio: '{field}'")
+    if not isinstance(textos.get("ticker"), list) or not textos.get("ticker"):
+        err("sitio.js: 'ticker' debe ser una lista con al menos un tema")
+    email = (textos.get("email_contacto") or "").strip()
+    if email and not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", email):
+        err(f"sitio.js: email_contacto no parece un email: {email!r}")
+
+
 def check_admin() -> None:
     for page in ("admin.html", "noticia.html", "terminos.html", "contacto.html"):
         f = ROOT / page
@@ -110,6 +136,7 @@ def check_admin() -> None:
 def main() -> int:
     check_data()
     check_noticias()
+    check_sitio()
     check_references()
     check_admin()
     if errors:

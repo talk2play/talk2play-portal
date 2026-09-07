@@ -51,7 +51,7 @@
 <main class="prose">
   <a class="back" href="index.html">← Volver a la portada</a>
   <h1>Contacto</h1>
-  <p>¿Una noticia que deberíamos cubrir, una colaboración, o simplemente quieres debatir
+  <p id="contacto-intro">¿Una noticia que deberíamos cubrir, una colaboración, o simplemente quieres debatir
   la última barbaridad de la industria? Estos son los canales:</p>
 
   <div class="contact-cards">
@@ -83,20 +83,22 @@
   </div>
 </footer>
 
+<script src="data/sitio.js"></script>
 <script>
-// Pon aquí el email público del podcast para activar el formulario.
-// Vacío = el bloque "Escríbenos" queda oculto y solo se muestran YouTube y Comunidad.
-var EMAIL_CONTACTO = "";
-
+// El email y la intro se editan desde el panel de administración (⚙ Admin →
+// Textos del sitio). Email vacío = el bloque "Escríbenos" queda oculto.
 (function () {
-  if (!EMAIL_CONTACTO) return;
+  var T = (window.T2P_SITIO || {}).textos || {};
+  if (T.contacto_intro) document.getElementById("contacto-intro").textContent = T.contacto_intro;
+  var email = (T.email_contacto || "").trim();
+  if (!email) return;
   var form = document.getElementById("mailform");
   form.hidden = false;
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var s = encodeURIComponent(document.getElementById("mf-subject").value);
     var b = encodeURIComponent(document.getElementById("mf-body").value);
-    location.href = "mailto:" + EMAIL_CONTACTO + "?subject=" + s + "&body=" + b;
+    location.href = "mailto:" + email + "?subject=" + s + "&body=" + b;
   });
 })();
 </script>
