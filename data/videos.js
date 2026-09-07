@@ -8,6 +8,14 @@ window.T2P_DATA = {
   "updated": "2026-09-07",
   "videos": [
     {
+      "id": "iBYcTRsD5s4",
+      "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
+      "duration": "11:38",
+      "views": "0 visualizaciones",
+      "when": "hace 56 minutos",
+      "category": "Actualidad"
+    },
+    {
       "id": "DdEMo29C_EY",
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
@@ -60,14 +68,14 @@ window.T2P_DATA = {
       "title": "UN BUEN CAMBIO DE AIRES A LA SAGA CON RESONANCE A PLAGUE TALE LEGACY",
       "duration": "24:46",
       "views": "15 visualizaciones",
-      "when": "hace 5 días",
+      "when": "hace 6 días",
       "category": "Actualidad"
     },
     {
       "id": "19ycwmFz8a4",
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
-      "views": "2 visualizaciones",
+      "views": "3 visualizaciones",
       "when": "hace 10 días",
       "category": "Directos"
     },
@@ -238,17 +246,14 @@ window.T2P_DATA = {
       "views": "10 visualizaciones",
       "when": "hace 1 mes",
       "category": "Actualidad"
-    },
-    {
-      "id": "JxO2FZMeVfw",
-      "title": "UBISOFT VE BIEN EL FIN DEL FÍSICO (¿QUÉ DICES?) | NOTICIAS UBISOFT",
-      "duration": "31:25",
-      "views": "16 visualizaciones",
-      "when": "hace 1 mes",
-      "category": "Actualidad"
     }
   ],
   "shorts": [
+    {
+      "id": "hNacjO7KfcI",
+      "title": "¡Todo lo que esperamos del próximo Nintendo Direct! #shorts",
+      "views": "0 visualizaciones"
+    },
     {
       "id": "hXLeYZzj6Dw",
       "title": "#gta6 #shorts #viral",
