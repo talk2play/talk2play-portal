@@ -319,7 +319,8 @@
   });
 
   /* ── diálogo de configuración ── */
-  $("btn-config").addEventListener("click", function () {
+  $("btn-config").addEventListener("click", function (e) {
+    e.preventDefault();
     var cfg = loadCfg();
     $("cfg-owner").value = cfg.owner || "";
     $("cfg-repo").value = cfg.repo || "";
