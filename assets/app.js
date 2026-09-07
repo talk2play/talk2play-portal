@@ -51,10 +51,14 @@
       '<div class="meta">' + esc(v.when || "") + (v.views ? " · " + esc(v.views) : "") + "</div></div></a>";
   };
 
-  /* noticias de redacción (data/noticias.js), delante de los vídeos */
+  /* noticias de redacción (data/noticias.js): mismo sistema de carta que los
+     vídeos — miniatura 16:9 (o placeholder con el wordmark), chip y meta */
   var newsCard = function (a) {
+    var thumbHtml = a.image
+      ? '<div class="thumb"><img src="' + esc(a.image) + '" alt="" loading="lazy"></div>'
+      : '<div class="thumb ph">Talk2Play</div>';
     return '<a class="card news" href="noticia.html?id=' + encodeURIComponent(a.id) + '">' +
-      (a.image ? '<div class="thumb"><img src="' + esc(a.image) + '" alt="" loading="lazy"></div>' : "") +
+      thumbHtml +
       '<div class="body"><span class="chip ' + esc(a.category) + '">' + esc(a.category) + "</span>" +
       ' <span class="byline">Redacción</span>' +
       "<h3>" + esc(a.title) + "</h3>" +
@@ -71,11 +75,17 @@
     });
     if (!vids.length && !arts.length) {
       $("hero").innerHTML = "";
+      $("news-block").hidden = true;
       $("grid").innerHTML = '<p class="empty">No hay contenido en esta sección todavía.</p>';
       return;
     }
     $("hero").innerHTML = vids.length ? heroCard(vids[0]) : "";
-    $("grid").innerHTML = arts.map(newsCard).join("") + vids.slice(1).map(gridCard).join("");
+    $("news-block").hidden = !arts.length;
+    $("news-grid").innerHTML = arts.map(newsCard).join("");
+    $("videos-block").hidden = vids.length < 2 && cat !== "Portada" && !vids.length;
+    $("videos-title").textContent = cat === "Portada" ? "Últimos vídeos" : "Vídeos de " + cat.toLowerCase();
+    $("grid").innerHTML = vids.slice(1).map(gridCard).join("") ||
+      '<p class="empty">El vídeo destacado de arriba es el único de esta sección.</p>';
   };
 
   /* ── navegación por categorías ── */

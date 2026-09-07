@@ -88,7 +88,8 @@ def check_references() -> None:
     for ref in re.findall(r'(?:src|href)="((?:assets|data)/[^"]+)"', html):
         if not (ROOT / ref).exists():
             err(f"index.html referencia {ref} y no existe")
-    for element_id in ("hero", "grid", "toplist", "shorts-strip", "ticker-reel", "updated"):
+    for element_id in ("hero", "grid", "news-grid", "news-block", "videos-block",
+                       "toplist", "shorts-strip", "ticker-reel", "updated"):
         if f'id="{element_id}"' not in html:
             err(f"index.html perdio el elemento id=\"{element_id}\" que app.js rellena")
 
