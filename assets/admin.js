@@ -334,4 +334,11 @@
   });
 
   renderList();
+
+  /* enlace directo desde el modo edición visual: admin.html#editar=<id> */
+  var hash = location.hash.match(/^#editar=(.+)$/);
+  if (hash && currentUser) {
+    var target = decodeURIComponent(hash[1]);
+    if (articles.some(function (a) { return a.id === target; })) openEditor(target);
+  }
 })();
