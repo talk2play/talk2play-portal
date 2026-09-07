@@ -5,6 +5,46 @@
   "use strict";
   var $ = function (id) { return document.getElementById(id); };
 
+  /* ── puerta de administradores ─────────────────────────────────────────
+     Lista de correos con acceso al panel. OJO: esto es un control de
+     conveniencia en el cliente (el código es público en Pages); la
+     autorización real para escribir la pone el token de GitHub. */
+  var ADMINS = [
+    "marcosreciosanchez@gmail.com",
+    "n.jimenezmercader@gmail.com",
+    "vicfleki@hotmail.com"
+  ];
+  var USER_KEY = "t2p-admin-user";
+  var currentUser = null;
+  try { currentUser = localStorage.getItem(USER_KEY); } catch (e) { /* ok */ }
+  if (currentUser && ADMINS.indexOf(currentUser) === -1) currentUser = null;
+
+  var showPanel = function () {
+    $("gate").hidden = true;
+    $("panel").hidden = false;
+    $("session-email").textContent = currentUser;
+  };
+  if (currentUser) {
+    showPanel();
+  } else {
+    $("gate").hidden = false;
+  }
+  $("gate-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = $("gate-email").value.trim().toLowerCase();
+    if (ADMINS.indexOf(email) === -1) {
+      $("gate-error").hidden = false;
+      return;
+    }
+    currentUser = email;
+    try { localStorage.setItem(USER_KEY, email); } catch (e2) { /* ok */ }
+    showPanel();
+  });
+  $("btn-logout").addEventListener("click", function () {
+    try { localStorage.removeItem(USER_KEY); } catch (e) { /* ok */ }
+    location.reload();
+  });
+
   var articles = ((window.T2P_NOTICIAS || {}).articles || []).map(function (a) {
     return Object.assign({}, a);
   });

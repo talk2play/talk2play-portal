@@ -12,6 +12,7 @@
   --play-dim:rgba(255,255,255,.08);
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{
   margin:0;background:var(--bg);color:var(--text);
   font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -57,6 +58,11 @@ a:focus-visible{outline:2px solid var(--play);outline-offset:3px;border-radius:2
 }
 .btn-sub:hover{background:#f5393e}
 .btn-sub.big{display:block;text-align:center;padding:12px;margin-top:14px;font-size:.95rem}
+.btn-admin{
+  border:1px solid var(--line);color:var(--muted);text-decoration:none;
+  font-weight:600;font-size:.85rem;padding:8px 14px;border-radius:8px;white-space:nowrap;
+}
+.btn-admin:hover{border-color:var(--talk);color:var(--talk)}
 
 /* ── ticker ── */
 .ticker{border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:9px 0}

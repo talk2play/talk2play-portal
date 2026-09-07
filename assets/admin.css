@@ -1,4 +1,14 @@
 /* Panel de redacción — misma identidad negro/blanco/rojo */
+.gate{display:flex;justify-content:center;padding-top:56px;padding-bottom:64px}
+.gate-box{max-width:440px;width:100%}
+.hint.err{color:var(--talk)}
+.session{
+  grid-column:1 / -1;display:flex;align-items:center;gap:12px;margin:0;
+  font-size:.85rem;color:var(--muted);
+}
+.session b{color:var(--text)}
+.session .btn-line{padding:5px 12px;font-size:.78rem;margin-left:auto}
+
 .admin-layout{
   display:grid;grid-template-columns:340px 1fr;gap:22px;
   padding-top:28px;padding-bottom:64px;align-items:start;

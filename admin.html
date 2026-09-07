@@ -27,7 +27,30 @@
   </div>
 </header>
 
-<main class="wrap admin-layout">
+<section class="wrap gate" id="gate" hidden>
+  <div class="panel gate-box">
+    <h2>Acceso de administradores</h2>
+    <p class="hint">Este panel es solo para la redacción de Talk2Play. Introduce tu
+    correo de administración para entrar. (La autorización real para publicar la pone
+    GitHub con tu token: este acceso solo evita despistes.)</p>
+    <form id="gate-form">
+      <label>Correo de administración
+        <input id="gate-email" type="email" required placeholder="tu@correo.com" autocomplete="email">
+      </label>
+      <p class="hint err" id="gate-error" hidden>Ese correo no está en la lista de administradores.</p>
+      <div class="actions">
+        <button class="btn-sub" type="submit">Entrar</button>
+        <a class="btn-line" href="index.html" style="text-decoration:none">Volver al portal</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<main class="wrap admin-layout" id="panel" hidden>
+  <p class="session" id="session-bar">
+    Sesión: <b id="session-email"></b>
+    <button class="btn-line" id="btn-logout" type="button">Salir</button>
+  </p>
   <section class="panel">
     <h2>Noticias publicadas</h2>
     <p class="hint">La base de datos es el propio repositorio: cada publicación es un commit sobre <code>data/noticias.js</code> y GitHub Pages redespliega solo (~1 min). El historial de git es el registro completo.</p>
