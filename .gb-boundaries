@@ -6,9 +6,13 @@
 
 # --- aristas declaradas (invisibles al analizador) ---
 assets.app     => data.videos
+assets.app     => data.noticias
+assets.admin   => data.noticias
 scripts.update => data.videos
 
 # --- prohibiciones (ARCHITECTURE.md reglas 1 y 2) ---
 # la presentacion no conoce al scraper, y el scraper no conoce la presentacion
 scripts.update -/-> assets.app
 scripts.check  -/-> assets.app
+# la portada no conoce al panel de redaccion (solo comparten data/noticias.js)
+assets.app     -/-> assets.admin

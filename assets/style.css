@@ -108,6 +108,12 @@ a:focus-visible{outline:2px solid var(--play);outline-offset:3px;border-radius:2
   margin:10px 0 0;font-size:.98rem;font-weight:600;line-height:1.35;
   font-family:"Instrument Sans",sans-serif;
 }
+.card.news{border-left:3px solid var(--talk)}
+.byline{
+  font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin-left:6px;
+}
+.card .sum{margin:8px 0 0;font-size:.84rem;color:var(--muted);line-height:1.45}
 .more{margin:26px 0 0;text-align:center}
 .more a{color:var(--talk);font-weight:600;text-decoration:none;font-size:.92rem}
 .more a:hover{text-decoration:underline}

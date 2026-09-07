@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noticia — Talk2Play</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .article{max-width:760px;margin:0 auto;padding:36px 20px 72px}
+  .article .back{color:var(--muted);text-decoration:none;font-size:.88rem}
+  .article .back:hover{color:var(--talk)}
+  .article h1{
+    font-size:clamp(1.7rem,4.5vw,2.6rem);text-transform:none;
+    font-variation-settings:"wdth" 112;margin:18px 0 0;line-height:1.15;
+  }
+  .article .meta{margin-top:14px;font-size:.84rem;color:var(--muted)}
+  .article .cover{margin:26px 0 0;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+  .article .cover img{width:100%;display:block}
+  .article .body{margin-top:28px;font-size:1.06rem;line-height:1.75;max-width:65ch}
+  .article .body p{margin:0 0 1.2em}
+  .article .summary{
+    margin-top:22px;font-size:1.15rem;color:var(--muted);line-height:1.55;
+    border-left:3px solid var(--talk);padding-left:16px;max-width:60ch;
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="index.html" aria-label="Talk2Play, portada">
+      <span class="t">Talk</span><span>2</span><span class="p">Play</span>
+      <small>PORTAL GAMER</small>
+    </a>
+    <span style="flex:1"></span>
+    <a class="btn-sub" href="https://www.youtube.com/@Talk2PlayPodcast?sub_confirmation=1" target="_blank" rel="noopener">▶ Suscríbete</a>
+  </div>
+</header>
+
+<article class="article" id="article">
+  <a class="back" href="index.html">← Volver a la portada</a>
+  <p class="empty" id="not-found" hidden>Noticia no encontrada. <a href="index.html">Volver a la portada</a>.</p>
+  <div id="content" hidden>
+    <h1 id="a-title"></h1>
+    <div class="meta"><span class="chip" id="a-chip"></span> &nbsp; <span id="a-meta"></span></div>
+    <p class="summary" id="a-summary"></p>
+    <figure class="cover" id="a-cover" hidden><img id="a-image" alt=""></figure>
+    <div class="body" id="a-body"></div>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© 2026 Talk2Play · Portal de noticias gamer</span>
+    <a href="https://www.youtube.com/@Talk2PlayPodcast" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script src="data/noticias.js"></script>
+<script>
+(function () {
+  var id = new URLSearchParams(location.search).get("id");
+  var articles = (window.T2P_NOTICIAS || {}).articles || [];
+  var a = articles.find(function (x) { return x.id === id; });
+  if (!a) { document.getElementById("not-found").hidden = false; return; }
+  document.title = a.title + " — Talk2Play";
+  document.getElementById("content").hidden = false;
+  document.getElementById("a-title").textContent = a.title;
+  var chip = document.getElementById("a-chip");
+  chip.textContent = a.category;
+  chip.classList.add(a.category);
+  document.getElementById("a-meta").textContent = a.date + " · " + a.author;
+  document.getElementById("a-summary").textContent = a.summary || "";
+  if (a.image) {
+    document.getElementById("a-cover").hidden = false;
+    var img = document.getElementById("a-image");
+    img.src = a.image;
+    img.alt = a.title;
+  }
+  var body = document.getElementById("a-body");
+  String(a.body || "").split(/\n\n+/).forEach(function (par) {
+    if (!par.trim()) return;
+    var p = document.createElement("p");
+    p.textContent = par.trim();
+    body.appendChild(p);
+  });
+})();
+</script>
+</body>
+</html>

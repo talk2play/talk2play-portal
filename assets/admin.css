@@ -1,0 +1,53 @@
+/* Panel de redacción — misma identidad negro/blanco/rojo */
+.admin-layout{
+  display:grid;grid-template-columns:340px 1fr;gap:22px;
+  padding-top:28px;padding-bottom:64px;align-items:start;
+}
+.admin-layout .publish{grid-column:1 / -1}
+@media (max-width:900px){.admin-layout{grid-template-columns:1fr}}
+
+.hint{font-size:.84rem;color:var(--muted);margin:0 0 14px}
+.hint code{background:var(--surface2);padding:1px 6px;border-radius:4px}
+
+.news-list{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.news-item{
+  display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;
+  background:var(--surface2);border:1px solid var(--line);border-radius:8px;
+  padding:10px 14px;cursor:pointer;text-align:left;color:var(--text);
+  font:inherit;width:100%;
+}
+.news-item:hover{border-color:var(--talk)}
+.news-item .tt{font-weight:600;font-size:.9rem;line-height:1.3}
+.news-item .dd{font-size:.74rem;color:var(--muted)}
+.news-item.dirty .dd::after{content:" · sin publicar";color:var(--talk);font-weight:700}
+
+form label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin:0 0 14px}
+form input,form select,form textarea{
+  display:block;width:100%;box-sizing:border-box;margin-top:6px;
+  background:var(--bg);border:1px solid var(--line);border-radius:8px;
+  color:var(--text);font:inherit;font-size:.95rem;padding:10px 12px;
+}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--talk);outline-offset:0;border-color:var(--talk)}
+form textarea{resize:vertical;line-height:1.55}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:600px){.row2{grid-template-columns:1fr}}
+
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn-sub[disabled]{opacity:.45;cursor:not-allowed}
+.btn-line{
+  background:transparent;border:1px solid var(--line);color:var(--text);
+  font:inherit;font-weight:600;font-size:.85rem;padding:9px 18px;border-radius:8px;cursor:pointer;
+}
+.btn-line:hover{border-color:var(--talk);color:var(--talk)}
+button.btn-sub{border:0;cursor:pointer;font:inherit;font-weight:600;font-size:.85rem}
+
+#publish-log{white-space:pre-line}
+#publish-log.ok{color:#4caf50}
+#publish-log.err{color:var(--talk)}
+
+dialog{
+  background:var(--surface);color:var(--text);border:1px solid var(--line);
+  border-radius:14px;max-width:440px;width:92vw;padding:24px;
+}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+.config-form h2{margin:0 0 10px;font-size:1.1rem}

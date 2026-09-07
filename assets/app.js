@@ -51,17 +51,31 @@
       '<div class="meta">' + esc(v.when || "") + (v.views ? " · " + esc(v.views) : "") + "</div></div></a>";
   };
 
+  /* noticias de redacción (data/noticias.js), delante de los vídeos */
+  var newsCard = function (a) {
+    return '<a class="card news" href="noticia.html?id=' + encodeURIComponent(a.id) + '">' +
+      (a.image ? '<div class="thumb"><img src="' + esc(a.image) + '" alt="" loading="lazy"></div>' : "") +
+      '<div class="body"><span class="chip ' + esc(a.category) + '">' + esc(a.category) + "</span>" +
+      ' <span class="byline">Redacción</span>' +
+      "<h3>" + esc(a.title) + "</h3>" +
+      (a.summary ? '<p class="sum">' + esc(a.summary) + "</p>" : "") +
+      '<div class="meta">' + esc(a.date) + " · " + esc(a.author) + "</div></div></a>";
+  };
+
   var render = function (cat) {
+    var arts = ((window.T2P_NOTICIAS || {}).articles || []).filter(function (a) {
+      return cat === "Portada" || a.category === cat;
+    });
     var vids = D.videos.filter(function (v) {
       return cat === "Portada" || v.category === cat;
     });
-    if (!vids.length) {
+    if (!vids.length && !arts.length) {
       $("hero").innerHTML = "";
-      $("grid").innerHTML = '<p class="empty">No hay vídeos en esta sección todavía.</p>';
+      $("grid").innerHTML = '<p class="empty">No hay contenido en esta sección todavía.</p>';
       return;
     }
-    $("hero").innerHTML = heroCard(vids[0]);
-    $("grid").innerHTML = vids.slice(1).map(gridCard).join("");
+    $("hero").innerHTML = vids.length ? heroCard(vids[0]) : "";
+    $("grid").innerHTML = arts.map(newsCard).join("") + vids.slice(1).map(gridCard).join("");
   };
 
   /* ── navegación por categorías ── */

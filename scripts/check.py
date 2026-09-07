@@ -52,6 +52,33 @@ def check_data() -> None:
         err("ningun video trae 'views' — el parser de update.py ha dejado de casar con YouTube")
 
 
+def check_noticias() -> None:
+    news_file = ROOT / "data" / "noticias.js"
+    if not news_file.exists():
+        err("data/noticias.js no existe")
+        return
+    raw = news_file.read_text(encoding="utf-8")
+    m = re.match(r"window\.T2P_NOTICIAS = ({.*});\s*$", raw, re.S)
+    if not m:
+        err("data/noticias.js no tiene el formato 'window.T2P_NOTICIAS = {...};'")
+        return
+    try:
+        data = json.loads(m.group(1))
+    except json.JSONDecodeError as e:
+        err(f"data/noticias.js no es JSON valido: {e}")
+        return
+    seen: set[str] = set()
+    for i, a in enumerate(data.get("articles", [])):
+        for field in ("id", "title", "date", "author", "body", "category"):
+            if not a.get(field):
+                err(f"articles[{i}] sin campo '{field}'")
+        if a.get("category") and a["category"] not in CATEGORIES:
+            err(f"articles[{i}] con categoria desconocida: {a['category']!r}")
+        if a.get("id") in seen:
+            err(f"articles[{i}] con id duplicado: {a['id']!r}")
+        seen.add(a.get("id"))
+
+
 def check_references() -> None:
     index = ROOT / "index.html"
     if not index.exists():
@@ -66,9 +93,23 @@ def check_references() -> None:
             err(f"index.html perdio el elemento id=\"{element_id}\" que app.js rellena")
 
 
+def check_admin() -> None:
+    for page in ("admin.html", "noticia.html"):
+        f = ROOT / page
+        if not f.exists():
+            err(f"{page} no existe")
+            continue
+        html = f.read_text(encoding="utf-8")
+        for ref in re.findall(r'(?:src|href)="((?:assets|data)/[^"]+)"', html):
+            if not (ROOT / ref).exists():
+                err(f"{page} referencia {ref} y no existe")
+
+
 def main() -> int:
     check_data()
+    check_noticias()
     check_references()
+    check_admin()
     if errors:
         print(f"ROJO — {len(errors)} problema(s):")
         for e in errors:

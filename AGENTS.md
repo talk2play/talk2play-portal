@@ -43,8 +43,12 @@ El pre-commit la ejecuta junto con `gb graph --gate` y `gb check --staged`.
 Tres piezas y un flujo en un solo sentido (la ley numerada está en ARCHITECTURE.md):
 
 ```
-scripts/update.py --escribe--> data/videos.js --lo lee--> assets/app.js --pinta--> index.html
+scripts/update.py --escribe--> data/videos.js  --lo lee--> assets/app.js --pinta--> index.html
+admin.html/admin.js --commitea via API GitHub--> data/noticias.js --lo leen--> app.js y noticia.html
 ```
+
+La "base de datos" de noticias es el propio repo (ADR-0002): publicar = commit,
+registro = historial git, despliegue = GitHub Pages al recibir el push.
 
 - `assets/app.js` solo LEE `window.T2P_DATA`; nunca escribe datos ni toca red (las
   miniaturas de i.ytimg.com son la única carga externa).

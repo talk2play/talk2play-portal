@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redacción — Talk2Play</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/admin.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="index.html" aria-label="Talk2Play, portada">
+      <span class="t">Talk</span><span>2</span><span class="p">Play</span>
+      <small>REDACCIÓN</small>
+    </a>
+    <span style="flex:1"></span>
+    <button class="btn-sub" id="btn-config" type="button">⚙ Conexión</button>
+  </div>
+</header>
+
+<main class="wrap admin-layout">
+  <section class="panel">
+    <h2>Noticias publicadas</h2>
+    <p class="hint">La base de datos es el propio repositorio: cada publicación es un commit sobre <code>data/noticias.js</code> y GitHub Pages redespliega solo (~1 min). El historial de git es el registro completo.</p>
+    <div id="list" class="news-list"></div>
+    <button class="btn-line" id="btn-new" type="button">+ Nueva noticia</button>
+  </section>
+
+  <section class="panel" id="editor" hidden>
+    <h2 id="editor-title">Nueva noticia</h2>
+    <form id="form">
+      <label>Título
+        <input name="title" required maxlength="140" placeholder="Sony admite que sus juegos digitales son licencias">
+      </label>
+      <div class="row2">
+        <label>Categoría
+          <select name="category">
+            <option>Noticias</option>
+            <option>Reacciones</option>
+            <option>Gameplays</option>
+            <option>Directos</option>
+          </select>
+        </label>
+        <label>Autor
+          <input name="author" value="Redacción Talk2Play" required>
+        </label>
+      </div>
+      <label>Imagen (URL, opcional — vale una miniatura de YouTube)
+        <input name="image" type="url" placeholder="https://i.ytimg.com/vi/VIDEO_ID/hqdefault.jpg">
+      </label>
+      <label>Entradilla
+        <textarea name="summary" rows="2" maxlength="300" placeholder="Una o dos frases que resumen la noticia."></textarea>
+      </label>
+      <label>Cuerpo (párrafos separados por línea en blanco)
+        <textarea name="body" rows="10" required></textarea>
+      </label>
+      <div class="actions">
+        <button class="btn-sub" type="submit" id="btn-save">Guardar en borrador</button>
+        <button class="btn-line" type="button" id="btn-delete" hidden>Eliminar</button>
+        <button class="btn-line" type="button" id="btn-cancel">Cancelar</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="panel publish">
+    <h2>Publicar</h2>
+    <p class="hint" id="draft-state">Sin cambios pendientes.</p>
+    <div class="actions">
+      <button class="btn-sub" id="btn-publish" type="button" disabled>Publicar en GitHub Pages</button>
+      <button class="btn-line" id="btn-download" type="button" disabled>Descargar noticias.js</button>
+    </div>
+    <p class="hint" id="publish-log"></p>
+  </section>
+</main>
+
+<dialog id="config">
+  <form method="dialog" class="config-form">
+    <h2>Conexión con GitHub</h2>
+    <p class="hint">Hace falta un <b>fine-grained token</b> con permiso <b>Contents: Read and write</b> SOLO sobre este repositorio (github.com → Settings → Developer settings → Fine-grained tokens). Se guarda únicamente en este navegador (localStorage) — no lo uses en un ordenador compartido.</p>
+    <label>Propietario <input id="cfg-owner" placeholder="Llicklair"></label>
+    <label>Repositorio <input id="cfg-repo" placeholder="talk2play-portal"></label>
+    <label>Rama <input id="cfg-branch" value="main"></label>
+    <label>Token <input id="cfg-token" type="password" placeholder="github_pat_…"></label>
+    <div class="actions">
+      <button class="btn-sub" id="cfg-save" value="save">Guardar</button>
+      <button class="btn-line" value="cancel">Cerrar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="data/noticias.js"></script>
+<script src="assets/admin.js"></script>
+</body>
+</html>
