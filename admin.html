@@ -50,6 +50,19 @@
     Sesión: <b id="session-email"></b>
     <button class="btn-line" id="btn-logout" type="button">Salir</button>
   </p>
+  <section class="panel metrics-panel">
+    <h2>Métricas</h2>
+    <div class="stat-row" id="stat-row"></div>
+    <div class="charts-row">
+      <figure class="mchart"><figcaption>Suscriptores del canal</figcaption><div id="chart-subs"></div></figure>
+      <figure class="mchart"><figcaption>Visitas de los Shorts</figcaption><div id="chart-shorts"></div></figure>
+    </div>
+    <p class="hint" id="metrics-note"></p>
+    <p class="hint">Fuente: páginas públicas de YouTube, foto diaria del bot. Twitch y las visitas
+    de esta web quedan pendientes: Twitch necesita el nombre del canal y una app gratuita de su
+    API; las visitas web, una cuenta gratuita de GoatCounter o Plausible.</p>
+  </section>
+
   <section class="panel">
     <h2>Noticias publicadas</h2>
     <p class="hint">La base de datos es el propio repositorio: cada publicación es un commit sobre <code>data/noticias.js</code> y GitHub Pages redespliega solo (~1 min). El historial de git es el registro completo.</p>
@@ -81,6 +94,19 @@
         <button class="btn-line" type="button" id="btn-cancel">Cancelar</button>
       </div>
     </form>
+  </section>
+
+  <section class="panel">
+    <h2>Radar de temas para el podcast</h2>
+    <p class="hint">Titulares de las últimas 48 h en la prensa gamer (Vandal, Eurogamer.es,
+    Gematsu, PlayStation Blog), actualizados a diario por el bot. <b class="hot-tag">Caliente</b> =
+    el mismo asunto aparece en varias fuentes. Cada tema puede convertirse en noticia
+    de redacción con un clic.</p>
+    <div class="actions" style="margin-bottom:12px">
+      <button class="btn-line" id="btn-escaleta" type="button">📋 Copiar escaleta del episodio</button>
+    </div>
+    <ol class="radar-list" id="radar-list"></ol>
+    <p class="hint" id="radar-updated"></p>
   </section>
 
   <section class="panel site-panel">
@@ -151,6 +177,8 @@
 
 <script src="data/noticias.js"></script>
 <script src="data/sitio.js"></script>
+<script src="data/temas.js"></script>
+<script src="data/metricas.js"></script>
 <script src="assets/plantilla-noticia.js"></script>
 <script src="assets/admin.js"></script>
 <script src="assets/cookies.js"></script>

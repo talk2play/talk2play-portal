@@ -386,6 +386,125 @@
     });
   });
 
+  /* ── métricas (data/metricas.js, foto diaria del bot) ── */
+  (function () {
+    var M = (window.T2P_METRICAS || {});
+    var hist = M.history || [];
+    if (!hist.length) {
+      $("metrics-note").textContent = "Sin datos todavía: el bot toma la primera foto en su próxima ejecución.";
+      return;
+    }
+    var last = hist[hist.length - 1];
+    var prev = hist.length > 1 ? hist[hist.length - 2] : null;
+    var fmt = function (n) { return Number(n).toLocaleString("es-ES"); };
+    var delta = function (key) {
+      if (!prev) return "";
+      var d = last[key] - prev[key];
+      var cls = d > 0 ? "up" : d < 0 ? "down" : "flat";
+      var sign = d > 0 ? "▲ +" : d < 0 ? "▼ " : "= ";
+      return '<div class="d ' + cls + '">' + sign + fmt(d) + " vs. ayer</div>";
+    };
+    var tiles = [
+      ["subs", "Suscriptores"],
+      ["videos", "Vídeos publicados"],
+      ["views_recientes", "Visitas · 30 últimos vídeos"],
+      ["views_shorts", "Visitas · Shorts"]
+    ];
+    $("stat-row").innerHTML = tiles.map(function (t) {
+      return '<div class="stat-tile"><div class="n">' + fmt(last[t[0]]) + "</div>" +
+        '<div class="l">' + t[1] + "</div>" + delta(t[0]) + "</div>";
+    }).join("");
+
+    // línea temporal: una serie por gráfico, escala propia, marca fina,
+    // rejilla recesiva y último valor etiquetado (color validado #e62429)
+    var lineChart = function (containerId, key) {
+      var el = $(containerId);
+      if (hist.length < 2) {
+        el.innerHTML = '<p class="empty-chart">La tendencia se dibuja a partir del segundo día de datos.</p>';
+        return;
+      }
+      var W = 320, H = 110, padL = 6, padR = 44, padT = 10, padB = 18;
+      var xs = hist.map(function (_, i) {
+        return padL + i * (W - padL - padR) / (hist.length - 1);
+      });
+      var values = hist.map(function (h) { return h[key] || 0; });
+      var lo = Math.min.apply(null, values), hi = Math.max.apply(null, values);
+      if (hi === lo) { hi += 1; lo -= 1; }
+      var y = function (v) { return padT + (H - padT - padB) * (1 - (v - lo) / (hi - lo)); };
+      var pts = values.map(function (v, i) { return xs[i].toFixed(1) + "," + y(v).toFixed(1); });
+
+      var svg = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Evolución diaria">';
+      [0.25, 0.5, 0.75].forEach(function (f) {
+        var gy = (padT + (H - padT - padB) * f).toFixed(1);
+        svg += '<line x1="' + padL + '" y1="' + gy + '" x2="' + (W - padR) + '" y2="' + gy +
+          '" stroke="var(--line)" stroke-width="1"/>';
+      });
+      svg += '<polyline points="' + pts.join(" ") + '" fill="none" stroke="#e62429" ' +
+        'stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>';
+      hist.forEach(function (h, i) {
+        var cx = xs[i].toFixed(1), cy = y(values[i]).toFixed(1);
+        var lastPt = i === hist.length - 1;
+        svg += '<circle class="hit" cx="' + cx + '" cy="' + cy + '" r="9" fill="transparent">' +
+          "<title>" + h.date + ": " + fmt(values[i]) + "</title></circle>" +
+          '<g class="pt' + (lastPt ? " last" : "") + '">' +
+          '<circle cx="' + cx + '" cy="' + cy + '" r="3.5" fill="#e62429" stroke="var(--surface2)" stroke-width="2"/>' +
+          (lastPt ? '<text x="' + (Number(cx) + 8) + '" y="' + (Number(cy) + 4) +
+            '" font-size="11" fill="var(--text)" style="font-variant-numeric:tabular-nums">' + fmt(values[i]) + "</text>" : "") +
+          "</g>";
+      });
+      var d0 = hist[0].date.slice(5), d1 = last.date.slice(5);
+      svg += '<text x="' + padL + '" y="' + (H - 4) + '" font-size="10" fill="var(--muted)">' + d0 + "</text>" +
+        '<text x="' + (W - padR) + '" y="' + (H - 4) + '" font-size="10" fill="var(--muted)" text-anchor="end">' + d1 + "</text></svg>";
+      el.innerHTML = svg;
+    };
+    lineChart("chart-subs", "subs");
+    lineChart("chart-shorts", "views_shorts");
+    $("metrics-note").textContent = "Histórico: " + hist.length + " día(s) · última foto " + M.updated + ".";
+  })();
+
+  /* ── radar de temas para el podcast (data/temas.js, lo escribe el bot) ── */
+  var radar = (window.T2P_TEMAS || {});
+  var temas = radar.temas || [];
+  var esc = function (s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  };
+  if (temas.length) {
+    $("radar-list").innerHTML = temas.map(function (t, i) {
+      return "<li><span class=\"rt\">" +
+        (t.hot ? '<span class="hot-tag">Caliente</span> ' : "") +
+        '<a href="' + esc(t.url) + '" target="_blank" rel="noopener">' + esc(t.title) + "</a>" +
+        '<span class="rm">' + esc(t.source) + " · " + esc(t.when) + "</span></span>" +
+        '<button type="button" class="rb" data-tema="' + i + '">→ noticia</button></li>';
+    }).join("");
+    $("radar-updated").textContent = "Radar actualizado: " + (radar.updated || "");
+    $("radar-list").addEventListener("click", function (e) {
+      var btn = e.target.closest(".rb");
+      if (!btn) return;
+      var t = temas[Number(btn.dataset.tema)];
+      if (!t) return;
+      openEditor(null);
+      var f = $("form");
+      f.title.value = t.title;
+      f.body.value = "\n\nFuente: " + t.url;
+      f.summary.focus();
+    });
+    $("btn-escaleta").addEventListener("click", function () {
+      var lines = ["ESCALETA — temas candidatos (" + (radar.updated || "") + ")", ""];
+      temas.forEach(function (t) {
+        lines.push((t.hot ? "🔥 " : "· ") + t.title + " — " + t.source + " (" + t.url + ")");
+      });
+      navigator.clipboard.writeText(lines.join("\n")).then(function () {
+        $("radar-updated").textContent = "Escaleta copiada al portapapeles ✔";
+      }, function () {
+        $("radar-updated").textContent = "No se pudo copiar (¿permisos del navegador?)";
+      });
+    });
+  } else {
+    $("radar-list").innerHTML = '<li><span class="rt">El bot todavía no ha recopilado temas — se actualiza a diario.</span></li>';
+  }
+
   renderList();
 
   /* enlace directo desde el modo edición visual: admin.html#editar=<id> */

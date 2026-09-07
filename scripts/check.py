@@ -142,6 +142,38 @@ def check_lanzamientos() -> None:
             err(f"lanzamientos[{i}] sin nombre o con url que no es de Steam: {g.get('url')!r}")
 
 
+def _check_data_js(fname: str, var: str) -> dict | None:
+    f = ROOT / "data" / fname
+    if not f.exists():
+        err(f"data/{fname} no existe — ejecuta su script generador")
+        return None
+    m = re.match(r"window\." + var + r" = ({.*});\s*$", f.read_text(encoding="utf-8"), re.S)
+    if not m:
+        err(f"data/{fname} no tiene el formato 'window.{var} = {{...}};'")
+        return None
+    try:
+        return json.loads(m.group(1))
+    except json.JSONDecodeError as e:
+        err(f"data/{fname} no es JSON valido: {e}")
+        return None
+
+
+def check_herramientas_admin() -> None:
+    temas = _check_data_js("temas.js", "T2P_TEMAS")
+    if temas is not None:
+        for i, t in enumerate(temas.get("temas", [])):
+            if not t.get("title") or not t.get("url", "").startswith("http"):
+                err(f"temas[{i}] sin titulo o url invalida")
+    metricas = _check_data_js("metricas.js", "T2P_METRICAS")
+    if metricas is not None:
+        hist = metricas.get("history", [])
+        if not isinstance(hist, list) or not hist:
+            err("metricas.js: 'history' debe ser una lista con al menos una foto")
+        for i, h in enumerate(hist):
+            if not h.get("date") or "subs" not in h:
+                err(f"metricas.history[{i}] sin 'date' o 'subs'")
+
+
 def check_paginas_estaticas() -> None:
     """Cada noticia debe tener su pagina pre-renderizada, y sitemap/rss al dia."""
     news_file = ROOT / "data" / "noticias.js"
@@ -191,6 +223,7 @@ def main() -> int:
     check_noticias()
     check_sitio()
     check_lanzamientos()
+    check_herramientas_admin()
     check_paginas_estaticas()
     check_references()
     check_admin()

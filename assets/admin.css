@@ -55,6 +55,53 @@ button.btn-sub{border:0;cursor:pointer;font:inherit;font-weight:600;font-size:.8
 #publish-log.ok{color:#4caf50}
 #publish-log.err{color:var(--talk)}
 
+/* métricas (solo admins) */
+.metrics-panel{grid-column:1 / -1}
+.stat-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+.stat-tile{
+  flex:1 1 150px;background:var(--surface2);border:1px solid var(--line);
+  border-radius:10px;padding:14px 16px;
+}
+.stat-tile .n{
+  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 120;font-weight:900;
+  font-size:1.6rem;line-height:1.1;font-variant-numeric:tabular-nums;
+}
+.stat-tile .l{font-size:.72rem;color:var(--muted);margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
+.stat-tile .d{font-size:.76rem;margin-top:4px;font-variant-numeric:tabular-nums}
+.stat-tile .d.up{color:#2fbf82}
+.stat-tile .d.down{color:var(--talk)}
+.stat-tile .d.flat{color:var(--muted)}
+.charts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.mchart{margin:0;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.mchart figcaption{font-size:.78rem;font-weight:600;color:var(--muted);margin-bottom:8px}
+.mchart svg{display:block;width:100%;height:auto}
+.mchart .empty-chart{font-size:.82rem;color:var(--muted);padding:18px 0}
+.mchart .pt{opacity:0}
+.mchart .hit:hover + .pt,.mchart .pt.last{opacity:1}
+
+/* radar de temas */
+.hot-tag{
+  display:inline-block;background:var(--talk);color:#fff;font-size:.66rem;
+  font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:2px 8px;border-radius:4px;
+}
+.radar-list{list-style:none;margin:0;padding:0}
+.radar-list li{
+  display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;
+  padding:10px 0;border-top:1px solid var(--line);
+}
+.radar-list li:first-child{border-top:0}
+.radar-list .rt{font-size:.9rem;font-weight:600;line-height:1.4}
+.radar-list .rt a{text-decoration:none;color:var(--text)}
+.radar-list .rt a:hover{color:var(--talk)}
+.radar-list .rm{display:block;font-size:.74rem;color:var(--muted);font-weight:400;margin-top:2px}
+.radar-list .rb{
+  background:transparent;border:1px solid var(--line);color:var(--muted);
+  font:inherit;font-weight:600;font-size:.76rem;padding:6px 12px;border-radius:6px;
+  cursor:pointer;white-space:nowrap;
+}
+.radar-list .rb:hover{border-color:var(--talk);color:var(--talk)}
+
 dialog{
   background:var(--surface);color:var(--text);border:1px solid var(--line);
   border-radius:14px;max-width:440px;width:92vw;padding:24px;
