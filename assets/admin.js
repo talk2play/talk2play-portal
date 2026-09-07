@@ -12,6 +12,7 @@
   var ADMINS = [
     "marcosreciosanchez@gmail.com",
     "n.jimenezmercader@gmail.com",
+    "m.jimenezmercader@gmail.com",
     "vicfleki@hotmail.com"
   ];
   var USER_KEY = "t2p-admin-user";
