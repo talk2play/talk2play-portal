@@ -191,7 +191,6 @@
     f.lema.value = site.textos.lema || "";
     f.titulo_videos.value = site.textos.titulo_videos || "";
     f.sub_redaccion.value = site.textos.sub_redaccion || "";
-    f.ticker.value = (site.textos.ticker || []).join("\n");
     f.lateral_texto.value = site.textos.lateral_texto || "";
     f.imagen_lateral.value = site.imagenes.lateral || "";
     f.footer.value = site.textos.footer || "";
@@ -205,9 +204,6 @@
     site.textos.lema = f.lema.value.trim();
     site.textos.titulo_videos = f.titulo_videos.value.trim();
     site.textos.sub_redaccion = f.sub_redaccion.value.trim();
-    site.textos.ticker = f.ticker.value.split("\n")
-      .map(function (t) { return t.trim(); })
-      .filter(function (t) { return t; });
     site.textos.lateral_texto = f.lateral_texto.value.trim();
     site.imagenes.lateral = f.imagen_lateral.value.trim();
     site.textos.footer = f.footer.value.trim();

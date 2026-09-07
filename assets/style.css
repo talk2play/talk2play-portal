@@ -64,18 +64,6 @@ a:focus-visible{outline:2px solid var(--play);outline-offset:3px;border-radius:2
 }
 .btn-admin:hover{border-color:var(--talk);color:var(--talk)}
 
-/* ── ticker ── */
-.ticker{border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:9px 0}
-.ticker .reel{
-  display:inline-block;animation:scroll 40s linear infinite;
-  font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 110;font-weight:700;
-  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
-}
-.ticker .reel span{margin:0 16px}
-.ticker .reel .sep{color:var(--talk)}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.ticker .reel{animation:none}}
-
 /* ── layout ── */
 .layout{display:grid;grid-template-columns:1fr 320px;gap:28px;padding-top:28px;padding-bottom:56px}
 @media (max-width:900px){.layout{grid-template-columns:1fr}}
@@ -150,20 +138,6 @@ a:focus-visible{outline:2px solid var(--play);outline-offset:3px;border-radius:2
 .side{display:flex;flex-direction:column;gap:22px}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 20px 22px}
 .panel h2{margin:0 0 14px;font-size:1.02rem}
-.toplist{list-style:none;margin:0;padding:0;counter-reset:top}
-.toplist li{border-top:1px solid var(--line)}
-.toplist li:first-child{border-top:0}
-.toplist a{
-  display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;
-  padding:11px 0;text-decoration:none;counter-increment:top;
-}
-.toplist a::before{
-  content:counter(top);font-family:"Archivo",sans-serif;font-variation-settings:"wdth" 120;
-  font-weight:900;font-size:1.35rem;color:var(--line);line-height:1.1;
-}
-.toplist a:hover::before{color:var(--talk)}
-.toplist .tt{font-size:.86rem;font-weight:600;line-height:1.35}
-.toplist .vv{display:block;margin-top:3px;font-size:.74rem;color:var(--muted);font-weight:400}
 .shorts-strip{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .short-card{
   position:relative;border-radius:10px;overflow:hidden;aspect-ratio:9/14;

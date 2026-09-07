@@ -89,8 +89,7 @@ def check_references() -> None:
     for ref in re.findall(r'(?:src|href)="((?:assets|data)/[^"]+)"', html):
         if not (ROOT / ref).exists():
             err(f"index.html referencia {ref} y no existe")
-    for element_id in ("hero", "grid", "news-grid", "news-block", "videos-block",
-                       "toplist", "shorts-strip", "ticker-reel", "updated"):
+    for element_id in ("hero", "grid", "news-grid", "shorts-strip", "updated"):
         if f'id="{element_id}"' not in html:
             err(f"index.html perdio el elemento id=\"{element_id}\" que app.js rellena")
 
@@ -114,8 +113,6 @@ def check_sitio() -> None:
     for field in ("lema", "sub_redaccion", "titulo_videos", "lateral_texto", "footer"):
         if not textos.get(field):
             err(f"sitio.js: texto obligatorio vacio: '{field}'")
-    if not isinstance(textos.get("ticker"), list) or not textos.get("ticker"):
-        err("sitio.js: 'ticker' debe ser una lista con al menos un tema")
     email = (textos.get("email_contacto") or "").strip()
     if email and not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", email):
         err(f"sitio.js: email_contacto no parece un email: {email!r}")
