@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "videos": [
     {
       "id": "iBYcTRsD5s4",
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
-      "views": "0 visualizaciones",
-      "when": "hace 1 hora",
+      "views": "2 visualizaciones",
+      "when": "hace 14 horas",
       "category": "Actualidad"
     },
     {
@@ -43,7 +43,7 @@ window.T2P_DATA = {
       "id": "btLOlqHAfyc",
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
-      "views": "10 visualizaciones",
+      "views": "11 visualizaciones",
       "when": "hace 4 días",
       "category": "Actualidad"
     },
@@ -52,7 +52,7 @@ window.T2P_DATA = {
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
       "views": "25 visualizaciones",
-      "when": "hace 4 días",
+      "when": "hace 5 días",
       "category": "Actualidad"
     },
     {
@@ -76,7 +76,7 @@ window.T2P_DATA = {
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
       "views": "3 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Directos"
     },
     {
@@ -91,7 +91,7 @@ window.T2P_DATA = {
       "id": "2fmaqp-AklY",
       "title": "GAMEPLAY DE FABLE 😱Y MÁS DE GOW E-DAY💀 | XBOX DIA 1 GAMESCOM 2026",
       "duration": "2:59:55",
-      "views": "16 visualizaciones",
+      "views": "17 visualizaciones",
       "when": "hace 12 días",
       "category": "Directos"
     },
@@ -108,7 +108,7 @@ window.T2P_DATA = {
       "title": "¡¡VAYA JUEGAZOS, UN PEDAZO DE EVENTO!! 😱 | OPENING NIGHT LIVE GAMESCOM 2026",
       "duration": "2:37:27",
       "views": "2 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -252,7 +252,7 @@ window.T2P_DATA = {
     {
       "id": "hNacjO7KfcI",
       "title": "¡Todo lo que esperamos del próximo Nintendo Direct! #shorts",
-      "views": "4 visualizaciones"
+      "views": "1,1 K visualizaciones"
     },
     {
       "id": "hXLeYZzj6Dw",

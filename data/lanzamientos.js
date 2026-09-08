@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "source": "Steam",
   "items": [
     {
-      "appid": 5130890,
-      "name": "Parasomnia",
-      "price": 0.0,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/5130890/"
+      "appid": 5094720,
+      "name": "Desktop P2W Simulator",
+      "price": 2.67,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/5094720/"
     },
     {
-      "appid": 4610590,
-      "name": "Dirty Laundry",
-      "price": 0.0,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/4610590/"
+      "appid": 3669570,
+      "name": "Alchemy Factory",
+      "price": 13.99,
+      "discount": 20,
+      "url": "https://store.steampowered.com/app/3669570/"
     },
     {
-      "appid": 1765250,
-      "name": "Sir Galgano - A Medieval Tale",
-      "price": 18.37,
-      "discount": 25,
-      "url": "https://store.steampowered.com/app/1765250/"
-    },
-    {
-      "appid": 4099120,
-      "name": "My Darling Dark Elf",
-      "price": 8.77,
-      "discount": 10,
-      "url": "https://store.steampowered.com/app/4099120/"
-    },
-    {
-      "appid": 2518490,
-      "name": "Dataminers",
-      "price": 6.29,
-      "discount": 10,
-      "url": "https://store.steampowered.com/app/2518490/"
-    },
-    {
-      "appid": 5104020,
-      "name": "Splatter Piece",
+      "appid": 5005150,
+      "name": "Flood With Friends",
       "price": 4.67,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/5104020/"
+      "url": "https://store.steampowered.com/app/5005150/"
+    },
+    {
+      "appid": 4994490,
+      "name": "Run to Run",
+      "price": 5.53,
+      "discount": 10,
+      "url": "https://store.steampowered.com/app/4994490/"
+    },
+    {
+      "appid": 4115370,
+      "name": "Dragon Tiles",
+      "price": 3.73,
+      "discount": 10,
+      "url": "https://store.steampowered.com/app/4115370/"
+    },
+    {
+      "appid": 4496240,
+      "name": "Novel Forger: Suicide Mr. Fury",
+      "price": 6.11,
+      "discount": 25,
+      "url": "https://store.steampowered.com/app/4496240/"
     }
   ]
 };

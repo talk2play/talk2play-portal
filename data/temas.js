@@ -1,5 +1,5 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-07 19:44 UTC",
+  "updated": "2026-09-08 08:39 UTC",
   "temas": [
     {
       "title": "Onimusha: Way of the Sword vendió más de un millón de copias en su día de lanzamiento",
@@ -58,17 +58,66 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Sid Meier’s Civilization VII major update ‘Arc of Tomorrow’ and paid expansion ‘Earthrise’ announced",
-      "url": "https://www.gematsu.com/2026/09/sid-meiers-civilization-vii-major-update-arc-of-tomorrow-and-paid-expansion-earthrise-announced",
+      "title": "Tang Dynasty-set turn-based RPG Tianji: Shadow of the Ancients announced for PS5, Switch 2, Switch, and PC",
+      "url": "https://www.gematsu.com/2026/09/tang-dynasty-set-turn-based-rpg-tianji-shadow-of-the-ancients-announced-for-ps5-switch-2-switch-and-pc",
       "source": "Gematsu",
-      "when": "2026-09-05 22:00",
-      "hot": true
+      "when": "2026-09-08 04:13",
+      "hot": false
+    },
+    {
+      "title": "Street Fighter 6 DLC character Arjun launches October 13",
+      "url": "https://www.gematsu.com/2026/09/street-fighter-6-dlc-character-arjun-launches-october-13",
+      "source": "Gematsu",
+      "when": "2026-09-07 23:54",
+      "hot": false
+    },
+    {
+      "title": "Microsoft asegura que Windows 11 funcionará más rápido en PCs con tan solo 8GB de memoria RAM",
+      "url": "https://www.eurogamer.es/microsoft-asegura-que-windows-11-funcionara-mas-rapido-en-pcs-con-8gb-de-ram",
+      "source": "Eurogamer.es",
+      "when": "2026-09-07 21:41",
+      "hot": false
+    },
+    {
+      "title": "Playground insiste en que Forza Horizon 6 se publicará este año en PS5",
+      "url": "https://www.eurogamer.es/playground-insiste-en-que-forza-horizon-6-se-publicara-este-ano-en-ps5",
+      "source": "Eurogamer.es",
+      "when": "2026-09-07 21:29",
+      "hot": false
+    },
+    {
+      "title": "GTA 6 confirma la hora exacta para su lanzamiento en España y el resto del mundo",
+      "url": "https://vandal.elespanol.com/noticia/2026250032/gta-6-confirma-la-hora-exacta-para-su-lanzamiento-en-espana-y-el-resto-del-mundo/",
+      "source": "Vandal",
+      "when": "2026-09-07 18:54",
+      "hot": false
+    },
+    {
+      "title": "Dragon Ball Xenoverse 3 lo confirma: el nuevo anime llegará como DLC con el gran villano de la serie",
+      "url": "https://vandal.elespanol.com/noticia/2026250031/dragon-ball-xenoverse-3-lo-confirma-el-nuevo-anime-llegara-como-dlc-con-el-gran-villano-de-la-serie/",
+      "source": "Vandal",
+      "when": "2026-09-07 18:00",
+      "hot": false
+    },
+    {
+      "title": "El drama de los despidos no para: Crytek habría despedido a cerca de 30 empleados en una nueva reestructuración",
+      "url": "https://vandal.elespanol.com/noticia/2026250030/el-drama-de-los-despidos-no-para-crytek-habria-despedido-a-cerca-de-30-empleados-en-una-nueva-reestructuracion/",
+      "source": "Vandal",
+      "when": "2026-09-07 16:45",
+      "hot": false
     },
     {
       "title": "Beyond the Dark: Nightwatch launches October 22",
       "url": "https://www.gematsu.com/2026/09/beyond-the-dark-nightwatch-launches-october-22",
       "source": "Gematsu",
       "when": "2026-09-07 16:11",
+      "hot": false
+    },
+    {
+      "title": "Descartan Destiny como referencia para el rumoreado shooter de Starcraft: 'Será como Far Cry o Space Marine'",
+      "url": "https://vandal.elespanol.com/noticia/2026250029/descartan-destiny-como-referencia-para-el-rumoreado-shooter-de-starcraft-sera-como-far-cry-o-space-marine/",
+      "source": "Vandal",
+      "when": "2026-09-07 16:06",
       "hot": false
     },
     {
@@ -86,10 +135,31 @@ window.T2P_TEMAS = {
       "hot": false
     },
     {
+      "title": "Capcom quiere reactivar sagas que no han recibido una nueva entrega: 'Maximizan el valor de la empresa'",
+      "url": "https://vandal.elespanol.com/noticia/2026250028/capcom-quiere-reactivar-sagas-que-no-han-recibido-una-nueva-entrega-maximizan-el-valor-de-la-empresa/",
+      "source": "Vandal",
+      "when": "2026-09-07 15:21",
+      "hot": false
+    },
+    {
+      "title": "Polyphony Digital incrementa el ritmo de contratación para su próximo Gran Turismo: publican 15 nuevos empleos",
+      "url": "https://vandal.elespanol.com/noticia/2026250027/polyphony-digital-incrementa-el-ritmo-de-contratacion-para-su-proximo-gran-turismo-publican-15-nuevos-empleos/",
+      "source": "Vandal",
+      "when": "2026-09-07 14:46",
+      "hot": false
+    },
+    {
       "title": "Rockstar reconoce que uno de los desafíos de GTA 6 fue escoger sus temas: 'Debíamos tener mucho cuidado'",
       "url": "https://vandal.elespanol.com/noticia/2026250024/rockstar-reconoce-que-uno-de-los-desafios-de-gta-6-fue-escoger-sus-temas-debiamos-tener-mucho-cuidado/",
       "source": "Vandal",
-      "when": "2026-09-07 14:27",
+      "when": "2026-09-07 14:31",
+      "hot": false
+    },
+    {
+      "title": "Jugar a Cyberpunk 2077 en tercera persona por fin es posible gracias a este trabajado 'mod inmersivo'",
+      "url": "https://vandal.elespanol.com/noticia/2026250020/jugar-a-cyberpunk-2077-en-tercera-persona-por-fin-es-posible-gracias-a-este-trabajado-mod-inmersivo/",
+      "source": "Vandal",
+      "when": "2026-09-07 14:31",
       "hot": false
     },
     {
@@ -104,76 +174,6 @@ window.T2P_TEMAS = {
       "url": "https://www.gematsu.com/2026/09/fast-paced-3d-action-adventure-platformer-lightspeed-lina-announced-for-pc",
       "source": "Gematsu",
       "when": "2026-09-07 14:22",
-      "hot": false
-    },
-    {
-      "title": "Un juego de terror que trata como nunca la caza de brujas: Hunter's Moon llega en exclusiva para PlayStation 5",
-      "url": "https://vandal.elespanol.com/noticia/2026250026/un-juego-de-terror-que-trata-como-nunca-la-caza-de-brujas-hunters-moon-llega-en-exclusiva-para-playstation-5/",
-      "source": "Vandal",
-      "when": "2026-09-07 14:09",
-      "hot": false
-    },
-    {
-      "title": "Atlus aprendió de Persona 3 Reload y va con todo con el remake de Persona 4: 'Pusimos todo el esfuerzo'",
-      "url": "https://vandal.elespanol.com/noticia/2026250023/atlus-aprendio-de-persona-3-reload-y-va-con-todo-con-el-remake-de-persona-4-pusimos-todo-el-esfuerzo/",
-      "source": "Vandal",
-      "when": "2026-09-07 11:53",
-      "hot": false
-    },
-    {
-      "title": "El juego de estrategia Humankind 2 desmiente que se utilizase IA en su tráiler, y lo demuestra con un nuevo vídeo",
-      "url": "https://vandal.elespanol.com/noticia/2026250022/el-juego-de-estrategia-humankind-2-desmiente-que-se-utilizase-ia-en-su-trailer-y-lo-demuestra-con-un-nuevo-video/",
-      "source": "Vandal",
-      "when": "2026-09-07 11:44",
-      "hot": false
-    },
-    {
-      "title": "Se confirman malas noticias en PC: Final Fantasy VII Revelation tendrá el polémico sistema antipiratería Denuvo",
-      "url": "https://vandal.elespanol.com/noticia/2026250021/se-confirman-malas-noticias-en-pc-final-fantasy-vii-revelation-tendra-el-polemico-sistema-antipirateria-denuvo/",
-      "source": "Vandal",
-      "when": "2026-09-07 11:26",
-      "hot": false
-    },
-    {
-      "title": "Jugar a Cyberpunk 2077 en tercera persona por fin es posible gracias a este trabajado 'mod inmersivo'",
-      "url": "https://vandal.elespanol.com/noticia/2026250020/jugar-a-cyberpunk-2077-en-tercera-persona-por-fin-es-posible-gracias-a-este-trabajado-mod-inmersivo/",
-      "source": "Vandal",
-      "when": "2026-09-07 11:01",
-      "hot": false
-    },
-    {
-      "title": "Fable tiene más de 1000 NPC y ninguno se ha creado al azar: Playground explica el enorme trabajo que hay detrás",
-      "url": "https://vandal.elespanol.com/noticia/2026250019/fable-tiene-mas-de-1000-npc-y-ninguno-se-ha-creado-al-azar-playground-explica-el-enorme-trabajo-que-hay-detras/",
-      "source": "Vandal",
-      "when": "2026-09-07 10:59",
-      "hot": false
-    },
-    {
-      "title": "Saber LATAM habría perdido el Metro multijugador, obligando al cierre de oficinas en Perú y Uruguay, según fuentes",
-      "url": "https://vandal.elespanol.com/noticia/2026250018/saber-latam-habria-perdido-el-metro-multijugador-obligando-al-cierre-de-oficinas-en-peru-y-uruguay-segun-fuentes/",
-      "source": "Vandal",
-      "when": "2026-09-07 10:30",
-      "hot": false
-    },
-    {
-      "title": "Dónde ver el Nintendo Direct de Zelda: fecha y hora exactas del evento en España y el resto del mundo",
-      "url": "https://vandal.elespanol.com/noticia/2026250017/donde-ver-el-nintendo-direct-de-zelda-fecha-y-hora-exactas-del-evento-en-espana-y-el-resto-del-mundo/",
-      "source": "Vandal",
-      "when": "2026-09-07 10:23",
-      "hot": false
-    },
-    {
-      "title": "Una de las mecánicas más polémicas de GTA 6 solo te hará perder 10 segundos: Rockstar responde a las críticas",
-      "url": "https://vandal.elespanol.com/noticia/2026250016/una-de-las-mecanicas-mas-polemicas-de-gta-6-solo-te-hara-perder-10-segundos-rockstar-responde-a-las-criticas/",
-      "source": "Vandal",
-      "when": "2026-09-07 09:55",
-      "hot": false
-    },
-    {
-      "title": "Jupiter & Mars: Definitive Edition announced for Switch",
-      "url": "https://www.gematsu.com/2026/09/jupiter-mars-definitive-edition-announced-for-switch",
-      "source": "Gematsu",
-      "when": "2026-09-07 09:45",
       "hot": false
     }
   ]
