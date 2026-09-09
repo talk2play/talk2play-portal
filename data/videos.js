@@ -5,14 +5,22 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "videos": [
+    {
+      "id": "6o8uwpB7ftA",
+      "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
+      "duration": "30:08",
+      "views": "1 visualización",
+      "when": "hace 14 horas",
+      "category": "Directos"
+    },
     {
       "id": "iBYcTRsD5s4",
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
-      "views": "2 visualizaciones",
-      "when": "hace 14 horas",
+      "views": "5 visualizaciones",
+      "when": "hace 1 día",
       "category": "Actualidad"
     },
     {
@@ -20,7 +28,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "5 visualizaciones",
-      "when": "hace 1 día",
+      "when": "hace 2 días",
       "category": "Gameplays"
     },
     {
@@ -28,23 +36,23 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "3 visualizaciones",
-      "when": "hace 2 días",
+      "when": "hace 3 días",
       "category": "Reacciones"
     },
     {
       "id": "KAov5qNDgXg",
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
-      "views": "1 visualización",
-      "when": "hace 3 días",
+      "views": "2 visualizaciones",
+      "when": "hace 4 días",
       "category": "Gameplays"
     },
     {
       "id": "btLOlqHAfyc",
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
-      "views": "11 visualizaciones",
-      "when": "hace 4 días",
+      "views": "13 visualizaciones",
+      "when": "hace 5 días",
       "category": "Actualidad"
     },
     {
@@ -52,7 +60,7 @@ window.T2P_DATA = {
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
       "views": "25 visualizaciones",
-      "when": "hace 5 días",
+      "when": "hace 6 días",
       "category": "Actualidad"
     },
     {
@@ -60,7 +68,7 @@ window.T2P_DATA = {
       "title": "GTA 6 ES UNA BARBARIDAD😱 | REACCIÓN E IMPRESIONES MIRADA EXTENDIDA",
       "duration": "54:05",
       "views": "10 visualizaciones",
-      "when": "hace 5 días",
+      "when": "hace 6 días",
       "category": "Reacciones"
     },
     {
@@ -68,7 +76,7 @@ window.T2P_DATA = {
       "title": "UN BUEN CAMBIO DE AIRES A LA SAGA CON RESONANCE A PLAGUE TALE LEGACY",
       "duration": "24:46",
       "views": "15 visualizaciones",
-      "when": "hace 6 días",
+      "when": "hace 7 días",
       "category": "Actualidad"
     },
     {
@@ -76,15 +84,15 @@ window.T2P_DATA = {
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
       "views": "3 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Directos"
     },
     {
       "id": "yOOgIfa-S94",
       "title": "GAMEPLAY Y ENTREVISTA TIDES OF ANNIHILATION😍 | FUTURE GAMES SHOW GAMESCOM 2026",
       "duration": "1:34:33",
-      "views": "15 visualizaciones",
-      "when": "hace 11 días",
+      "views": "17 visualizaciones",
+      "when": "hace 12 días",
       "category": "Directos"
     },
     {
@@ -92,7 +100,7 @@ window.T2P_DATA = {
       "title": "GAMEPLAY DE FABLE 😱Y MÁS DE GOW E-DAY💀 | XBOX DIA 1 GAMESCOM 2026",
       "duration": "2:59:55",
       "views": "17 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -100,7 +108,7 @@ window.T2P_DATA = {
       "title": "SONY ADMITE QUE SUS JUEGOS DIGITALES SON LICENCIAS | HORARIO GAMESCOM 2026",
       "duration": "27:00",
       "views": "4 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -108,7 +116,7 @@ window.T2P_DATA = {
       "title": "¡¡VAYA JUEGAZOS, UN PEDAZO DE EVENTO!! 😱 | OPENING NIGHT LIVE GAMESCOM 2026",
       "duration": "2:37:27",
       "views": "2 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Directos"
     },
     {
@@ -132,7 +140,7 @@ window.T2P_DATA = {
       "title": "GEARS OF WAR E-DAY VIENE PISANDO FUERTE💀 | NOTICIAS XBOX✍🏻",
       "duration": "28:43",
       "views": "23 visualizaciones",
-      "when": "hace 2 semanas",
+      "when": "hace 3 semanas",
       "category": "Actualidad"
     },
     {
@@ -204,7 +212,7 @@ window.T2P_DATA = {
       "title": "EA ES COMPRADA POR ARABIA SAUDITA | XBOX ESTARÁ EN TOKYO GAMES SHOW 2026",
       "duration": "24:29",
       "views": "29 visualizaciones",
-      "when": "hace 3 semanas",
+      "when": "hace 4 semanas",
       "category": "Actualidad"
     },
     {
@@ -238,17 +246,19 @@ window.T2P_DATA = {
       "views": "19 visualizaciones",
       "when": "hace 1 mes",
       "category": "Actualidad"
-    },
-    {
-      "id": "BuTrsNJturI",
-      "title": "SEGA DEFIENDE EL FORMATO FÍSICO | COMENTAMOS SOBRE EL TEMA",
-      "duration": "10:00",
-      "views": "10 visualizaciones",
-      "when": "hace 1 mes",
-      "category": "Actualidad"
     }
   ],
   "shorts": [
+    {
+      "id": "lUsLhiMKK1g",
+      "title": "Fecha Zelda Ocarina of Time | #talk2play de #Twitch",
+      "views": "5 visualizaciones"
+    },
+    {
+      "id": "A9SO-vOwJP8",
+      "title": "Primer vistazo Ocarina of time | #talk2play de #Twitch",
+      "views": "389 visualizaciones"
+    },
     {
       "id": "hNacjO7KfcI",
       "title": "¡Todo lo que esperamos del próximo Nintendo Direct! #shorts",
@@ -352,7 +362,7 @@ window.T2P_DATA = {
     {
       "id": "XT0vWB70sgY",
       "title": "HAY QUE SALVAR LOS VIDEOJUEGOS _",
-      "views": "6 visualizaciones"
+      "views": "8 visualizaciones"
     },
     {
       "id": "jx-3XMXFeaI",
@@ -452,7 +462,7 @@ window.T2P_DATA = {
     {
       "id": "WIqS_DmejmI",
       "title": "NUEVO LORDS OF THE FALLEN 2 ( LOCURITA )",
-      "views": "71 visualizaciones"
+      "views": "72 visualizaciones"
     },
     {
       "id": "_tbV2Vm_fzY",

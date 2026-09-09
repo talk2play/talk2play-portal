@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "source": "Steam",
   "items": [
     {
-      "appid": 5094720,
-      "name": "Desktop P2W Simulator",
-      "price": 2.67,
-      "discount": 15,
-      "url": "https://store.steampowered.com/app/5094720/"
-    },
-    {
-      "appid": 3669570,
-      "name": "Alchemy Factory",
-      "price": 13.99,
-      "discount": 20,
-      "url": "https://store.steampowered.com/app/3669570/"
-    },
-    {
-      "appid": 5005150,
-      "name": "Flood With Friends",
-      "price": 4.67,
+      "appid": 3711050,
+      "name": "BeaterCore",
+      "price": 8.86,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/5005150/"
+      "url": "https://store.steampowered.com/app/3711050/"
     },
     {
-      "appid": 4994490,
-      "name": "Run to Run",
-      "price": 5.53,
+      "appid": 3971950,
+      "name": "In Falsus",
+      "price": 35.99,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/4994490/"
+      "url": "https://store.steampowered.com/app/3971950/"
     },
     {
-      "appid": 4115370,
-      "name": "Dragon Tiles",
-      "price": 3.73,
+      "appid": 2459840,
+      "name": "Barbarian Saga: The Beastmaster",
+      "price": 13.49,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/4115370/"
+      "url": "https://store.steampowered.com/app/2459840/"
     },
     {
-      "appid": 4496240,
-      "name": "Novel Forger: Suicide Mr. Fury",
-      "price": 6.11,
-      "discount": 25,
-      "url": "https://store.steampowered.com/app/4496240/"
+      "appid": 4985690,
+      "name": "MyHiStory",
+      "price": 4.99,
+      "discount": 0,
+      "url": "https://store.steampowered.com/app/4985690/"
+    },
+    {
+      "appid": 5143750,
+      "name": "Hanzi Bird",
+      "price": 6.47,
+      "discount": 10,
+      "url": "https://store.steampowered.com/app/5143750/"
+    },
+    {
+      "appid": 4292170,
+      "name": "Planeta Nueve",
+      "price": 6.47,
+      "discount": 10,
+      "url": "https://store.steampowered.com/app/4292170/"
     }
   ]
 };

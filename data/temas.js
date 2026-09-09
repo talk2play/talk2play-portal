@@ -1,60 +1,165 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-08 08:39 UTC",
+  "updated": "2026-09-09 08:38 UTC",
   "temas": [
     {
-      "title": "Onimusha: Way of the Sword vendió más de un millón de copias en su día de lanzamiento",
-      "url": "https://www.eurogamer.es/onimusha-way-of-the-sword-vendio-mas-de-un-millon-de-copias-en-su-dia-de-lanzamiento",
+      "title": "Dónde ver el Nintendo Direct del 9 de septiembre: fecha y hora exactas en España y el resto del mundo",
+      "url": "https://vandal.elespanol.com/noticia/2026251030/donde-ver-el-nintendo-direct-del-9-de-septiembre-fecha-y-hora-exactas-en-espana-y-el-resto-del-mundo/",
+      "source": "Vandal",
+      "when": "2026-09-08 18:45",
+      "hot": true
+    },
+    {
+      "title": "Nintendo revela una nueva mecánica de Zelda Ocarina of Time Remake: podrás usar tu voz o instrumentos reales",
+      "url": "https://vandal.elespanol.com/noticia/2026251026/the-legend-of-zelda-ocarina-of-time-remake-permitira-tararear-y-tocar-la-musica-con-un-accesorio-especial/",
+      "source": "Vandal",
+      "when": "2026-09-08 16:28",
+      "hot": true
+    },
+    {
+      "title": "Zelda Notes se amplía con Ocarina of Time Remake: más de 2000 preguntas, pistas y una ocarina virtual",
+      "url": "https://vandal.elespanol.com/noticia/2026251029/zelda-notes-se-amplia-con-ocarina-of-time-remake-mas-de-2000-preguntas-pistas-y-una-ocarina-virtual/",
+      "source": "Vandal",
+      "when": "2026-09-08 15:55",
+      "hot": true
+    },
+    {
+      "title": "Nintendo anuncia nuevos amiibo de The Legend of Zelda: Ocarina of Time Remake con Link y Zelda",
+      "url": "https://vandal.elespanol.com/noticia/2026251028/nintendo-anuncia-nuevos-amiibo-de-the-legend-of-zelda-ocarina-of-time-remake-con-link-y-zelda/",
+      "source": "Vandal",
+      "when": "2026-09-08 15:46",
+      "hot": true
+    },
+    {
+      "title": "RESUMEN del Nintendo Direct del 40 aniversario de Zelda: fecha y todos los detalles de Ocarina of Time Remake",
+      "url": "https://vandal.elespanol.com/noticia/2026251024/sigue-en-directo-el-nintendo-direct-del-40-aniversario-de-zelda-todos-los-anuncios-oficiales/",
+      "source": "Vandal",
+      "when": "2026-09-08 15:28",
+      "hot": true
+    },
+    {
+      "title": "Todos los anuncios del Nintendo Direct de Zelda para celebrar el 40º aniversario de la saga",
+      "url": "https://www.eurogamer.es/todos-los-anuncios-del-nintendo-direct-de-zelda-para-celebrar-el-40o-aniversario-de-la-saga",
       "source": "Eurogamer.es",
-      "when": "2026-09-07 15:24",
+      "when": "2026-09-08 14:45",
       "hot": true
     },
     {
-      "title": "Anunciado Rain World Anthology en formato físico",
-      "url": "https://www.eurogamer.es/anunciado-rain-world-anthology-en-formato-fisico",
-      "source": "Eurogamer.es",
-      "when": "2026-09-07 14:52",
-      "hot": true
-    },
-    {
-      "title": "Super Mario Odyssey inspiró a Capcom en la realización de Onimusha Way of the Sword: 'Queríamos su experiencia'",
-      "url": "https://vandal.elespanol.com/noticia/2026250025/super-mario-odyssey-inspiro-a-capcom-en-la-realizacion-de-onimusha-way-of-the-sword-queriamos-su-experiencia/",
+      "title": "Anunciada una Switch 2 de Zelda: ya tiene fecha de lanzamiento y no incluye Ocarina of Time Remake",
+      "url": "https://vandal.elespanol.com/noticia/2026251027/anunciada-una-switch-2-de-zelda-ya-tiene-fecha-de-lanzamiento-y-no-incluye-ocarina-of-time-remake/",
       "source": "Vandal",
-      "when": "2026-09-07 13:30",
+      "when": "2026-09-08 14:45",
       "hot": true
     },
     {
-      "title": "Otro éxito contundente para Capcom: Onimusha Way of the Sword anuncia su hito de ventas en sólo 24 horas",
-      "url": "https://vandal.elespanol.com/noticia/2026250015/otro-exito-contundente-para-capcom-onimusha-way-of-the-sword-anuncia-su-hito-de-ventas-en-solo-24-horas/",
-      "source": "Vandal",
-      "when": "2026-09-07 09:48",
-      "hot": true
-    },
-    {
-      "title": "Civilization VII da el salto a la era atómica y anuncia su primera gran expansión para 2027",
-      "url": "https://vandal.elespanol.com/noticia/2026250006/civilization-vii-da-el-salto-a-la-era-atomica-y-anuncia-su-primera-gran-expansion-para-2027/",
-      "source": "Vandal",
-      "when": "2026-09-07 07:19",
-      "hot": true
-    },
-    {
-      "title": "Onimusha: Way of the Sword sales top one million on launch day",
-      "url": "https://www.gematsu.com/2026/09/onimusha-way-of-the-sword-sales-top-one-million-on-launch-day",
+      "title": "Nintendo Switch 2 – The Legend of Zelda 40th Anniversary Edition announced",
+      "url": "https://www.gematsu.com/2026/09/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-announced",
       "source": "Gematsu",
-      "when": "2026-09-07 07:10",
+      "when": "2026-09-08 14:29",
       "hot": true
     },
     {
-      "title": "Earthrise será la primera expansión de pago para Civilization VII",
-      "url": "https://www.eurogamer.es/earthrise-sera-la-primera-gran-expansion-de-pago-para-civilization-vii",
+      "title": "Así es el remake de Zelda Ocarina of Time para Switch 2: primer gameplay, precio y fecha de lanzamiento",
+      "url": "https://vandal.elespanol.com/noticia/2026251025/asi-es-el-remake-de-zelda-ocarina-of-time-para-switch-2-primer-gameplay-y-fecha-de-lanzamiento/",
+      "source": "Vandal",
+      "when": "2026-09-08 14:29",
+      "hot": true
+    },
+    {
+      "title": "El remake de The Legend of Zelda: Ocarina of Time saldrá en noviembre",
+      "url": "https://www.eurogamer.es/el-remake-de-the-legend-of-zelda-ocarina-of-time-saldra-en-noviembre",
       "source": "Eurogamer.es",
-      "when": "2026-09-06 22:01",
+      "when": "2026-09-08 14:26",
       "hot": true
     },
     {
-      "title": "Rain World Anthology physical edition announced for PS5, Switch 2",
-      "url": "https://www.gematsu.com/2026/09/rain-world-anthology-physical-edition-announced-for-ps5-switch-2",
+      "title": "The Legend of Zelda: Ocarina of Time remake launches November 5",
+      "url": "https://www.gematsu.com/2026/09/the-legend-of-zelda-ocarina-of-time-remake-launches-november-5",
       "source": "Gematsu",
-      "when": "2026-09-06 19:30",
+      "when": "2026-09-08 14:25",
+      "hot": true
+    },
+    {
+      "title": "La película de Zelda se titulará \"The Legend of Zelda\" y no tendrá un subtítulo como los juegos",
+      "url": "https://www.eurogamer.es/la-pelicula-de-zelda-se-titulara-the-legend-of-zelda-y-no-tendra-un-subtitulo-como-los-juegos",
+      "source": "Eurogamer.es",
+      "when": "2026-09-08 14:16",
+      "hot": true
+    },
+    {
+      "title": "The Legend of Zelda live-action film titled The Legend of Zelda",
+      "url": "https://www.gematsu.com/2026/09/the-legend-of-zelda-live-action-film-titled-the-legend-of-zelda",
+      "source": "Gematsu",
+      "when": "2026-09-08 14:08",
+      "hot": true
+    },
+    {
+      "title": "Ya sabemos a qué hora se podrá jugar a Grand Theft Auto 6 en todo el mundo",
+      "url": "https://www.eurogamer.es/grand-theft-auto-6-hora-desbloqueo-hora-jugar-todo-mundo-cuando-gta-vi",
+      "source": "Eurogamer.es",
+      "when": "2026-09-08 11:28",
+      "hot": true
+    },
+    {
+      "title": "Anuncian Tianji: Shadow of the Ancients, un espectacular RPG por turnos ambientado en la antigua China",
+      "url": "https://vandal.elespanol.com/noticia/2026251020/anuncian-tianji-shadow-of-the-ancients-un-espectacular-rpg-por-turnos-ambientado-en-la-antigua-china/",
+      "source": "Vandal",
+      "when": "2026-09-08 10:44",
+      "hot": true
+    },
+    {
+      "title": "Atelier Karia ya tiene fecha de lanzamiento y muestra sus espectaculares combates en un nuevo tráiler",
+      "url": "https://vandal.elespanol.com/noticia/2026251016/atelier-karia-ya-tiene-fecha-de-lanzamiento-y-muestra-sus-espectaculares-combates-en-un-nuevo-trailer/",
+      "source": "Vandal",
+      "when": "2026-09-08 09:48",
+      "hot": true
+    },
+    {
+      "title": "Atelier Karia: El reino de la noche y la guía de los recuerdos se lanzará en febrero de 2027",
+      "url": "https://www.eurogamer.es/atelier-karia-el-reino-de-la-noche-y-la-guia-de-los-recuerdos-se-lanzara-en-febrero-de-2027",
+      "source": "Eurogamer.es",
+      "when": "2026-09-08 09:13",
+      "hot": true
+    },
+    {
+      "title": "Dónde ver el Nintendo Direct de Zelda de hoy: fecha y hora exactas del evento en España y el resto del mundo",
+      "url": "https://vandal.elespanol.com/noticia/2026250017/donde-ver-el-nintendo-direct-de-zelda-fecha-y-hora-exactas-del-evento-en-espana-y-el-resto-del-mundo/",
+      "source": "Vandal",
+      "when": "2026-09-08 09:09",
+      "hot": true
+    },
+    {
+      "title": "Arjun debutará como luchador de Street Fighter 6 en octubre",
+      "url": "https://www.eurogamer.es/arjun-debutara-como-luchador-de-street-fighter-6-en-octubre",
+      "source": "Eurogamer.es",
+      "when": "2026-09-08 08:53",
+      "hot": true
+    },
+    {
+      "title": "Nintendo actualiza Pokémon Pokopia en Switch 2: ¿Qué cambia exactamente en la versión 2.0.1?",
+      "url": "https://vandal.elespanol.com/noticia/2026251012/nintendo-actualiza-pokemon-pokopia-en-switch-2-que-cambia-exactamente-en-la-version-201/",
+      "source": "Vandal",
+      "when": "2026-09-08 08:34",
+      "hot": true
+    },
+    {
+      "title": "Atelier Karia: The Night Kingdom & the Guide of Memories launches February 25, 2027",
+      "url": "https://www.gematsu.com/2026/09/atelier-karia-the-night-kingdom-the-guide-of-memories-launches-february-25-2027",
+      "source": "Gematsu",
+      "when": "2026-09-08 08:00",
+      "hot": true
+    },
+    {
+      "title": "Nintendo filtra el precio de Zelda: Ocarina of Time Remake antes del Direct de hoy",
+      "url": "https://vandal.elespanol.com/noticia/2026251009/nintendo-filtra-el-precio-de-zelda-ocarina-of-time-remake-antes-del-direct-de-hoy/",
+      "source": "Vandal",
+      "when": "2026-09-08 07:36",
+      "hot": true
+    },
+    {
+      "title": "Street Fighter 6 pone fecha a Arjun, su nuevo luchador que usa el yoga para golpear con una fuerza brutal",
+      "url": "https://vandal.elespanol.com/noticia/2026251002/street-fighter-6-pone-fecha-a-arjun-su-nuevo-luchador-que-usa-el-yoga-para-golpear-con-una-fuerza-brutal/",
+      "source": "Vandal",
+      "when": "2026-09-08 06:14",
       "hot": true
     },
     {
@@ -62,119 +167,14 @@ window.T2P_TEMAS = {
       "url": "https://www.gematsu.com/2026/09/tang-dynasty-set-turn-based-rpg-tianji-shadow-of-the-ancients-announced-for-ps5-switch-2-switch-and-pc",
       "source": "Gematsu",
       "when": "2026-09-08 04:13",
-      "hot": false
+      "hot": true
     },
     {
       "title": "Street Fighter 6 DLC character Arjun launches October 13",
       "url": "https://www.gematsu.com/2026/09/street-fighter-6-dlc-character-arjun-launches-october-13",
       "source": "Gematsu",
       "when": "2026-09-07 23:54",
-      "hot": false
-    },
-    {
-      "title": "Microsoft asegura que Windows 11 funcionará más rápido en PCs con tan solo 8GB de memoria RAM",
-      "url": "https://www.eurogamer.es/microsoft-asegura-que-windows-11-funcionara-mas-rapido-en-pcs-con-8gb-de-ram",
-      "source": "Eurogamer.es",
-      "when": "2026-09-07 21:41",
-      "hot": false
-    },
-    {
-      "title": "Playground insiste en que Forza Horizon 6 se publicará este año en PS5",
-      "url": "https://www.eurogamer.es/playground-insiste-en-que-forza-horizon-6-se-publicara-este-ano-en-ps5",
-      "source": "Eurogamer.es",
-      "when": "2026-09-07 21:29",
-      "hot": false
-    },
-    {
-      "title": "GTA 6 confirma la hora exacta para su lanzamiento en España y el resto del mundo",
-      "url": "https://vandal.elespanol.com/noticia/2026250032/gta-6-confirma-la-hora-exacta-para-su-lanzamiento-en-espana-y-el-resto-del-mundo/",
-      "source": "Vandal",
-      "when": "2026-09-07 18:54",
-      "hot": false
-    },
-    {
-      "title": "Dragon Ball Xenoverse 3 lo confirma: el nuevo anime llegará como DLC con el gran villano de la serie",
-      "url": "https://vandal.elespanol.com/noticia/2026250031/dragon-ball-xenoverse-3-lo-confirma-el-nuevo-anime-llegara-como-dlc-con-el-gran-villano-de-la-serie/",
-      "source": "Vandal",
-      "when": "2026-09-07 18:00",
-      "hot": false
-    },
-    {
-      "title": "El drama de los despidos no para: Crytek habría despedido a cerca de 30 empleados en una nueva reestructuración",
-      "url": "https://vandal.elespanol.com/noticia/2026250030/el-drama-de-los-despidos-no-para-crytek-habria-despedido-a-cerca-de-30-empleados-en-una-nueva-reestructuracion/",
-      "source": "Vandal",
-      "when": "2026-09-07 16:45",
-      "hot": false
-    },
-    {
-      "title": "Beyond the Dark: Nightwatch launches October 22",
-      "url": "https://www.gematsu.com/2026/09/beyond-the-dark-nightwatch-launches-october-22",
-      "source": "Gematsu",
-      "when": "2026-09-07 16:11",
-      "hot": false
-    },
-    {
-      "title": "Descartan Destiny como referencia para el rumoreado shooter de Starcraft: 'Será como Far Cry o Space Marine'",
-      "url": "https://vandal.elespanol.com/noticia/2026250029/descartan-destiny-como-referencia-para-el-rumoreado-shooter-de-starcraft-sera-como-far-cry-o-space-marine/",
-      "source": "Vandal",
-      "when": "2026-09-07 16:06",
-      "hot": false
-    },
-    {
-      "title": "Descubrid los secretos de Uncanyon, un nuevo título de aventura que llegará a PS5 en 2027",
-      "url": "https://blog.es.playstation.com/2026/09/07/descubrid-los-secretos-de-uncanyon-un-nuevo-titulo-de-aventura-en-ps5-que-llegara-en-2027/",
-      "source": "PlayStation Blog",
-      "when": "2026-09-07 15:55",
-      "hot": false
-    },
-    {
-      "title": "Okko The Exiled launches September 30 for PC, in early 2027 for PS5, Xbox Series, PS4, Xbox One, and Switch",
-      "url": "https://www.gematsu.com/2026/09/okko-the-exiled-launches-september-30-for-pc-in-early-2027-for-ps5-xbox-series-ps4-xbox-one-and-switch",
-      "source": "Gematsu",
-      "when": "2026-09-07 15:24",
-      "hot": false
-    },
-    {
-      "title": "Capcom quiere reactivar sagas que no han recibido una nueva entrega: 'Maximizan el valor de la empresa'",
-      "url": "https://vandal.elespanol.com/noticia/2026250028/capcom-quiere-reactivar-sagas-que-no-han-recibido-una-nueva-entrega-maximizan-el-valor-de-la-empresa/",
-      "source": "Vandal",
-      "when": "2026-09-07 15:21",
-      "hot": false
-    },
-    {
-      "title": "Polyphony Digital incrementa el ritmo de contratación para su próximo Gran Turismo: publican 15 nuevos empleos",
-      "url": "https://vandal.elespanol.com/noticia/2026250027/polyphony-digital-incrementa-el-ritmo-de-contratacion-para-su-proximo-gran-turismo-publican-15-nuevos-empleos/",
-      "source": "Vandal",
-      "when": "2026-09-07 14:46",
-      "hot": false
-    },
-    {
-      "title": "Rockstar reconoce que uno de los desafíos de GTA 6 fue escoger sus temas: 'Debíamos tener mucho cuidado'",
-      "url": "https://vandal.elespanol.com/noticia/2026250024/rockstar-reconoce-que-uno-de-los-desafios-de-gta-6-fue-escoger-sus-temas-debiamos-tener-mucho-cuidado/",
-      "source": "Vandal",
-      "when": "2026-09-07 14:31",
-      "hot": false
-    },
-    {
-      "title": "Jugar a Cyberpunk 2077 en tercera persona por fin es posible gracias a este trabajado 'mod inmersivo'",
-      "url": "https://vandal.elespanol.com/noticia/2026250020/jugar-a-cyberpunk-2077-en-tercera-persona-por-fin-es-posible-gracias-a-este-trabajado-mod-inmersivo/",
-      "source": "Vandal",
-      "when": "2026-09-07 14:31",
-      "hot": false
-    },
-    {
-      "title": "The Blood of Dawnwalker consigue un primer hito de ventas y confirma el éxito del nuevo RPG de acción",
-      "url": "https://vandal.elespanol.com/noticia/2026250009/the-blood-of-dawnwalker-consigue-un-primer-hito-de-ventas-y-confirma-el-exito-del-nuevo-rpg-de-accion/",
-      "source": "Vandal",
-      "when": "2026-09-07 14:27",
-      "hot": false
-    },
-    {
-      "title": "Fast-paced 3D action adventure platformer Lightspeed Lina announced for PC",
-      "url": "https://www.gematsu.com/2026/09/fast-paced-3d-action-adventure-platformer-lightspeed-lina-announced-for-pc",
-      "source": "Gematsu",
-      "when": "2026-09-07 14:22",
-      "hot": false
+      "hot": true
     }
   ]
 };
