@@ -5,30 +5,38 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "videos": [
+    {
+      "id": "3xc-K23uXNw",
+      "title": "¡TREMENDA CASTAÑA! | Reacción Nintendo Direct 09/09/2026",
+      "duration": "52:29",
+      "views": "3 visualizaciones",
+      "when": "hace 15 horas",
+      "category": "Directos"
+    },
     {
       "id": "6o8uwpB7ftA",
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
-      "views": "1 visualización",
-      "when": "hace 14 horas",
+      "views": "3 visualizaciones",
+      "when": "hace 1 día",
       "category": "Directos"
     },
     {
       "id": "iBYcTRsD5s4",
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
-      "views": "5 visualizaciones",
-      "when": "hace 1 día",
+      "views": "7 visualizaciones",
+      "when": "hace 2 días",
       "category": "Actualidad"
     },
     {
       "id": "DdEMo29C_EY",
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
-      "views": "5 visualizaciones",
-      "when": "hace 2 días",
+      "views": "8 visualizaciones",
+      "when": "hace 3 días",
       "category": "Gameplays"
     },
     {
@@ -36,7 +44,7 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "3 visualizaciones",
-      "when": "hace 3 días",
+      "when": "hace 4 días",
       "category": "Reacciones"
     },
     {
@@ -44,31 +52,31 @@ window.T2P_DATA = {
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
       "views": "2 visualizaciones",
-      "when": "hace 4 días",
+      "when": "hace 5 días",
       "category": "Gameplays"
     },
     {
       "id": "btLOlqHAfyc",
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
-      "views": "13 visualizaciones",
-      "when": "hace 5 días",
+      "views": "14 visualizaciones",
+      "when": "hace 6 días",
       "category": "Actualidad"
     },
     {
       "id": "roMrzXrUZH0",
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
-      "views": "25 visualizaciones",
-      "when": "hace 6 días",
+      "views": "26 visualizaciones",
+      "when": "hace 7 días",
       "category": "Actualidad"
     },
     {
       "id": "XatKAuW_xCc",
       "title": "GTA 6 ES UNA BARBARIDAD😱 | REACCIÓN E IMPRESIONES MIRADA EXTENDIDA",
       "duration": "54:05",
-      "views": "10 visualizaciones",
-      "when": "hace 6 días",
+      "views": "11 visualizaciones",
+      "when": "hace 7 días",
       "category": "Reacciones"
     },
     {
@@ -76,7 +84,7 @@ window.T2P_DATA = {
       "title": "UN BUEN CAMBIO DE AIRES A LA SAGA CON RESONANCE A PLAGUE TALE LEGACY",
       "duration": "24:46",
       "views": "15 visualizaciones",
-      "when": "hace 7 días",
+      "when": "hace 8 días",
       "category": "Actualidad"
     },
     {
@@ -84,7 +92,7 @@ window.T2P_DATA = {
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
       "views": "3 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -92,7 +100,7 @@ window.T2P_DATA = {
       "title": "GAMEPLAY Y ENTREVISTA TIDES OF ANNIHILATION😍 | FUTURE GAMES SHOW GAMESCOM 2026",
       "duration": "1:34:33",
       "views": "17 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -100,7 +108,7 @@ window.T2P_DATA = {
       "title": "GAMEPLAY DE FABLE 😱Y MÁS DE GOW E-DAY💀 | XBOX DIA 1 GAMESCOM 2026",
       "duration": "2:59:55",
       "views": "17 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Directos"
     },
     {
@@ -108,7 +116,7 @@ window.T2P_DATA = {
       "title": "SONY ADMITE QUE SUS JUEGOS DIGITALES SON LICENCIAS | HORARIO GAMESCOM 2026",
       "duration": "27:00",
       "views": "4 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Directos"
     },
     {
@@ -131,8 +139,8 @@ window.T2P_DATA = {
       "id": "RhT9e4UKNg0",
       "title": "SONY QUEREMOS FORMATO FÍSICO NO TU PROPIA MONEDA😡 | SQUARE ENIX NÚMEROS FINANCIEROS Y NOTICIAS🧐",
       "duration": "22:47",
-      "views": "20 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "22 visualizaciones",
+      "when": "hace 3 semanas",
       "category": "Actualidad"
     },
     {
@@ -195,7 +203,7 @@ window.T2P_DATA = {
       "id": "C-YOTgrxqnU",
       "title": "ANTES SABÍAN RETRACTARSE, AHORA TIENEN UNA FUERTE CONVICCIÓN | NOTICIAS SONY",
       "duration": "34:00",
-      "views": "21 visualizaciones",
+      "views": "23 visualizaciones",
       "when": "hace 3 semanas",
       "category": "Actualidad"
     },
@@ -204,7 +212,7 @@ window.T2P_DATA = {
       "title": "ONIMUSHA CON EFECTOS DE SONIDO REALISTAS | GTA 6 MIRADA EXTENDIDA EN NETFLIX",
       "duration": "16:41",
       "views": "13 visualizaciones",
-      "when": "hace 3 semanas",
+      "when": "hace 4 semanas",
       "category": "Actualidad"
     },
     {
@@ -238,26 +246,33 @@ window.T2P_DATA = {
       "views": "10 visualizaciones",
       "when": "hace 1 mes",
       "category": "Actualidad"
-    },
-    {
-      "id": "2sRvY2SLoRw",
-      "title": "LOS CREADORES DE DAWNWALKER CREEN EN SU PRODUCTO | COMENTAMOS NOTICIAS NINTENDO",
-      "duration": "15:03",
-      "views": "19 visualizaciones",
-      "when": "hace 1 mes",
-      "category": "Actualidad"
     }
   ],
   "shorts": [
     {
+      "id": "LnysWS0JM-w",
+      "title": "El peor Nintendo Direct ! #shorts",
+      "views": "0 visualizaciones"
+    },
+    {
+      "id": "fYoNQY7gwFk",
+      "title": "Professor Layton esat de vuelta #shorts",
+      "views": "152 visualizaciones"
+    },
+    {
+      "id": "2cFo85scWPE",
+      "title": "¡Este Metroid es una locura! #shorts",
+      "views": "509 visualizaciones"
+    },
+    {
       "id": "lUsLhiMKK1g",
       "title": "Fecha Zelda Ocarina of Time | #talk2play de #Twitch",
-      "views": "5 visualizaciones"
+      "views": "120 visualizaciones"
     },
     {
       "id": "A9SO-vOwJP8",
       "title": "Primer vistazo Ocarina of time | #talk2play de #Twitch",
-      "views": "389 visualizaciones"
+      "views": "542 visualizaciones"
     },
     {
       "id": "hNacjO7KfcI",

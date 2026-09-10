@@ -1,179 +1,179 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-09 08:38 UTC",
+  "updated": "2026-09-10 08:39 UTC",
   "temas": [
     {
-      "title": "Dónde ver el Nintendo Direct del 9 de septiembre: fecha y hora exactas en España y el resto del mundo",
-      "url": "https://vandal.elespanol.com/noticia/2026251030/donde-ver-el-nintendo-direct-del-9-de-septiembre-fecha-y-hora-exactas-en-espana-y-el-resto-del-mundo/",
-      "source": "Vandal",
-      "when": "2026-09-08 18:45",
-      "hot": true
-    },
-    {
-      "title": "Nintendo revela una nueva mecánica de Zelda Ocarina of Time Remake: podrás usar tu voz o instrumentos reales",
-      "url": "https://vandal.elespanol.com/noticia/2026251026/the-legend-of-zelda-ocarina-of-time-remake-permitira-tararear-y-tocar-la-musica-con-un-accesorio-especial/",
-      "source": "Vandal",
-      "when": "2026-09-08 16:28",
-      "hot": true
-    },
-    {
-      "title": "Zelda Notes se amplía con Ocarina of Time Remake: más de 2000 preguntas, pistas y una ocarina virtual",
-      "url": "https://vandal.elespanol.com/noticia/2026251029/zelda-notes-se-amplia-con-ocarina-of-time-remake-mas-de-2000-preguntas-pistas-y-una-ocarina-virtual/",
-      "source": "Vandal",
-      "when": "2026-09-08 15:55",
-      "hot": true
-    },
-    {
-      "title": "Nintendo anuncia nuevos amiibo de The Legend of Zelda: Ocarina of Time Remake con Link y Zelda",
-      "url": "https://vandal.elespanol.com/noticia/2026251028/nintendo-anuncia-nuevos-amiibo-de-the-legend-of-zelda-ocarina-of-time-remake-con-link-y-zelda/",
-      "source": "Vandal",
-      "when": "2026-09-08 15:46",
-      "hot": true
-    },
-    {
-      "title": "RESUMEN del Nintendo Direct del 40 aniversario de Zelda: fecha y todos los detalles de Ocarina of Time Remake",
-      "url": "https://vandal.elespanol.com/noticia/2026251024/sigue-en-directo-el-nintendo-direct-del-40-aniversario-de-zelda-todos-los-anuncios-oficiales/",
-      "source": "Vandal",
-      "when": "2026-09-08 15:28",
-      "hot": true
-    },
-    {
-      "title": "Todos los anuncios del Nintendo Direct de Zelda para celebrar el 40º aniversario de la saga",
-      "url": "https://www.eurogamer.es/todos-los-anuncios-del-nintendo-direct-de-zelda-para-celebrar-el-40o-aniversario-de-la-saga",
+      "title": "Sony cancela el acuerdo con Kojima Productions para Physint... ¡y al final lo publicará Xbox!",
+      "url": "https://www.eurogamer.es/sony-cancela-el-acuerdo-con-kojima-productions-para-physint-y-al-final-lo-publicara-xbox",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 14:45",
+      "when": "2026-09-10 04:32",
       "hot": true
     },
     {
-      "title": "Anunciada una Switch 2 de Zelda: ya tiene fecha de lanzamiento y no incluye Ocarina of Time Remake",
-      "url": "https://vandal.elespanol.com/noticia/2026251027/anunciada-una-switch-2-de-zelda-ya-tiene-fecha-de-lanzamiento-y-no-incluye-ocarina-of-time-remake/",
-      "source": "Vandal",
-      "when": "2026-09-08 14:45",
-      "hot": true
-    },
-    {
-      "title": "Nintendo Switch 2 – The Legend of Zelda 40th Anniversary Edition announced",
-      "url": "https://www.gematsu.com/2026/09/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-announced",
+      "title": "Physint to be published by Xbox Game Studios as Sony Interactive Entertainment steps away [Update]",
+      "url": "https://www.gematsu.com/2026/09/physint-to-be-published-by-xbox-game-studios-as-sony-interactive-entertainment-steps-away",
       "source": "Gematsu",
-      "when": "2026-09-08 14:29",
+      "when": "2026-09-10 02:41",
       "hot": true
     },
     {
-      "title": "Así es el remake de Zelda Ocarina of Time para Switch 2: primer gameplay, precio y fecha de lanzamiento",
-      "url": "https://vandal.elespanol.com/noticia/2026251025/asi-es-el-remake-de-zelda-ocarina-of-time-para-switch-2-primer-gameplay-y-fecha-de-lanzamiento/",
+      "title": "Navinosuke: The Yo-kai Buster launches in 2027 for Switch, PC",
+      "url": "https://www.gematsu.com/2026/09/navinosuke-the-yo-kai-buster-launches-in-2027-for-switch-pc",
+      "source": "Gematsu",
+      "when": "2026-09-10 01:42",
+      "hot": true
+    },
+    {
+      "title": "Star Fox Adventures ya disponible en Nintendo Switch 2: una joya de Rare para Gamecube que imitó la fórmula Zelda",
+      "url": "https://vandal.elespanol.com/noticia/2026252042/star-fox-adventures-ya-disponible-en-nintendo-switch-2-una-joya-de-rare-para-gamecube-que-imito-la-formula-zelda/",
       "source": "Vandal",
-      "when": "2026-09-08 14:29",
+      "when": "2026-09-09 17:07",
       "hot": true
     },
     {
-      "title": "El remake de The Legend of Zelda: Ocarina of Time saldrá en noviembre",
-      "url": "https://www.eurogamer.es/el-remake-de-the-legend-of-zelda-ocarina-of-time-saldra-en-noviembre",
+      "title": "Anunciado nuevo Metroid para Nintendo Switch 2: se llama Metroid Ravenous y llegará a comienzos de 2027",
+      "url": "https://vandal.elespanol.com/noticia/2026252031/anunciado-nuevo-metroid-para-nintendo-switch-2-se-llama-metroid-ravenous-y-aparecera-a-comienzos-de-2027/",
+      "source": "Vandal",
+      "when": "2026-09-09 16:18",
+      "hot": true
+    },
+    {
+      "title": "Terror exclusivo para Switch 2: Blobber Team anuncia ONYX: The Dark Grip en el último Nintendo Direct",
+      "url": "https://vandal.elespanol.com/noticia/2026252039/terror-exclusivo-para-switch-2-blobber-team-anuncia-onyx-the-dark-grip-en-el-ultimo-nintendo-direct/",
+      "source": "Vandal",
+      "when": "2026-09-09 16:14",
+      "hot": true
+    },
+    {
+      "title": "RESUMEN del Nintendo Direct de hoy: todos los anuncios y tráileres, con los nuevos Kirby y Metroid para Switch 2",
+      "url": "https://vandal.elespanol.com/noticia/2026252022/sigue-en-directo-el-nintendo-direct-de-hoy-todos-los-anuncios-y-traileres-oficiales-de-nuevos-juegos-para-switch-2/",
+      "source": "Vandal",
+      "when": "2026-09-09 16:04",
+      "hot": true
+    },
+    {
+      "title": "PlayStation Plus Extra y Premium confirman los juegos de septiembre, con Ninja Gaiden: Ragebound entre ellos",
+      "url": "https://vandal.elespanol.com/noticia/2026252038/playstation-plus-extra-y-premium-confirman-los-juegos-de-septiembre-con-ninja-gaiden-ragebound-entre-ellos/",
+      "source": "Vandal",
+      "when": "2026-09-09 15:50",
+      "hot": true
+    },
+    {
+      "title": "Anunciados los juegos de PlayStation Plus Extra y Premium de septiembre",
+      "url": "https://www.eurogamer.es/anunciados-los-juegos-de-playstation-plus-extra-y-premium-de-septiembre-2026",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 14:26",
+      "when": "2026-09-09 15:49",
       "hot": true
     },
     {
-      "title": "The Legend of Zelda: Ocarina of Time remake launches November 5",
-      "url": "https://www.gematsu.com/2026/09/the-legend-of-zelda-ocarina-of-time-remake-launches-november-5",
+      "title": "Ubisoft confirma dos FarCry clásicos en Nintendo Switch 2: FarCry 3 y FarCry 3: Blood Dragon",
+      "url": "https://vandal.elespanol.com/noticia/2026252037/ubisoft-confirma-dos-farcry-clasicos-en-nintendo-switch-2-farcry-3-y-farcry-3-blood-dragon/",
+      "source": "Vandal",
+      "when": "2026-09-09 15:43",
+      "hot": true
+    },
+    {
+      "title": "Catálogo de juegos de PlayStation Plus de septiembre: RuneScape: Dragonwilds, WWE 2K26, Ball x Pit y Date Everything!, entre otros",
+      "url": "https://blog.es.playstation.com/2026/09/09/catalogo-de-juegos-de-playstation-plus-de-septiembre-runescape-dragonwilds-wwe-2k26-ball-x-pit-y-date-everything-entre-otros/",
+      "source": "PlayStation Blog",
+      "when": "2026-09-09 15:32",
+      "hot": true
+    },
+    {
+      "title": "PlayStation Plus Game Catalog and Classics Catalog lineup for September 2026 announced",
+      "url": "https://www.gematsu.com/2026/09/playstation-plus-game-catalog-and-classics-catalog-lineup-for-september-2026-announced",
       "source": "Gematsu",
-      "when": "2026-09-08 14:25",
+      "when": "2026-09-09 15:30",
       "hot": true
     },
     {
-      "title": "La película de Zelda se titulará \"The Legend of Zelda\" y no tendrá un subtítulo como los juegos",
-      "url": "https://www.eurogamer.es/la-pelicula-de-zelda-se-titulara-the-legend-of-zelda-y-no-tendra-un-subtitulo-como-los-juegos",
+      "title": "Anunciados Resident Evil 2, 3 y 4 para Nintendo Switch 2",
+      "url": "https://www.eurogamer.es/anunciados-resident-evil-2-3-y-4-para-nintendo-switch-2",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 14:16",
+      "when": "2026-09-09 15:30",
       "hot": true
     },
     {
-      "title": "The Legend of Zelda live-action film titled The Legend of Zelda",
-      "url": "https://www.gematsu.com/2026/09/the-legend-of-zelda-live-action-film-titled-the-legend-of-zelda",
-      "source": "Gematsu",
-      "when": "2026-09-08 14:08",
+      "title": "Atlus confirma Persona 4 Revival y Persona 6 en Nintendo Switch 2",
+      "url": "https://vandal.elespanol.com/noticia/2026252036/atlus-confirma-persona-4-revival-y-persona-6-en-nintendo-switch-2/",
+      "source": "Vandal",
+      "when": "2026-09-09 15:21",
       "hot": true
     },
     {
-      "title": "Ya sabemos a qué hora se podrá jugar a Grand Theft Auto 6 en todo el mundo",
-      "url": "https://www.eurogamer.es/grand-theft-auto-6-hora-desbloqueo-hora-jugar-todo-mundo-cuando-gta-vi",
+      "title": "El profesor Layton y el Nuevo Mundo a vapor se lanzará en diciembre",
+      "url": "https://www.eurogamer.es/el-profesor-layton-y-el-nuevo-mundo-a-vapor-se-lanzara-en-diciembre",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 11:28",
+      "when": "2026-09-09 15:17",
       "hot": true
     },
     {
-      "title": "Anuncian Tianji: Shadow of the Ancients, un espectacular RPG por turnos ambientado en la antigua China",
-      "url": "https://vandal.elespanol.com/noticia/2026251020/anuncian-tianji-shadow-of-the-ancients-un-espectacular-rpg-por-turnos-ambientado-en-la-antigua-china/",
-      "source": "Vandal",
-      "when": "2026-09-08 10:44",
-      "hot": true
-    },
-    {
-      "title": "Atelier Karia ya tiene fecha de lanzamiento y muestra sus espectaculares combates en un nuevo tráiler",
-      "url": "https://vandal.elespanol.com/noticia/2026251016/atelier-karia-ya-tiene-fecha-de-lanzamiento-y-muestra-sus-espectaculares-combates-en-un-nuevo-trailer/",
-      "source": "Vandal",
-      "when": "2026-09-08 09:48",
-      "hot": true
-    },
-    {
-      "title": "Atelier Karia: El reino de la noche y la guía de los recuerdos se lanzará en febrero de 2027",
-      "url": "https://www.eurogamer.es/atelier-karia-el-reino-de-la-noche-y-la-guia-de-los-recuerdos-se-lanzara-en-febrero-de-2027",
+      "title": "Nintendo anuncia Kirby and the World Beyond para primavera de 2027",
+      "url": "https://www.eurogamer.es/nintendo-anuncia-kirby-and-the-world-beyond-para-primavera-de-2027",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 09:13",
+      "when": "2026-09-09 15:14",
       "hot": true
     },
     {
-      "title": "Dónde ver el Nintendo Direct de Zelda de hoy: fecha y hora exactas del evento en España y el resto del mundo",
-      "url": "https://vandal.elespanol.com/noticia/2026250017/donde-ver-el-nintendo-direct-de-zelda-fecha-y-hora-exactas-del-evento-en-espana-y-el-resto-del-mundo/",
+      "title": "El regreso del Profesor Layton concreta fecha y promete 'la mayor selección de puzles' de la historia de la saga",
+      "url": "https://vandal.elespanol.com/noticia/2026252035/el-regreso-del-profesor-layton-concreta-fecha-y-promete-la-mayor-seleccion-de-puzles-de-la-historia-de-la-saga/",
       "source": "Vandal",
-      "when": "2026-09-08 09:09",
+      "when": "2026-09-09 15:11",
       "hot": true
     },
     {
-      "title": "Arjun debutará como luchador de Street Fighter 6 en octubre",
-      "url": "https://www.eurogamer.es/arjun-debutara-como-luchador-de-street-fighter-6-en-octubre",
+      "title": "Persona 6 y Persona 4 Revival tendrán versiones para Nintendo Switch 2",
+      "url": "https://www.eurogamer.es/persona-6-y-persona-4-revival-tendran-versiones-para-nintendo-switch-2",
       "source": "Eurogamer.es",
-      "when": "2026-09-08 08:53",
+      "when": "2026-09-09 15:03",
       "hot": true
     },
     {
-      "title": "Nintendo actualiza Pokémon Pokopia en Switch 2: ¿Qué cambia exactamente en la versión 2.0.1?",
-      "url": "https://vandal.elespanol.com/noticia/2026251012/nintendo-actualiza-pokemon-pokopia-en-switch-2-que-cambia-exactamente-en-la-version-201/",
-      "source": "Vandal",
-      "when": "2026-09-08 08:34",
+      "title": "Anunciado Metroid Ravenous",
+      "url": "https://www.eurogamer.es/anunciado-metroid-ravenous",
+      "source": "Eurogamer.es",
+      "when": "2026-09-09 14:59",
       "hot": true
     },
     {
-      "title": "Atelier Karia: The Night Kingdom & the Guide of Memories launches February 25, 2027",
-      "url": "https://www.gematsu.com/2026/09/atelier-karia-the-night-kingdom-the-guide-of-memories-launches-february-25-2027",
+      "title": "Kirby and the World Beyond announced for Switch 2",
+      "url": "https://www.gematsu.com/2026/09/kirby-and-the-world-beyond-announced-for-switch-2",
       "source": "Gematsu",
-      "when": "2026-09-08 08:00",
+      "when": "2026-09-09 14:55",
       "hot": true
     },
     {
-      "title": "Nintendo filtra el precio de Zelda: Ocarina of Time Remake antes del Direct de hoy",
-      "url": "https://vandal.elespanol.com/noticia/2026251009/nintendo-filtra-el-precio-de-zelda-ocarina-of-time-remake-antes-del-direct-de-hoy/",
+      "title": "Todos los anuncios del Nintendo Direct de septiembre de 2026",
+      "url": "https://www.eurogamer.es/todos-los-anuncios-del-nintendo-direct-de-septiembre-de-2026",
+      "source": "Eurogamer.es",
+      "when": "2026-09-09 14:53",
+      "hot": true
+    },
+    {
+      "title": "Kirby cierra el último Nintendo Direct con su nueva aventura en 3D, que ya tiene fecha aproximada de lanzamiento",
+      "url": "https://vandal.elespanol.com/noticia/2026252034/kirby-cierra-el-ultimo-nintendo-direct-con-su-nueva-aventura-en-3d-que-ya-tiene-fecha-aproximada-de-lanzamiento/",
       "source": "Vandal",
-      "when": "2026-09-08 07:36",
+      "when": "2026-09-09 14:53",
       "hot": true
     },
     {
-      "title": "Street Fighter 6 pone fecha a Arjun, su nuevo luchador que usa el yoga para golpear con una fuerza brutal",
-      "url": "https://vandal.elespanol.com/noticia/2026251002/street-fighter-6-pone-fecha-a-arjun-su-nuevo-luchador-que-usa-el-yoga-para-golpear-con-una-fuerza-brutal/",
-      "source": "Vandal",
-      "when": "2026-09-08 06:14",
-      "hot": true
-    },
-    {
-      "title": "Tang Dynasty-set turn-based RPG Tianji: Shadow of the Ancients announced for PS5, Switch 2, Switch, and PC",
-      "url": "https://www.gematsu.com/2026/09/tang-dynasty-set-turn-based-rpg-tianji-shadow-of-the-ancients-announced-for-ps5-switch-2-switch-and-pc",
+      "title": "Persona 6 adds Switch 2 version",
+      "url": "https://www.gematsu.com/2026/09/persona-6-adds-switch-2-version",
       "source": "Gematsu",
-      "when": "2026-09-08 04:13",
+      "when": "2026-09-09 14:52",
       "hot": true
     },
     {
-      "title": "Street Fighter 6 DLC character Arjun launches October 13",
-      "url": "https://www.gematsu.com/2026/09/street-fighter-6-dlc-character-arjun-launches-october-13",
+      "title": "Persona 4 Revival coming to Switch 2 on May 20, 2027",
+      "url": "https://www.gematsu.com/2026/09/persona-4-revival-coming-to-switch-2-on-may-20-2027",
       "source": "Gematsu",
-      "when": "2026-09-07 23:54",
+      "when": "2026-09-09 14:51",
+      "hot": true
+    },
+    {
+      "title": "Marvel’s Guardians of the Galaxy Encore Edition coming to Switch 2 on November 5",
+      "url": "https://www.gematsu.com/2026/09/marvels-guardians-of-the-galaxy-encore-edition-coming-to-switch-2-on-november-5",
+      "source": "Gematsu",
+      "when": "2026-09-09 14:50",
       "hot": true
     }
   ]
