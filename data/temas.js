@@ -1,60 +1,109 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-10 08:39 UTC",
+  "updated": "2026-09-11 08:39 UTC",
   "temas": [
+    {
+      "title": "Monster Hunter Wilds expansion ‘Ascendance’ trailer – ‘Hunting Horn Boosted Action Breakdown’",
+      "url": "https://www.gematsu.com/2026/09/monster-hunter-wilds-expansion-ascendance-trailer-hunting-horn-boosted-action-breakdown",
+      "source": "Gematsu",
+      "when": "2026-09-11 06:05",
+      "hot": true
+    },
+    {
+      "title": "¿Cuánto dura realmente Marvel's Wolverine? Esta es la duración del juego de Lobezno para PS5",
+      "url": "https://vandal.elespanol.com/noticia/2026253038/cuanto-dura-realmente-marvels-wolverine-esta-es-la-duracion-del-juego-de-lobezno-para-ps5/",
+      "source": "Vandal",
+      "when": "2026-09-10 16:55",
+      "hot": true
+    },
+    {
+      "title": "Mercury Steam lo confirma: el nuevo Metroid Ravenous para Nintendo Switch 2 también ha sido creado en España",
+      "url": "https://vandal.elespanol.com/noticia/2026253036/mercury-steam-lo-confirma-el-nuevo-metroid-ravenous-para-nintendo-switch-2-tambien-ha-sido-creado-en-espana/",
+      "source": "Vandal",
+      "when": "2026-09-10 15:53",
+      "hot": true
+    },
+    {
+      "title": "El primer Profesor Layton regresa con un remake: 'La villa misteriosa' vuelve en 2027 para consolas y PC",
+      "url": "https://vandal.elespanol.com/noticia/2026253035/el-primer-profesor-layton-regresa-con-un-remake-la-villa-misteriosa-vuelve-en-2027-para-consolas-y-pc/",
+      "source": "Vandal",
+      "when": "2026-09-10 15:27",
+      "hot": true
+    },
+    {
+      "title": "Análisis de Marvel: Lobezno - Una excelente exploración del personaje que sufre un poco de \"precuelitis\"",
+      "url": "https://www.eurogamer.es/marvel-wolverine-analisis-review",
+      "source": "Eurogamer.es",
+      "when": "2026-09-10 15:00",
+      "hot": true
+    },
+    {
+      "title": "Professor Layton and the Curious Village Remake announced for PS5, Switch 2, Switch, and PC",
+      "url": "https://www.gematsu.com/2026/09/professor-layton-and-the-curious-village-remake-announced-for-ps5-switch-2-switch-and-pc",
+      "source": "Gematsu",
+      "when": "2026-09-10 13:44",
+      "hot": true
+    },
+    {
+      "title": "Pokémon celebra sus 30 años en una colaboracion especial: unidades de almacenamiento de Sandisk con Mew y Mewtwo",
+      "url": "https://vandal.elespanol.com/noticia/2026253028/pokemon-celebra-sus-30-anos-en-una-colaboracion-especial-unidades-de-almacenamiento-de-sandisk-con-mew-y-mewtwo/",
+      "source": "Vandal",
+      "when": "2026-09-10 13:21",
+      "hot": true
+    },
+    {
+      "title": "Snack World: Reloaded launches in 2027",
+      "url": "https://www.gematsu.com/2026/09/snack-world-reloaded-launches-in-2027",
+      "source": "Gematsu",
+      "when": "2026-09-10 13:15",
+      "hot": true
+    },
+    {
+      "title": "Los Direct no convencen a los inversores y las acciones de Nintendo caen fuertemente: un 10% en solo dos días",
+      "url": "https://vandal.elespanol.com/noticia/2026253027/los-direct-no-convencen-a-los-inversores-y-las-acciones-de-nintendo-caen-fuertemente-un-10-en-solo-dos-dias/",
+      "source": "Vandal",
+      "when": "2026-09-10 12:49",
+      "hot": true
+    },
+    {
+      "title": "Asha Sharma, CEO de Xbox, celebra la colaboración con Kojima: '¡Physint y OD!'",
+      "url": "https://vandal.elespanol.com/noticia/2026253022/asha-sharma-ceo-de-xbox-celebra-la-colaboracion-con-kojima-physint-y-od/",
+      "source": "Vandal",
+      "when": "2026-09-10 11:29",
+      "hot": true
+    },
+    {
+      "title": "Ha sido una de las sorpresas del año y podremos jugarlo en Nintendo Switch 2: Cairn tiene ventana de lanzamiento",
+      "url": "https://vandal.elespanol.com/noticia/2026253018/ha-sido-una-de-las-sorpresas-del-ano-y-podremos-jugarlo-en-nintendo-switch-2-cairn-tiene-ventana-de-lanzamiento/",
+      "source": "Vandal",
+      "when": "2026-09-10 09:53",
+      "hot": true
+    },
+    {
+      "title": "Nintendo confirma que Metroid Ravenous para Switch 2 permitirá hasta 120 imágenes por segundo",
+      "url": "https://vandal.elespanol.com/noticia/2026253016/nintendo-confirma-que-metroid-ravenous-para-switch-2-permitira-hasta-120-imagenes-por-segundo/",
+      "source": "Vandal",
+      "when": "2026-09-10 09:15",
+      "hot": true
+    },
+    {
+      "title": "Nintendo actualiza Switch y Switch 2 con muchas novedades: ¿Qué cambia en la versión 23.0.0?",
+      "url": "https://vandal.elespanol.com/noticia/2026253015/nintendo-actualiza-switch-y-switch-2-con-muchas-novedades-que-cambia-en-la-version-2300/",
+      "source": "Vandal",
+      "when": "2026-09-10 09:13",
+      "hot": true
+    },
+    {
+      "title": "Monster Hunter Wilds confirma demo y precios en Switch 2: habrá descuento por tiempo limitado",
+      "url": "https://vandal.elespanol.com/noticia/2026253014/monster-hunter-wilds-confirma-demo-y-precios-en-switch-2-habra-descuento-por-tiempo-limitado/",
+      "source": "Vandal",
+      "when": "2026-09-10 08:39",
+      "hot": true
+    },
     {
       "title": "Sony cancela el acuerdo con Kojima Productions para Physint... ¡y al final lo publicará Xbox!",
       "url": "https://www.eurogamer.es/sony-cancela-el-acuerdo-con-kojima-productions-para-physint-y-al-final-lo-publicara-xbox",
       "source": "Eurogamer.es",
       "when": "2026-09-10 04:32",
-      "hot": true
-    },
-    {
-      "title": "Physint to be published by Xbox Game Studios as Sony Interactive Entertainment steps away [Update]",
-      "url": "https://www.gematsu.com/2026/09/physint-to-be-published-by-xbox-game-studios-as-sony-interactive-entertainment-steps-away",
-      "source": "Gematsu",
-      "when": "2026-09-10 02:41",
-      "hot": true
-    },
-    {
-      "title": "Navinosuke: The Yo-kai Buster launches in 2027 for Switch, PC",
-      "url": "https://www.gematsu.com/2026/09/navinosuke-the-yo-kai-buster-launches-in-2027-for-switch-pc",
-      "source": "Gematsu",
-      "when": "2026-09-10 01:42",
-      "hot": true
-    },
-    {
-      "title": "Star Fox Adventures ya disponible en Nintendo Switch 2: una joya de Rare para Gamecube que imitó la fórmula Zelda",
-      "url": "https://vandal.elespanol.com/noticia/2026252042/star-fox-adventures-ya-disponible-en-nintendo-switch-2-una-joya-de-rare-para-gamecube-que-imito-la-formula-zelda/",
-      "source": "Vandal",
-      "when": "2026-09-09 17:07",
-      "hot": true
-    },
-    {
-      "title": "Anunciado nuevo Metroid para Nintendo Switch 2: se llama Metroid Ravenous y llegará a comienzos de 2027",
-      "url": "https://vandal.elespanol.com/noticia/2026252031/anunciado-nuevo-metroid-para-nintendo-switch-2-se-llama-metroid-ravenous-y-aparecera-a-comienzos-de-2027/",
-      "source": "Vandal",
-      "when": "2026-09-09 16:18",
-      "hot": true
-    },
-    {
-      "title": "Terror exclusivo para Switch 2: Blobber Team anuncia ONYX: The Dark Grip en el último Nintendo Direct",
-      "url": "https://vandal.elespanol.com/noticia/2026252039/terror-exclusivo-para-switch-2-blobber-team-anuncia-onyx-the-dark-grip-en-el-ultimo-nintendo-direct/",
-      "source": "Vandal",
-      "when": "2026-09-09 16:14",
-      "hot": true
-    },
-    {
-      "title": "RESUMEN del Nintendo Direct de hoy: todos los anuncios y tráileres, con los nuevos Kirby y Metroid para Switch 2",
-      "url": "https://vandal.elespanol.com/noticia/2026252022/sigue-en-directo-el-nintendo-direct-de-hoy-todos-los-anuncios-y-traileres-oficiales-de-nuevos-juegos-para-switch-2/",
-      "source": "Vandal",
-      "when": "2026-09-09 16:04",
-      "hot": true
-    },
-    {
-      "title": "PlayStation Plus Extra y Premium confirman los juegos de septiembre, con Ninja Gaiden: Ragebound entre ellos",
-      "url": "https://vandal.elespanol.com/noticia/2026252038/playstation-plus-extra-y-premium-confirman-los-juegos-de-septiembre-con-ninja-gaiden-ragebound-entre-ellos/",
-      "source": "Vandal",
-      "when": "2026-09-09 15:50",
       "hot": true
     },
     {
@@ -65,13 +114,6 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Ubisoft confirma dos FarCry clásicos en Nintendo Switch 2: FarCry 3 y FarCry 3: Blood Dragon",
-      "url": "https://vandal.elespanol.com/noticia/2026252037/ubisoft-confirma-dos-farcry-clasicos-en-nintendo-switch-2-farcry-3-y-farcry-3-blood-dragon/",
-      "source": "Vandal",
-      "when": "2026-09-09 15:43",
-      "hot": true
-    },
-    {
       "title": "Catálogo de juegos de PlayStation Plus de septiembre: RuneScape: Dragonwilds, WWE 2K26, Ball x Pit y Date Everything!, entre otros",
       "url": "https://blog.es.playstation.com/2026/09/09/catalogo-de-juegos-de-playstation-plus-de-septiembre-runescape-dragonwilds-wwe-2k26-ball-x-pit-y-date-everything-entre-otros/",
       "source": "PlayStation Blog",
@@ -79,24 +121,10 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "PlayStation Plus Game Catalog and Classics Catalog lineup for September 2026 announced",
-      "url": "https://www.gematsu.com/2026/09/playstation-plus-game-catalog-and-classics-catalog-lineup-for-september-2026-announced",
-      "source": "Gematsu",
-      "when": "2026-09-09 15:30",
-      "hot": true
-    },
-    {
       "title": "Anunciados Resident Evil 2, 3 y 4 para Nintendo Switch 2",
       "url": "https://www.eurogamer.es/anunciados-resident-evil-2-3-y-4-para-nintendo-switch-2",
       "source": "Eurogamer.es",
       "when": "2026-09-09 15:30",
-      "hot": true
-    },
-    {
-      "title": "Atlus confirma Persona 4 Revival y Persona 6 en Nintendo Switch 2",
-      "url": "https://vandal.elespanol.com/noticia/2026252036/atlus-confirma-persona-4-revival-y-persona-6-en-nintendo-switch-2/",
-      "source": "Vandal",
-      "when": "2026-09-09 15:21",
       "hot": true
     },
     {
@@ -114,13 +142,6 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "El regreso del Profesor Layton concreta fecha y promete 'la mayor selección de puzles' de la historia de la saga",
-      "url": "https://vandal.elespanol.com/noticia/2026252035/el-regreso-del-profesor-layton-concreta-fecha-y-promete-la-mayor-seleccion-de-puzles-de-la-historia-de-la-saga/",
-      "source": "Vandal",
-      "when": "2026-09-09 15:11",
-      "hot": true
-    },
-    {
       "title": "Persona 6 y Persona 4 Revival tendrán versiones para Nintendo Switch 2",
       "url": "https://www.eurogamer.es/persona-6-y-persona-4-revival-tendran-versiones-para-nintendo-switch-2",
       "source": "Eurogamer.es",
@@ -135,13 +156,6 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Kirby and the World Beyond announced for Switch 2",
-      "url": "https://www.gematsu.com/2026/09/kirby-and-the-world-beyond-announced-for-switch-2",
-      "source": "Gematsu",
-      "when": "2026-09-09 14:55",
-      "hot": true
-    },
-    {
       "title": "Todos los anuncios del Nintendo Direct de septiembre de 2026",
       "url": "https://www.eurogamer.es/todos-los-anuncios-del-nintendo-direct-de-septiembre-de-2026",
       "source": "Eurogamer.es",
@@ -149,31 +163,17 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Kirby cierra el último Nintendo Direct con su nueva aventura en 3D, que ya tiene fecha aproximada de lanzamiento",
-      "url": "https://vandal.elespanol.com/noticia/2026252034/kirby-cierra-el-ultimo-nintendo-direct-con-su-nueva-aventura-en-3d-que-ya-tiene-fecha-aproximada-de-lanzamiento/",
-      "source": "Vandal",
-      "when": "2026-09-09 14:53",
+      "title": "Capcom confirma Monster Hunter Wilds para Nintendo Switch 2 en diciembre",
+      "url": "https://www.eurogamer.es/capcom-confirma-monster-hunter-wilds-para-nintendo-switch-2-en-diciembre",
+      "source": "Eurogamer.es",
+      "when": "2026-09-09 14:10",
       "hot": true
     },
     {
-      "title": "Persona 6 adds Switch 2 version",
-      "url": "https://www.gematsu.com/2026/09/persona-6-adds-switch-2-version",
-      "source": "Gematsu",
-      "when": "2026-09-09 14:52",
-      "hot": true
-    },
-    {
-      "title": "Persona 4 Revival coming to Switch 2 on May 20, 2027",
-      "url": "https://www.gematsu.com/2026/09/persona-4-revival-coming-to-switch-2-on-may-20-2027",
-      "source": "Gematsu",
-      "when": "2026-09-09 14:51",
-      "hot": true
-    },
-    {
-      "title": "Marvel’s Guardians of the Galaxy Encore Edition coming to Switch 2 on November 5",
-      "url": "https://www.gematsu.com/2026/09/marvels-guardians-of-the-galaxy-encore-edition-coming-to-switch-2-on-november-5",
-      "source": "Gematsu",
-      "when": "2026-09-09 14:50",
+      "title": "Hello Games celebra 10 años de No Man's Sky con Cosmos, que permite montar tu propia estación espacial",
+      "url": "https://www.eurogamer.es/hello-games-celebra-10-anos-de-no-mans-sky-con-cosmos-que-permite-montar-tu-propia-estacion-espacial",
+      "source": "Eurogamer.es",
+      "when": "2026-09-09 13:20",
       "hot": true
     }
   ]
