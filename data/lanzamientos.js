@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-11",
+  "updated": "2026-09-13",
   "source": "Steam",
   "items": [
     {
-      "appid": 4487760,
-      "name": "Blurry Shopping",
-      "price": 3.39,
-      "discount": 15,
-      "url": "https://store.steampowered.com/app/4487760/"
+      "appid": 3520600,
+      "name": "ORBA",
+      "price": 2.09,
+      "discount": 30,
+      "url": "https://store.steampowered.com/app/3520600/"
     },
     {
-      "appid": 5157140,
-      "name": "SIMPLE ACTION",
+      "appid": 5156410,
+      "name": "DAKENSHI",
+      "price": 3.15,
+      "discount": 0,
+      "url": "https://store.steampowered.com/app/5156410/"
+    },
+    {
+      "appid": 3991330,
+      "name": "Elegía para una Violeta",
       "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/5157140/"
+      "url": "https://store.steampowered.com/app/3991330/"
     },
     {
-      "appid": 4895560,
-      "name": "Journey to Echo",
-      "price": 4.67,
+      "appid": 5104330,
+      "name": "Kilnborn",
+      "price": 0.0,
+      "discount": 0,
+      "url": "https://store.steampowered.com/app/5104330/"
+    },
+    {
+      "appid": 5050290,
+      "name": "Strip Mall Simulator",
+      "price": 7.33,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/4895560/"
+      "url": "https://store.steampowered.com/app/5050290/"
     },
     {
-      "appid": 5116160,
-      "name": "She Sucked Me Once, and Dry",
-      "price": 0.0,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/5116160/"
-    },
-    {
-      "appid": 4951590,
-      "name": "Ball Scratch Simulator",
-      "price": 2.96,
-      "discount": 15,
-      "url": "https://store.steampowered.com/app/4951590/"
-    },
-    {
-      "appid": 4998020,
-      "name": "Temporal Anomaly Bureau",
-      "price": 2.49,
+      "appid": 4950560,
+      "name": "Romance Mejorado",
+      "price": 4.31,
       "discount": 40,
-      "url": "https://store.steampowered.com/app/4998020/"
+      "url": "https://store.steampowered.com/app/4950560/"
     }
   ]
 };

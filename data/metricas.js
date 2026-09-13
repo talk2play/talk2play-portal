@@ -1,5 +1,5 @@
 window.T2P_METRICAS = {
-  "updated": "2026-09-11",
+  "updated": "2026-09-13",
   "history": [
     {
       "date": "2026-09-07",
@@ -40,6 +40,14 @@ window.T2P_METRICAS = {
       "views_recientes": 439,
       "views_shorts": 18858,
       "twitch": 40
+    },
+    {
+      "date": "2026-09-13",
+      "subs": 35,
+      "videos": 250,
+      "views_recientes": 450,
+      "views_shorts": 19354,
+      "twitch": 39
     }
   ]
 };
