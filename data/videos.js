@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "6 visualizaciones",
-      "when": "hace 4 días",
+      "when": "hace 5 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "5 visualizaciones",
-      "when": "hace 5 días",
+      "when": "hace 6 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "10 visualizaciones",
-      "when": "hace 6 días",
+      "when": "hace 7 días",
       "category": "Actualidad"
     },
     {
@@ -36,7 +36,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "9 visualizaciones",
-      "when": "hace 7 días",
+      "when": "hace 8 días",
       "category": "Gameplays"
     },
     {
@@ -44,7 +44,7 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "4 visualizaciones",
-      "when": "hace 8 días",
+      "when": "hace 9 días",
       "category": "Reacciones"
     },
     {
@@ -52,7 +52,7 @@ window.T2P_DATA = {
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
       "views": "2 visualizaciones",
-      "when": "hace 9 días",
+      "when": "hace 10 días",
       "category": "Gameplays"
     },
     {
@@ -60,7 +60,7 @@ window.T2P_DATA = {
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
       "views": "15 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Actualidad"
     },
     {
@@ -68,15 +68,15 @@ window.T2P_DATA = {
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
       "views": "28 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Actualidad"
     },
     {
       "id": "XatKAuW_xCc",
       "title": "GTA 6 ES UNA BARBARIDAD😱 | REACCIÓN E IMPRESIONES MIRADA EXTENDIDA",
       "duration": "54:05",
-      "views": "13 visualizaciones",
-      "when": "hace 11 días",
+      "views": "16 visualizaciones",
+      "when": "hace 12 días",
       "category": "Reacciones"
     },
     {
@@ -84,7 +84,7 @@ window.T2P_DATA = {
       "title": "UN BUEN CAMBIO DE AIRES A LA SAGA CON RESONANCE A PLAGUE TALE LEGACY",
       "duration": "24:46",
       "views": "15 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Actualidad"
     },
     {
@@ -156,7 +156,7 @@ window.T2P_DATA = {
       "title": "DUSKFADE OPINIÓN PRIMERAS HORAS 🤔| LO COMENTAMOS 🤓",
       "duration": "9:22",
       "views": "29 visualizaciones",
-      "when": "hace 3 semanas",
+      "when": "hace 4 semanas",
       "category": "Actualidad"
     },
     {
@@ -180,7 +180,7 @@ window.T2P_DATA = {
       "title": "PRÓXIMO EVENTO KINGDOM HEARTS EN EL D23 | PUPURRI DE NOTICIAS",
       "duration": "42:06",
       "views": "15 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -188,7 +188,7 @@ window.T2P_DATA = {
       "title": "25 ANIVERSARIO GHOST RECON, OCTOPATH TRAVELER 3 CONFIRMADO... | PUPURRI DE NOTICIAS",
       "duration": "50:40",
       "views": "18 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -272,7 +272,7 @@ window.T2P_DATA = {
     {
       "id": "A9SO-vOwJP8",
       "title": "Primer vistazo Ocarina of time | #talk2play de #Twitch",
-      "views": "667 visualizaciones"
+      "views": "662 visualizaciones"
     },
     {
       "id": "hNacjO7KfcI",
