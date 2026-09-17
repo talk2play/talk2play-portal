@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "source": "Steam",
   "items": [
     {
-      "appid": 4974950,
-      "name": "WATT FUR? Animal Power Plant",
-      "price": 4.67,
+      "appid": 4437370,
+      "name": "Pop! Pachinko",
+      "price": 10.11,
+      "discount": 25,
+      "url": "https://store.steampowered.com/app/4437370/"
+    },
+    {
+      "appid": 2503990,
+      "name": "13 Playing Cards Of Demon",
+      "price": 2.2,
+      "discount": 35,
+      "url": "https://store.steampowered.com/app/2503990/"
+    },
+    {
+      "appid": 4110220,
+      "name": "Room 404: Erotic Massage",
+      "price": 14.21,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/4974950/"
+      "url": "https://store.steampowered.com/app/4110220/"
     },
     {
-      "appid": 4240610,
-      "name": "Code Velocity",
-      "price": 2.52,
-      "discount": 20,
-      "url": "https://store.steampowered.com/app/4240610/"
-    },
-    {
-      "appid": 4979640,
-      "name": "Hidden Objects Painted Forest",
+      "appid": 2877420,
+      "name": "江山美人",
       "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/4979640/"
+      "url": "https://store.steampowered.com/app/2877420/"
     },
     {
-      "appid": 5132730,
-      "name": "ShutterOut",
-      "price": 3.32,
-      "discount": 20,
-      "url": "https://store.steampowered.com/app/5132730/"
+      "appid": 4944390,
+      "name": "灵山未至",
+      "price": 2.49,
+      "discount": 40,
+      "url": "https://store.steampowered.com/app/4944390/"
     },
     {
-      "appid": 3166160,
-      "name": "Oops! You're the Hero!",
-      "price": 5.19,
+      "appid": 4261320,
+      "name": "스페셜포스 리마스터",
+      "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/3166160/"
-    },
-    {
-      "appid": 4921830,
-      "name": "JettFuel+",
-      "price": 1.09,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/4921830/"
+      "url": "https://store.steampowered.com/app/4261320/"
     }
   ]
 };
