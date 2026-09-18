@@ -1,179 +1,179 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-17 08:37 UTC",
+  "updated": "2026-09-18 08:38 UTC",
   "temas": [
     {
-      "title": "Solo Leveling: KARMA ‘Game Overview’ and ‘Cinematic’ trailers",
-      "url": "https://www.gematsu.com/2026/09/solo-leveling-karma-game-overview-and-cinematic-trailers",
+      "title": "Ubisoft actualiza gratis The Rogue of Prince of Persia un año después de su lanzamiento y esto es lo que cambia",
+      "url": "https://vandal.elespanol.com/noticia/2026261002/ubisoft-actualiza-gratis-the-rogue-of-prince-of-persia-un-ano-despues-de-su-lanzamiento-y-esto-es-lo-que-cambia/",
+      "source": "Vandal",
+      "when": "2026-09-18 06:12",
+      "hot": true
+    },
+    {
+      "title": "Sugar Lies launches in late 2026 for PC, in spring 2027 for Switch",
+      "url": "https://www.gematsu.com/2026/09/sugar-lies-launches-in-late-2026-for-pc-in-spring-2027-for-switch",
       "source": "Gematsu",
-      "when": "2026-09-17 04:00",
+      "when": "2026-09-18 03:50",
       "hot": true
     },
     {
-      "title": "‘Reverse’ zombie game The First Zombie announced for Switch, PC",
-      "url": "https://www.gematsu.com/2026/09/reverse-zombie-game-the-first-zombie-announced-for-switch-pc",
+      "title": "The Rogue Prince of Persia ‘Anniversary’ update now available",
+      "url": "https://www.gematsu.com/2026/09/the-rogue-prince-of-persia-anniversary-update-now-available",
       "source": "Gematsu",
-      "when": "2026-09-16 22:40",
+      "when": "2026-09-17 16:12",
       "hot": true
     },
     {
-      "title": "Wo Long 2: Wings of Ember | Lanzamiento previsto el 4 de marzo de 2027, con una demo ya disponible",
-      "url": "https://blog.es.playstation.com/2026/09/16/wo-long-2-wings-of-ember-lanzamiento-previsto-el-4-de-marzo-de-2027-con-una-demo-ya-disponible/",
-      "source": "PlayStation Blog",
-      "when": "2026-09-16 17:12",
-      "hot": true
-    },
-    {
-      "title": "Solo Leveling: Karma deslumbra con un nuevo avance con Sung Jinwoo y se filtra su ventana de lanzamiento",
-      "url": "https://vandal.elespanol.com/noticia/2026259024/solo-leveling-karma-deslumbra-con-un-nuevo-avance-con-sung-jinwoo-y-desvela-su-ventana-de-lanzamiento/",
+      "title": "Bloodstained: The Scarlet Engagement muestra nuevo gameplay y promete el mapa más grande de la saga",
+      "url": "https://vandal.elespanol.com/noticia/2026260029/bloodstained-the-scarlet-engagement-muestra-nuevo-gameplay-y-promete-el-mapa-mas-grande-de-la-saga/",
       "source": "Vandal",
-      "when": "2026-09-16 17:11",
+      "when": "2026-09-17 15:55",
       "hot": true
     },
     {
-      "title": "Xbox responde a los rumores sobre Game Pass: 'Evaluamos lo que funciona mejor para los jugadores'",
-      "url": "https://vandal.elespanol.com/noticia/2026259020/xbox-responde-a-los-rumores-sobre-game-pass-evaluamos-lo-que-funciona-mejor-para-los-jugadores/",
+      "title": "Hideo Kojima encuentra a su 'Snake' para Physint: Bill Skarsgård, el actor de Pennywise en IT",
+      "url": "https://vandal.elespanol.com/noticia/2026260017/hideo-kojima-encuentra-a-su-snake-para-physint-bill-skarsgrd-el-actor-de-pennywise-en-it/",
       "source": "Vandal",
-      "when": "2026-09-16 14:34",
+      "when": "2026-09-17 11:15",
       "hot": true
     },
     {
-      "title": "'Una de las mayores transformaciones que he visto con esta tecnología': así cambia 007 First Light con Path Tracing",
-      "url": "https://vandal.elespanol.com/noticia/2026259014/una-de-las-mayores-transformaciones-que-he-visto-con-esta-tecnologia-asi-cambia-007-first-light-con-path-tracing/",
+      "title": "Bloomwalker, ambientado en el universo de Ni no Kuni, es un precioso juego relajante que saldrá en PC y consolas",
+      "url": "https://vandal.elespanol.com/noticia/2026260016/bloomwalker-ambientado-en-el-universo-de-ni-no-kuni-es-un-precioso-juego-relajante-que-saldra-en-pc-y-xbox/",
       "source": "Vandal",
-      "when": "2026-09-16 10:39",
+      "when": "2026-09-17 10:47",
       "hot": true
     },
     {
-      "title": "Wo Long 2: Wings of Ember confirma fecha de lanzamiento y estrena demo que ya puedes probar gratis",
-      "url": "https://vandal.elespanol.com/noticia/2026259009/wo-long-2-wings-of-ember-confirma-fecha-de-lanzamiento-y-estrena-demo-que-ya-puedes-probar-gratis/",
+      "title": "Call of Duty Modern Warfare 4 tiene nuevo y espectacular traíler de campaña, centrado en la guerra en Corea",
+      "url": "https://vandal.elespanol.com/noticia/2026260014/call-of-duty-modern-warfare-4-muestra-su-nuevo-y-espectacular-trailer-de-campana-centrado-en-la-guerra-en-corea/",
       "source": "Vandal",
-      "when": "2026-09-16 09:25",
+      "when": "2026-09-17 10:38",
       "hot": true
     },
     {
-      "title": "Presentamos la nueva línea de productos de sonido de PS5: los auriculares inalámbricos PlayStation Pulse y Pulse Edge",
-      "url": "https://blog.es.playstation.com/2026/09/16/presentamos-la-nueva-linea-de-productos-de-sonido-de-ps5-los-auriculares-inalambricos-playstation-pulse-y-pulse-edge/",
-      "source": "PlayStation Blog",
-      "when": "2026-09-16 08:43",
-      "hot": true
-    },
-    {
-      "title": "Estos son los 8 juegos que abandonan el servicio Xbox Games Pass durante septiembre",
-      "url": "https://vandal.elespanol.com/noticia/2026259006/estos-son-los-8-juegos-que-abandonan-el-servicio-xbox-games-pass-durante-septiembre/",
-      "source": "Vandal",
-      "when": "2026-09-16 07:57",
-      "hot": true
-    },
-    {
-      "title": "PlayStation presenta sus nuevos auriculares PULSE y PULSE Edge para PS5 pero aún no tiene precio ni fecha",
-      "url": "https://vandal.elespanol.com/noticia/2026259005/playstation-presenta-sus-nuevos-auriculares-pulse-y-pulse-edge-para-ps5-pero-aun-no-tiene-precio-ni-fecha/",
-      "source": "Vandal",
-      "when": "2026-09-16 07:38",
-      "hot": true
-    },
-    {
-      "title": "Microsoft anuncia la próxima tanda de juegos que llegarán a Xbox Game Pass",
-      "url": "https://www.eurogamer.es/microsoft-anuncia-la-proxima-tanda-de-juegos-que-llegaran-a-xbox-game-pass",
-      "source": "Eurogamer.es",
-      "when": "2026-09-15 18:41",
-      "hot": true
-    },
-    {
-      "title": "XBOX Game Pass anuncia sus juegos para la segunda quincena de septiembre y principios de octubre",
-      "url": "https://vandal.elespanol.com/noticia/2026258028/xbox-game-pass-anuncia-sus-juegos-para-la-segunda-quincena-de-septiembre-y-principios-de-octubre/",
-      "source": "Vandal",
-      "when": "2026-09-15 16:43",
-      "hot": true
-    },
-    {
-      "title": "¿Revolución en Xbox Game Pass? Pérdida de lanzamientos 'día 1', nuevos planes y precios, según un rumor",
-      "url": "https://vandal.elespanol.com/noticia/2026258027/revolucion-en-xbox-game-pass-perdida-de-lanzamientos-dia-1-nuevos-planes-y-precios-segun-un-rumor/",
-      "source": "Vandal",
-      "when": "2026-09-15 16:08",
-      "hot": true
-    },
-    {
-      "title": "007 First Light se ve mejor que nunca en PC gracias al Path Tracing oficial: estos son los requisitos para activarlo",
-      "url": "https://vandal.elespanol.com/noticia/2026258025/007-first-light-se-ve-mejor-que-nunca-en-pc-gracias-al-path-tracing-oficial-estos-son-los-requisitos-para-activarlo/",
-      "source": "Vandal",
-      "when": "2026-09-15 15:10",
-      "hot": true
-    },
-    {
-      "title": "IO Interactive vuelve a retrasar el lanzamiento de 007 First Light para Nintendo Switch 2",
-      "url": "https://www.eurogamer.es/io-interactive-vuelve-a-retrasar-el-lanzamiento-de-007-first-light-en-switch-2",
-      "source": "Eurogamer.es",
-      "when": "2026-09-15 12:14",
-      "hot": true
-    },
-    {
-      "title": "ZERO PARADES: For Dead Spies for PS5 launches November 3 alongside ‘Director’s Cut’ update",
-      "url": "https://www.gematsu.com/2026/09/zero-parades-for-dead-spies-for-ps5-launches-november-3-alongside-directors-cut-update",
+      "title": "PHYSINT lead to be portrayed by Bill Skarsgard",
+      "url": "https://www.gematsu.com/2026/09/physint-lead-to-be-portrayed-by-bill-skarsgard",
       "source": "Gematsu",
-      "when": "2026-09-17 03:12",
+      "when": "2026-09-17 10:37",
+      "hot": true
+    },
+    {
+      "title": "Bloodstained: The Scarlet Engagement TGS 2026 trailer",
+      "url": "https://www.gematsu.com/2026/09/bloodstained-the-scarlet-engagement-tgs-2026-trailer",
+      "source": "Gematsu",
+      "when": "2026-09-17 10:34",
+      "hot": true
+    },
+    {
+      "title": "Bloomwalker adds PS5, Switch 2, and Switch versions; set in Ni no Kuni universe",
+      "url": "https://www.gematsu.com/2026/09/bloomwalker-adds-ps5-switch-2-and-switch-versions-set-in-ni-no-kuni-universe",
+      "source": "Gematsu",
+      "when": "2026-09-17 10:16",
+      "hot": true
+    },
+    {
+      "title": "Call of Duty: Modern Warfare 4 ‘Campaign’ trailer",
+      "url": "https://www.gematsu.com/2026/09/call-of-duty-modern-warfare-4-campaign-trailer",
+      "source": "Gematsu",
+      "when": "2026-09-17 10:05",
+      "hot": true
+    },
+    {
+      "title": "Las mejores ofertas de Nintendo Switch y Switch 2 en la eShop de esta semana (17/09/2026)",
+      "url": "https://vandal.elespanol.com/noticia/2026260004/las-mejores-ofertas-de-nintendo-switch-y-switch-2-en-la-eshop-de-esta-semana-17092026/",
+      "source": "Vandal",
+      "when": "2026-09-17 07:14",
+      "hot": true
+    },
+    {
+      "title": "¿Podrá tu PC con Gears of War: E-Day? Estos son sus requisitos finales para juga en mínimo, recomendado y ultra",
+      "url": "https://vandal.elespanol.com/noticia/2026261001/podra-tu-pc-con-gears-of-war-eday-estos-son-sus-requisitos-finales-para-juga-en-minimo-recomendado-y-ultra/",
+      "source": "Vandal",
+      "when": "2026-09-18 05:47",
       "hot": false
     },
     {
-      "title": "Earth Defense Force 6.2: Invaders from Another World launches March 18, 2027 in Japan",
-      "url": "https://www.gematsu.com/2026/09/earth-defense-force-6-2-invaders-from-another-world-launches-march-18-2027-in-japan",
+      "title": "Tropico 7 adds Switch 2 version",
+      "url": "https://www.gematsu.com/2026/09/tropico-7-adds-switch-2-version",
       "source": "Gematsu",
-      "when": "2026-09-17 02:34",
+      "when": "2026-09-17 18:00",
       "hot": false
     },
     {
-      "title": "Astrae Oratio launches in 2027 for iOS and Android, followed by PC",
-      "url": "https://www.gematsu.com/2026/09/astrae-oratio-launches-in-2027-for-ios-and-android-followed-by-pc",
+      "title": "Ved: Recure launches September 22",
+      "url": "https://www.gematsu.com/2026/09/ved-recure-launches-september-22",
       "source": "Gematsu",
-      "when": "2026-09-17 02:30",
+      "when": "2026-09-17 16:47",
       "hot": false
     },
     {
-      "title": "Earth Defense Force 6 for Switch 2 launches January 28, 2027",
-      "url": "https://www.gematsu.com/2026/09/earth-defense-force-6-for-switch-2-launches-january-28-2027",
-      "source": "Gematsu",
-      "when": "2026-09-17 02:23",
+      "title": "Kingdom Hearts llega a Fortnite con multitud de contenido y el pack de contenido más caro del juego",
+      "url": "https://vandal.elespanol.com/noticia/2026260030/kingdom-hearts-llega-a-fortnite-con-multitud-de-contenido-y-el-pack-de-contenido-mas-caro-del-juego/",
+      "source": "Vandal",
+      "when": "2026-09-17 16:14",
       "hot": false
     },
     {
-      "title": "Entergram announces hololive Virtual YouTuber Hakui Koyori visual novel Koyorenium",
-      "url": "https://www.gematsu.com/2026/09/entergram-announces-hololive-virtual-youtuber-hakui-koyori-visual-novel-koyorenium",
+      "title": "Psikyo Memories announced for PS5, Switch 2",
+      "url": "https://www.gematsu.com/2026/09/psikyo-memories-announced-for-ps5-switch-2",
       "source": "Gematsu",
-      "when": "2026-09-17 01:36",
+      "when": "2026-09-17 15:59",
       "hot": false
     },
     {
-      "title": "CRYMELIGHT opening movie",
-      "url": "https://www.gematsu.com/2026/09/crymelight-opening-movie",
+      "title": "Dragon Slayer: The Legend of Heroes I & II announced for PS5, PS4, Switch, and PC",
+      "url": "https://www.gematsu.com/2026/09/dragon-slayer-the-legend-of-heroes-i-ii-announced-for-ps5-ps4-switch-and-pc",
       "source": "Gematsu",
-      "when": "2026-09-17 01:20",
+      "when": "2026-09-17 15:59",
       "hot": false
     },
     {
-      "title": "UN:Me delayed to 2027",
-      "url": "https://www.gematsu.com/2026/09/unme-delayed-to-2027",
+      "title": "Toshinden Collection announced for PS5, Switch 2, and PC",
+      "url": "https://www.gematsu.com/2026/09/toshinden-collection-announced-for-ps5-switch-2-and-pc",
       "source": "Gematsu",
-      "when": "2026-09-17 01:16",
+      "when": "2026-09-17 15:58",
       "hot": false
     },
     {
-      "title": "Dragon Quest Monsters: The Withered World ‘Gameplay’ trailer",
-      "url": "https://www.gematsu.com/2026/09/dragon-quest-monsters-the-withered-world-gameplay-trailer",
-      "source": "Gematsu",
-      "when": "2026-09-17 01:10",
+      "title": "Wardogs es el nuevo fenómeno 'shooter' y está vendiendo más rápido que ARC Raiders o Helldivers 2",
+      "url": "https://vandal.elespanol.com/noticia/2026260028/wardogs-es-el-nuevo-fenomeno-shooter-y-esta-vendiendo-mas-rapido-que-arc-raiders-o-helldivers-2/",
+      "source": "Vandal",
+      "when": "2026-09-17 15:47",
       "hot": false
     },
     {
-      "title": "Final Fantasy Resonance TGS 2026 trailer",
-      "url": "https://www.gematsu.com/2026/09/final-fantasy-resonance-tgs-2026-trailer",
-      "source": "Gematsu",
-      "when": "2026-09-17 01:06",
+      "title": "¿A qué hora se desbloquea EA Sports FC 27? Hora exacta de su lanzamiento en acceso anticipado",
+      "url": "https://vandal.elespanol.com/noticia/2026260027/a-que-hora-se-desbloquea-ea-sports-fc-27-hora-exacta-de-su-lanzamiento-en-acceso-anticipado/",
+      "source": "Vandal",
+      "when": "2026-09-17 15:26",
       "hot": false
     },
     {
-      "title": "Pixel art tower defense game PixelHeroScramble Plus announced for Switch, PC",
-      "url": "https://www.gematsu.com/2026/09/pixel-art-tower-defense-game-pixelheroscramble-plus-announced-for-switch-pc",
+      "title": "Ya disponibles los dos juego gratis de Epic Games Store y anunciados los próximos regalos",
+      "url": "https://vandal.elespanol.com/noticia/2026260026/ya-disponibles-los-dos-juego-gratis-de-epic-games-store-y-anunciados-los-proximos-regalos/",
+      "source": "Vandal",
+      "when": "2026-09-17 15:07",
+      "hot": false
+    },
+    {
+      "title": "Pragmata recibe nuevas apariencias gratuitas, una colaboración con Mega Man que 'hace realidad' la teoría fan",
+      "url": "https://vandal.elespanol.com/noticia/2026260025/pragmata-recibe-nuevas-apariencias-gratuitas-una-colaboracion-con-mega-man-que-hace-realidad-la-teoria-fan/",
+      "source": "Vandal",
+      "when": "2026-09-17 14:36",
+      "hot": false
+    },
+    {
+      "title": "Blizzard presume de récords: BlizzCon 2026 superó todas las cifras de pasadas ediciones",
+      "url": "https://vandal.elespanol.com/noticia/2026260024/blizzard-presume-de-records-blizzcon-2026-supero-todas-las-cifras-de-pasadas-ediciones/",
+      "source": "Vandal",
+      "when": "2026-09-17 14:03",
+      "hot": false
+    },
+    {
+      "title": "Kingdom of Night for PS5, Xbox Series, and Switch launches November 5",
+      "url": "https://www.gematsu.com/2026/09/kingdom-of-night-for-ps5-xbox-series-and-switch-launches-november-5",
       "source": "Gematsu",
-      "when": "2026-09-17 00:24",
+      "when": "2026-09-17 14:00",
       "hot": false
     }
   ]

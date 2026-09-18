@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "source": "Steam",
   "items": [
     {
-      "appid": 4437370,
-      "name": "Pop! Pachinko",
-      "price": 10.11,
-      "discount": 25,
-      "url": "https://store.steampowered.com/app/4437370/"
-    },
-    {
-      "appid": 2503990,
-      "name": "13 Playing Cards Of Demon",
-      "price": 2.2,
-      "discount": 35,
-      "url": "https://store.steampowered.com/app/2503990/"
-    },
-    {
-      "appid": 4110220,
-      "name": "Room 404: Erotic Massage",
-      "price": 14.21,
+      "appid": 3737310,
+      "name": "寄生エレベーター",
+      "price": 5.53,
       "discount": 10,
-      "url": "https://store.steampowered.com/app/4110220/"
+      "url": "https://store.steampowered.com/app/3737310/"
     },
     {
-      "appid": 2877420,
-      "name": "江山美人",
-      "price": 0.0,
+      "appid": 5177870,
+      "name": "Cave Escape",
+      "price": 1.09,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/2877420/"
+      "url": "https://store.steampowered.com/app/5177870/"
     },
     {
-      "appid": 4944390,
-      "name": "灵山未至",
-      "price": 2.49,
+      "appid": 3931000,
+      "name": "There Is mORE",
+      "price": 11.24,
+      "discount": 25,
+      "url": "https://store.steampowered.com/app/3931000/"
+    },
+    {
+      "appid": 3369490,
+      "name": "Noxcode",
+      "price": 4.89,
       "discount": 40,
-      "url": "https://store.steampowered.com/app/4944390/"
+      "url": "https://store.steampowered.com/app/3369490/"
     },
     {
-      "appid": 4261320,
-      "name": "스페셜포스 리마스터",
-      "price": 0.0,
+      "appid": 5169750,
+      "name": "Personal Racing",
+      "price": 4.99,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/4261320/"
+      "url": "https://store.steampowered.com/app/5169750/"
+    },
+    {
+      "appid": 4883590,
+      "name": "iRacing® Studios NASCAR 26",
+      "price": 61.99,
+      "discount": 0,
+      "url": "https://store.steampowered.com/app/4883590/"
     }
   ]
 };

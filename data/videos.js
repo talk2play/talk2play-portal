@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "7 visualizaciones",
-      "when": "hace 7 días",
+      "when": "hace 8 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "7 visualizaciones",
-      "when": "hace 8 días",
+      "when": "hace 9 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "11 visualizaciones",
-      "when": "hace 9 días",
+      "when": "hace 10 días",
       "category": "Actualidad"
     },
     {
@@ -36,7 +36,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "9 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Gameplays"
     },
     {
@@ -44,7 +44,7 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "4 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Reacciones"
     },
     {
@@ -52,22 +52,22 @@ window.T2P_DATA = {
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
       "views": "2 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Gameplays"
     },
     {
       "id": "btLOlqHAfyc",
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
-      "views": "15 visualizaciones",
-      "when": "hace 13 días",
+      "views": "16 visualizaciones",
+      "when": "hace 2 semanas",
       "category": "Actualidad"
     },
     {
       "id": "roMrzXrUZH0",
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
-      "views": "31 visualizaciones",
+      "views": "34 visualizaciones",
       "when": "hace 2 semanas",
       "category": "Actualidad"
     },
@@ -92,15 +92,15 @@ window.T2P_DATA = {
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
       "views": "3 visualizaciones",
-      "when": "hace 2 semanas",
+      "when": "hace 3 semanas",
       "category": "Directos"
     },
     {
       "id": "yOOgIfa-S94",
       "title": "GAMEPLAY Y ENTREVISTA TIDES OF ANNIHILATION😍 | FUTURE GAMES SHOW GAMESCOM 2026",
       "duration": "1:34:33",
-      "views": "18 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "17 visualizaciones",
+      "when": "hace 3 semanas",
       "category": "Directos"
     },
     {
@@ -132,7 +132,7 @@ window.T2P_DATA = {
       "title": "¡¡VUELVE LA 1060!!😱 ESPECS PC RESONANCE A PLAGUE TALE LEGACY | PUPURRI DE NOTICIAS ✍🏻",
       "duration": "22:10",
       "views": "13 visualizaciones",
-      "when": "hace 3 semanas",
+      "when": "hace 4 semanas",
       "category": "Actualidad"
     },
     {
@@ -156,7 +156,7 @@ window.T2P_DATA = {
       "title": "DUSKFADE OPINIÓN PRIMERAS HORAS 🤔| LO COMENTAMOS 🤓",
       "duration": "9:22",
       "views": "29 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -249,6 +249,11 @@ window.T2P_DATA = {
     }
   ],
   "shorts": [
+    {
+      "id": "ilxlsbM8MH8",
+      "title": "¡Prepárate para el WoW! 🎮 #shorts",
+      "views": "0 visualizaciones"
+    },
     {
       "id": "ExdL1_4XOUY",
       "title": "¡No te pierdas la nueva serie de anime del diablo en Netflix! #shorts",
@@ -483,11 +488,6 @@ window.T2P_DATA = {
       "id": "WIqS_DmejmI",
       "title": "NUEVO LORDS OF THE FALLEN 2 ( LOCURITA )",
       "views": "72 visualizaciones"
-    },
-    {
-      "id": "_tbV2Vm_fzY",
-      "title": "The Witcher3 ¡ El DLC que nos coge por sorpresa !",
-      "views": "245 visualizaciones"
     }
   ]
 };
