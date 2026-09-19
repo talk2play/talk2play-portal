@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "7 visualizaciones",
-      "when": "hace 8 días",
+      "when": "hace 9 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "7 visualizaciones",
-      "when": "hace 9 días",
+      "when": "hace 10 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "11 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Actualidad"
     },
     {
@@ -36,7 +36,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "9 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Gameplays"
     },
     {
@@ -44,7 +44,7 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "4 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Reacciones"
     },
     {
@@ -52,7 +52,7 @@ window.T2P_DATA = {
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
       "views": "2 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Gameplays"
     },
     {
@@ -148,7 +148,7 @@ window.T2P_DATA = {
       "title": "GEARS OF WAR E-DAY VIENE PISANDO FUERTE💀 | NOTICIAS XBOX✍🏻",
       "duration": "28:43",
       "views": "23 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -250,14 +250,19 @@ window.T2P_DATA = {
   ],
   "shorts": [
     {
+      "id": "LAfB7crbnCc",
+      "title": "STARCRAFT CONVENCE ? #shorts",
+      "views": "995 visualizaciones"
+    },
+    {
       "id": "ilxlsbM8MH8",
       "title": "¡Prepárate para el WoW! 🎮 #shorts",
-      "views": "0 visualizaciones"
+      "views": "879 visualizaciones"
     },
     {
       "id": "ExdL1_4XOUY",
       "title": "¡No te pierdas la nueva serie de anime del diablo en Netflix! #shorts",
-      "views": "1,3 K visualizaciones"
+      "views": "1,4 K visualizaciones"
     },
     {
       "id": "LnysWS0JM-w",
@@ -322,7 +327,7 @@ window.T2P_DATA = {
     {
       "id": "sv134cCi1XE",
       "title": "REACCIONAMOS al nuevo POKEMON ( 10ª generación ) #pokemon",
-      "views": "29 visualizaciones"
+      "views": "30 visualizaciones"
     },
     {
       "id": "yrYpC1hlKzY",
@@ -337,7 +342,7 @@ window.T2P_DATA = {
     {
       "id": "po-b-kQOhjk",
       "title": "Phill Spencer DIMITE ( Presidente de XBOX ) !!!! #parati #xbox",
-      "views": "110 visualizaciones"
+      "views": "112 visualizaciones"
     },
     {
       "id": "2HbtpJWyYzk",
@@ -367,7 +372,7 @@ window.T2P_DATA = {
     {
       "id": "OY4t0e78Znc",
       "title": "DETALLES DLC THE WITCHER : CIRI BRUJA?",
-      "views": "8 visualizaciones"
+      "views": "9 visualizaciones"
     },
     {
       "id": "oJS2Au8Sr5M",
@@ -483,11 +488,6 @@ window.T2P_DATA = {
       "id": "j_p40yWcbzA",
       "title": "Un remake de Lara croft que nadie se esperaba!!! #videojuegos #viral",
       "views": "7 visualizaciones"
-    },
-    {
-      "id": "WIqS_DmejmI",
-      "title": "NUEVO LORDS OF THE FALLEN 2 ( LOCURITA )",
-      "views": "72 visualizaciones"
     }
   ]
 };

@@ -1,18 +1,25 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-18 08:38 UTC",
+  "updated": "2026-09-19 08:36 UTC",
   "temas": [
+    {
+      "title": "Control Resonant: Remedy apuesta por una secuela de terror paranormal más extensa y extraña",
+      "url": "https://blog.es.playstation.com/2026/09/18/control-resonant-remedy-apuesta-por-una-secuela-de-terror-paranormal-mas-extensa-y-extrana/",
+      "source": "PlayStation Blog",
+      "when": "2026-09-18 17:14",
+      "hot": true
+    },
+    {
+      "title": "Análisis de Control Resonant - Mejor cuanto más abraza su rareza",
+      "url": "https://www.eurogamer.es/control-resonant-analisis-review",
+      "source": "Eurogamer.es",
+      "when": "2026-09-18 13:00",
+      "hot": true
+    },
     {
       "title": "Ubisoft actualiza gratis The Rogue of Prince of Persia un año después de su lanzamiento y esto es lo que cambia",
       "url": "https://vandal.elespanol.com/noticia/2026261002/ubisoft-actualiza-gratis-the-rogue-of-prince-of-persia-un-ano-despues-de-su-lanzamiento-y-esto-es-lo-que-cambia/",
       "source": "Vandal",
       "when": "2026-09-18 06:12",
-      "hot": true
-    },
-    {
-      "title": "Sugar Lies launches in late 2026 for PC, in spring 2027 for Switch",
-      "url": "https://www.gematsu.com/2026/09/sugar-lies-launches-in-late-2026-for-pc-in-spring-2027-for-switch",
-      "source": "Gematsu",
-      "when": "2026-09-18 03:50",
       "hot": true
     },
     {
@@ -30,34 +37,6 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Hideo Kojima encuentra a su 'Snake' para Physint: Bill Skarsgård, el actor de Pennywise en IT",
-      "url": "https://vandal.elespanol.com/noticia/2026260017/hideo-kojima-encuentra-a-su-snake-para-physint-bill-skarsgrd-el-actor-de-pennywise-en-it/",
-      "source": "Vandal",
-      "when": "2026-09-17 11:15",
-      "hot": true
-    },
-    {
-      "title": "Bloomwalker, ambientado en el universo de Ni no Kuni, es un precioso juego relajante que saldrá en PC y consolas",
-      "url": "https://vandal.elespanol.com/noticia/2026260016/bloomwalker-ambientado-en-el-universo-de-ni-no-kuni-es-un-precioso-juego-relajante-que-saldra-en-pc-y-xbox/",
-      "source": "Vandal",
-      "when": "2026-09-17 10:47",
-      "hot": true
-    },
-    {
-      "title": "Call of Duty Modern Warfare 4 tiene nuevo y espectacular traíler de campaña, centrado en la guerra en Corea",
-      "url": "https://vandal.elespanol.com/noticia/2026260014/call-of-duty-modern-warfare-4-muestra-su-nuevo-y-espectacular-trailer-de-campana-centrado-en-la-guerra-en-corea/",
-      "source": "Vandal",
-      "when": "2026-09-17 10:38",
-      "hot": true
-    },
-    {
-      "title": "PHYSINT lead to be portrayed by Bill Skarsgard",
-      "url": "https://www.gematsu.com/2026/09/physint-lead-to-be-portrayed-by-bill-skarsgard",
-      "source": "Gematsu",
-      "when": "2026-09-17 10:37",
-      "hot": true
-    },
-    {
       "title": "Bloodstained: The Scarlet Engagement TGS 2026 trailer",
       "url": "https://www.gematsu.com/2026/09/bloodstained-the-scarlet-engagement-tgs-2026-trailer",
       "source": "Gematsu",
@@ -65,115 +44,136 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Bloomwalker adds PS5, Switch 2, and Switch versions; set in Ni no Kuni universe",
-      "url": "https://www.gematsu.com/2026/09/bloomwalker-adds-ps5-switch-2-and-switch-versions-set-in-ni-no-kuni-universe",
-      "source": "Gematsu",
-      "when": "2026-09-17 10:16",
-      "hot": true
+      "title": "Sony celebra diez años de silencio con unos auriculares que redondean y elevan su modelo más popular",
+      "url": "https://www.eurogamer.es/sony-celebra-diez-anos-de-silencio-con-unos-auriculares-que-redondean-y-elevan-su-modelo-mas-popular",
+      "source": "Eurogamer.es",
+      "when": "2026-09-18 19:00",
+      "hot": false
     },
     {
-      "title": "Call of Duty: Modern Warfare 4 ‘Campaign’ trailer",
-      "url": "https://www.gematsu.com/2026/09/call-of-duty-modern-warfare-4-campaign-trailer",
-      "source": "Gematsu",
-      "when": "2026-09-17 10:05",
-      "hot": true
-    },
-    {
-      "title": "Las mejores ofertas de Nintendo Switch y Switch 2 en la eShop de esta semana (17/09/2026)",
-      "url": "https://vandal.elespanol.com/noticia/2026260004/las-mejores-ofertas-de-nintendo-switch-y-switch-2-en-la-eshop-de-esta-semana-17092026/",
+      "title": "¿Hay diferencias? Comparan el detalle gráfico de EA Sports FC 27 en PS5, Switch 2 y PS4",
+      "url": "https://vandal.elespanol.com/noticia/2026261027/hay-diferencias-comparan-el-detalle-grafico-de-ea-sports-fc-27-en-ps5-switch-2-y-ps4/",
       "source": "Vandal",
-      "when": "2026-09-17 07:14",
-      "hot": true
-    },
-    {
-      "title": "¿Podrá tu PC con Gears of War: E-Day? Estos son sus requisitos finales para juga en mínimo, recomendado y ultra",
-      "url": "https://vandal.elespanol.com/noticia/2026261001/podra-tu-pc-con-gears-of-war-eday-estos-son-sus-requisitos-finales-para-juga-en-minimo-recomendado-y-ultra/",
-      "source": "Vandal",
-      "when": "2026-09-18 05:47",
+      "when": "2026-09-18 15:52",
       "hot": false
     },
     {
-      "title": "Tropico 7 adds Switch 2 version",
-      "url": "https://www.gematsu.com/2026/09/tropico-7-adds-switch-2-version",
+      "title": "Fire Emblem: Fortune's Weave solo tiene una partida guardada y sus creadores explican por qué",
+      "url": "https://vandal.elespanol.com/noticia/2026261026/fire-emblem-fortunes-weave-solo-tiene-una-partida-guardada-y-sus-creadores-explican-por-que/",
+      "source": "Vandal",
+      "when": "2026-09-18 15:16",
+      "hot": false
+    },
+    {
+      "title": "Acaba de salir y Trails in the Sky 2nd Chapter es uno de los juegos mejor valorados del año según Metacritic",
+      "url": "https://vandal.elespanol.com/noticia/2026261025/acaba-de-salir-y-trails-in-the-sky-2nd-chapter-es-uno-de-los-juegos-mejor-valorados-del-ano-segun-metacritic/",
+      "source": "Vandal",
+      "when": "2026-09-18 15:16",
+      "hot": false
+    },
+    {
+      "title": "Amazon está regalando 2 nuevos juegos gratis de PC a todos los suscriptores de Amazon Prime, incluyendo DOOM Eternal",
+      "url": "https://vandal.elespanol.com/noticia/2026261024/amazon-esta-regalando-2-nuevos-juegos-gratis-de-pc-a-todos-los-suscriptores-de-amazon-prime-incluyendo-doom-eternal/",
+      "source": "Vandal",
+      "when": "2026-09-18 14:51",
+      "hot": false
+    },
+    {
+      "title": "Gungrave G.O.R.E: Blood Heat ‘Action’ trailer",
+      "url": "https://www.gematsu.com/2026/09/gungrave-gore-blood-heat-action-trailer",
       "source": "Gematsu",
-      "when": "2026-09-17 18:00",
+      "when": "2026-09-18 14:17",
       "hot": false
     },
     {
-      "title": "Ved: Recure launches September 22",
-      "url": "https://www.gematsu.com/2026/09/ved-recure-launches-september-22",
+      "title": "‘Character-driven single-player sci-fantasy JRPG’ KAELIS: Seraph Protocol announced for PC",
+      "url": "https://www.gematsu.com/2026/09/character-driven-single-player-sci-fantasy-jrpg-kaelis-seraph-protocol-announced-for-pc",
       "source": "Gematsu",
-      "when": "2026-09-17 16:47",
+      "when": "2026-09-18 14:04",
       "hot": false
     },
     {
-      "title": "Kingdom Hearts llega a Fortnite con multitud de contenido y el pack de contenido más caro del juego",
-      "url": "https://vandal.elespanol.com/noticia/2026260030/kingdom-hearts-llega-a-fortnite-con-multitud-de-contenido-y-el-pack-de-contenido-mas-caro-del-juego/",
+      "title": "El nuevo Fable se pudo permitir un desarrollo de 10 años porque 'forma parte del ADN de Xbox', según Playground",
+      "url": "https://vandal.elespanol.com/noticia/2026261023/el-nuevo-fable-se-pudo-permitir-un-desarrollo-de-10-anos-porque-forma-parte-del-adn-de-xbox-segun-playground/",
       "source": "Vandal",
-      "when": "2026-09-17 16:14",
+      "when": "2026-09-18 14:00",
       "hot": false
     },
     {
-      "title": "Psikyo Memories announced for PS5, Switch 2",
-      "url": "https://www.gematsu.com/2026/09/psikyo-memories-announced-for-ps5-switch-2",
-      "source": "Gematsu",
-      "when": "2026-09-17 15:59",
-      "hot": false
-    },
-    {
-      "title": "Dragon Slayer: The Legend of Heroes I & II announced for PS5, PS4, Switch, and PC",
-      "url": "https://www.gematsu.com/2026/09/dragon-slayer-the-legend-of-heroes-i-ii-announced-for-ps5-ps4-switch-and-pc",
-      "source": "Gematsu",
-      "when": "2026-09-17 15:59",
-      "hot": false
-    },
-    {
-      "title": "Toshinden Collection announced for PS5, Switch 2, and PC",
-      "url": "https://www.gematsu.com/2026/09/toshinden-collection-announced-for-ps5-switch-2-and-pc",
-      "source": "Gematsu",
-      "when": "2026-09-17 15:58",
-      "hot": false
-    },
-    {
-      "title": "Wardogs es el nuevo fenómeno 'shooter' y está vendiendo más rápido que ARC Raiders o Helldivers 2",
-      "url": "https://vandal.elespanol.com/noticia/2026260028/wardogs-es-el-nuevo-fenomeno-shooter-y-esta-vendiendo-mas-rapido-que-arc-raiders-o-helldivers-2/",
+      "title": "La secuela de The Blood of Dawnwalker podría descartar su mecánica más polémica: 'No la forzaremos'",
+      "url": "https://vandal.elespanol.com/noticia/2026261022/la-secuela-de-the-blood-of-dawnwalker-podria-descartar-su-mecanica-mas-polemica-no-la-forzaremos/",
       "source": "Vandal",
-      "when": "2026-09-17 15:47",
+      "when": "2026-09-18 13:30",
       "hot": false
     },
     {
-      "title": "¿A qué hora se desbloquea EA Sports FC 27? Hora exacta de su lanzamiento en acceso anticipado",
-      "url": "https://vandal.elespanol.com/noticia/2026260027/a-que-hora-se-desbloquea-ea-sports-fc-27-hora-exacta-de-su-lanzamiento-en-acceso-anticipado/",
+      "title": "GAME te premia por ir a la San Diego Comic-Con de Málaga: la suscripción a GAME Premium te saldrá gratis",
+      "url": "https://vandal.elespanol.com/noticia/2026261021/game-te-premia-por-ir-a-la-san-diego-comiccon-de-malaga-la-suscripcion-a-game-premium-te-saldra-gratis/",
       "source": "Vandal",
-      "when": "2026-09-17 15:26",
+      "when": "2026-09-18 12:54",
       "hot": false
     },
     {
-      "title": "Ya disponibles los dos juego gratis de Epic Games Store y anunciados los próximos regalos",
-      "url": "https://vandal.elespanol.com/noticia/2026260026/ya-disponibles-los-dos-juego-gratis-de-epic-games-store-y-anunciados-los-proximos-regalos/",
+      "title": "El director de Final Fantasy VII Revelation explica cómo serán los DLC de Vincent y Sephiroth",
+      "url": "https://vandal.elespanol.com/noticia/2026261020/el-director-de-final-fantasy-vii-revelation-explica-como-seran-los-dlc-de-vincent-y-sephiroth/",
       "source": "Vandal",
-      "when": "2026-09-17 15:07",
+      "when": "2026-09-18 11:52",
       "hot": false
     },
     {
-      "title": "Pragmata recibe nuevas apariencias gratuitas, una colaboración con Mega Man que 'hace realidad' la teoría fan",
-      "url": "https://vandal.elespanol.com/noticia/2026260025/pragmata-recibe-nuevas-apariencias-gratuitas-una-colaboracion-con-mega-man-que-hace-realidad-la-teoria-fan/",
+      "title": "Take-Two vuelve a dar pistas sobre GTA 6 en PC: 'Es una plataforma cada vez más importante'",
+      "url": "https://vandal.elespanol.com/noticia/2026261019/taketwo-vuelve-a-dar-pistas-sobre-gta-6-en-pc-es-una-plataforma-cada-vez-mas-importante/",
       "source": "Vandal",
-      "when": "2026-09-17 14:36",
+      "when": "2026-09-18 11:30",
       "hot": false
     },
     {
-      "title": "Blizzard presume de récords: BlizzCon 2026 superó todas las cifras de pasadas ediciones",
-      "url": "https://vandal.elespanol.com/noticia/2026260024/blizzard-presume-de-records-blizzcon-2026-supero-todas-las-cifras-de-pasadas-ediciones/",
+      "title": "Valor Mortis costará solo 40 euros para poder competir en un otoño saturado de grandes lanzamientos",
+      "url": "https://vandal.elespanol.com/noticia/2026261018/valor-mortis-costara-solo-40-euros-para-poder-competir-en-un-otono-saturado-de-grandes-lanzamientos/",
       "source": "Vandal",
-      "when": "2026-09-17 14:03",
+      "when": "2026-09-18 11:02",
       "hot": false
     },
     {
-      "title": "Kingdom of Night for PS5, Xbox Series, and Switch launches November 5",
-      "url": "https://www.gematsu.com/2026/09/kingdom-of-night-for-ps5-xbox-series-and-switch-launches-november-5",
-      "source": "Gematsu",
-      "when": "2026-09-17 14:00",
+      "title": "La beta de World of Warcraft Forever se colapsa ante una avalancha de jugadores: 'Es una locura'",
+      "url": "https://vandal.elespanol.com/noticia/2026261017/la-beta-de-world-of-warcraft-forever-se-colapsa-ante-una-avalancha-de-jugadores-es-una-locura/",
+      "source": "Vandal",
+      "when": "2026-09-18 10:33",
+      "hot": false
+    },
+    {
+      "title": "Capcom rectifica una de las decisiones más polémicas de Monster Hunter Wilds: editar tu personaje será gratis",
+      "url": "https://vandal.elespanol.com/noticia/2026261016/capcom-rectifica-una-de-las-decisiones-mas-polemicas-de-monster-hunter-wilds-editar-tu-personaje-sera-gratis/",
+      "source": "Vandal",
+      "when": "2026-09-18 09:59",
+      "hot": false
+    },
+    {
+      "title": "Hideo Kojima da buenas noticias sobre OD: el desarrollo vuelve a avanzar según lo previsto",
+      "url": "https://vandal.elespanol.com/noticia/2026261015/hideo-kojima-da-buenas-noticias-sobre-od-el-desarrollo-vuelve-a-avanzar-segun-lo-previsto/",
+      "source": "Vandal",
+      "when": "2026-09-18 09:34",
+      "hot": false
+    },
+    {
+      "title": "GAME inaugura nueva tienda en la calle Goya de Madrid: no te pierdas su espacio dedicado a Marvel's Wolverine",
+      "url": "https://vandal.elespanol.com/noticia/2026261014/game-inaugura-nueva-tienda-en-la-calle-goya-de-madrid-no-te-pierdas-su-espacio-dedicado-a-marvels-wolverine/",
+      "source": "Vandal",
+      "when": "2026-09-18 09:32",
+      "hot": false
+    },
+    {
+      "title": "Así es el mundo abierto de EA Sports FC 27: gameplay real del modo The Grounds",
+      "url": "https://vandal.elespanol.com/noticia/2026261013/asi-es-el-mundo-abierto-de-ea-sports-fc-27-gameplay-real-del-modo-the-grounds/",
+      "source": "Vandal",
+      "when": "2026-09-18 09:05",
+      "hot": false
+    },
+    {
+      "title": "Final Fantasy Resonance reúne a héroes de toda la saga en un espectacular tráiler con motivo del Tokyo Game Show",
+      "url": "https://vandal.elespanol.com/noticia/2026261012/final-fantasy-resonance-reune-a-heroes-de-toda-la-saga-en-un-espectacular-trailer-con-motivo-del-tokyo-game-show/",
+      "source": "Vandal",
+      "when": "2026-09-18 08:56",
       "hot": false
     }
   ]
