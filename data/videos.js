@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "7 visualizaciones",
-      "when": "hace 9 días",
+      "when": "hace 10 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "7 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "11 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Actualidad"
     },
     {
@@ -36,7 +36,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "9 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Gameplays"
     },
     {
@@ -44,7 +44,7 @@ window.T2P_DATA = {
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
       "views": "4 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Reacciones"
     },
     {
@@ -67,7 +67,7 @@ window.T2P_DATA = {
       "id": "roMrzXrUZH0",
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
-      "views": "34 visualizaciones",
+      "views": "33 visualizaciones",
       "when": "hace 2 semanas",
       "category": "Actualidad"
     },
@@ -140,7 +140,7 @@ window.T2P_DATA = {
       "title": "SONY QUEREMOS FORMATO FÍSICO NO TU PROPIA MONEDA😡 | SQUARE ENIX NÚMEROS FINANCIEROS Y NOTICIAS🧐",
       "duration": "22:47",
       "views": "22 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -195,7 +195,7 @@ window.T2P_DATA = {
       "id": "TXU5bxjFur4",
       "title": "REACCIONAMOS AL ADELANTO PHANTOM BLADE 0 | PRECIO EDICIONES",
       "duration": "13:10",
-      "views": "20 visualizaciones",
+      "views": "21 visualizaciones",
       "when": "hace 1 mes",
       "category": "Reacciones"
     },
@@ -219,7 +219,7 @@ window.T2P_DATA = {
       "id": "gle8Jc_sU2M",
       "title": "EA ES COMPRADA POR ARABIA SAUDITA | XBOX ESTARÁ EN TOKYO GAMES SHOW 2026",
       "duration": "24:29",
-      "views": "31 visualizaciones",
+      "views": "30 visualizaciones",
       "when": "hace 1 mes",
       "category": "Actualidad"
     },
@@ -252,17 +252,17 @@ window.T2P_DATA = {
     {
       "id": "LAfB7crbnCc",
       "title": "STARCRAFT CONVENCE ? #shorts",
-      "views": "995 visualizaciones"
+      "views": "1,1 K visualizaciones"
     },
     {
       "id": "ilxlsbM8MH8",
       "title": "¡Prepárate para el WoW! 🎮 #shorts",
-      "views": "879 visualizaciones"
+      "views": "941 visualizaciones"
     },
     {
       "id": "ExdL1_4XOUY",
       "title": "¡No te pierdas la nueva serie de anime del diablo en Netflix! #shorts",
-      "views": "1,4 K visualizaciones"
+      "views": "1,2 K visualizaciones"
     },
     {
       "id": "LnysWS0JM-w",
