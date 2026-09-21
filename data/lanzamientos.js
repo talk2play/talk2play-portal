@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "source": "Steam",
   "items": [
     {
-      "appid": 5013390,
-      "name": "Sakura: The Eternal Night",
-      "price": 0.65,
-      "discount": 40,
-      "url": "https://store.steampowered.com/app/5013390/"
+      "appid": 4513060,
+      "name": "Virus Yandere",
+      "price": 5.75,
+      "discount": 20,
+      "url": "https://store.steampowered.com/app/4513060/"
     },
     {
-      "appid": 5005050,
-      "name": "UMAN",
-      "price": 5.53,
-      "discount": 10,
-      "url": "https://store.steampowered.com/app/5005050/"
-    },
-    {
-      "appid": 5099860,
-      "name": "ChessTan",
+      "appid": 4910440,
+      "name": "華京夜探",
       "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/5099860/"
+      "url": "https://store.steampowered.com/app/4910440/"
     },
     {
-      "appid": 5126840,
-      "name": "Disfigure Soundtrack",
-      "price": 6.15,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/5126840/"
-    },
-    {
-      "appid": 5097440,
-      "name": "BIG BANG TO US",
-      "price": 9.19,
-      "discount": 0,
-      "url": "https://store.steampowered.com/app/5097440/"
-    },
-    {
-      "appid": 5132180,
-      "name": "忍牌忍战大师Ninja Cards and Ninja Battle Master",
+      "appid": 4875650,
+      "name": "Idle Block Breaker",
       "price": 5.19,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/5132180/"
+      "url": "https://store.steampowered.com/app/4875650/"
+    },
+    {
+      "appid": 5145860,
+      "name": "ひびき＆かのんの囲碁19路完全入門",
+      "price": 18.26,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/5145860/"
+    },
+    {
+      "appid": 2403830,
+      "name": "Brave New Wonders",
+      "price": 21.66,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/2403830/"
+    },
+    {
+      "appid": 3855090,
+      "name": "永劫之阿比斯",
+      "price": 8.27,
+      "discount": 10,
+      "url": "https://store.steampowered.com/app/3855090/"
     }
   ]
 };

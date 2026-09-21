@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "7 visualizaciones",
-      "when": "hace 10 días",
+      "when": "hace 11 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "7 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "11 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Actualidad"
     },
     {
@@ -36,7 +36,7 @@ window.T2P_DATA = {
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
       "views": "9 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Gameplays"
     },
     {
@@ -132,7 +132,7 @@ window.T2P_DATA = {
       "title": "¡¡VUELVE LA 1060!!😱 ESPECS PC RESONANCE A PLAGUE TALE LEGACY | PUPURRI DE NOTICIAS ✍🏻",
       "duration": "22:10",
       "views": "13 visualizaciones",
-      "when": "hace 4 semanas",
+      "when": "hace 1 mes",
       "category": "Actualidad"
     },
     {
@@ -252,12 +252,12 @@ window.T2P_DATA = {
     {
       "id": "LAfB7crbnCc",
       "title": "STARCRAFT CONVENCE ? #shorts",
-      "views": "1,1 K visualizaciones"
+      "views": "1,2 K visualizaciones"
     },
     {
       "id": "ilxlsbM8MH8",
       "title": "¡Prepárate para el WoW! 🎮 #shorts",
-      "views": "941 visualizaciones"
+      "views": "944 visualizaciones"
     },
     {
       "id": "ExdL1_4XOUY",
