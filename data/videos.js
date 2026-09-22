@@ -5,14 +5,14 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
       "views": "7 visualizaciones",
-      "when": "hace 11 días",
+      "when": "hace 12 días",
       "category": "Directos"
     },
     {
@@ -20,7 +20,7 @@ window.T2P_DATA = {
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
       "views": "7 visualizaciones",
-      "when": "hace 12 días",
+      "when": "hace 13 días",
       "category": "Directos"
     },
     {
@@ -28,7 +28,7 @@ window.T2P_DATA = {
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
       "views": "11 visualizaciones",
-      "when": "hace 13 días",
+      "when": "hace 2 semanas",
       "category": "Actualidad"
     },
     {
@@ -115,7 +115,7 @@ window.T2P_DATA = {
       "id": "7yKaiD8HEGE",
       "title": "SONY ADMITE QUE SUS JUEGOS DIGITALES SON LICENCIAS | HORARIO GAMESCOM 2026",
       "duration": "27:00",
-      "views": "4 visualizaciones",
+      "views": "5 visualizaciones",
       "when": "hace 3 semanas",
       "category": "Directos"
     },
@@ -257,7 +257,7 @@ window.T2P_DATA = {
     {
       "id": "ilxlsbM8MH8",
       "title": "¡Prepárate para el WoW! 🎮 #shorts",
-      "views": "944 visualizaciones"
+      "views": "946 visualizaciones"
     },
     {
       "id": "ExdL1_4XOUY",

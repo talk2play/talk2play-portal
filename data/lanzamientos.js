@@ -1,48 +1,48 @@
 window.T2P_LANZAMIENTOS = {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "source": "Steam",
   "items": [
     {
-      "appid": 4513060,
-      "name": "Virus Yandere",
-      "price": 5.75,
-      "discount": 20,
-      "url": "https://store.steampowered.com/app/4513060/"
+      "appid": 2999500,
+      "name": "STUNTBOOST",
+      "price": 5.95,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/2999500/"
     },
     {
-      "appid": 4910440,
-      "name": "華京夜探",
+      "appid": 5010200,
+      "name": "Questfarers of the Stone",
+      "price": 17.41,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/5010200/"
+    },
+    {
+      "appid": 4967790,
+      "name": "Catson Files: Wizard Town",
       "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/4910440/"
+      "url": "https://store.steampowered.com/app/4967790/"
     },
     {
-      "appid": 4875650,
-      "name": "Idle Block Breaker",
-      "price": 5.19,
+      "appid": 3652840,
+      "name": "Cheerleaders",
+      "price": 11.46,
+      "discount": 15,
+      "url": "https://store.steampowered.com/app/3652840/"
+    },
+    {
+      "appid": 5142990,
+      "name": "Laryen",
+      "price": 0.0,
       "discount": 0,
-      "url": "https://store.steampowered.com/app/4875650/"
+      "url": "https://store.steampowered.com/app/5142990/"
     },
     {
-      "appid": 5145860,
-      "name": "ひびき＆かのんの囲碁19路完全入門",
-      "price": 18.26,
-      "discount": 15,
-      "url": "https://store.steampowered.com/app/5145860/"
-    },
-    {
-      "appid": 2403830,
-      "name": "Brave New Wonders",
-      "price": 21.66,
-      "discount": 15,
-      "url": "https://store.steampowered.com/app/2403830/"
-    },
-    {
-      "appid": 3855090,
-      "name": "永劫之阿比斯",
-      "price": 8.27,
-      "discount": 10,
-      "url": "https://store.steampowered.com/app/3855090/"
+      "appid": 4821960,
+      "name": "Subspace: Redux",
+      "price": 0.0,
+      "discount": 0,
+      "url": "https://store.steampowered.com/app/4821960/"
     }
   ]
 };

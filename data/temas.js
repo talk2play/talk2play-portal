@@ -1,6 +1,97 @@
 window.T2P_TEMAS = {
-  "updated": "2026-09-21 08:38 UTC",
+  "updated": "2026-09-22 08:38 UTC",
   "temas": [
+    {
+      "title": "Bungie recuperará las campañas retiradas de Destiny 2 y asegura que \"nuestra aventura con Destiny no ha terminado\"",
+      "url": "https://www.eurogamer.es/bungie-recuperara-las-campanas-retiradas-de-destiny-2-y-asegura-que-nuestra-aventura-con-destiny-no-ha-terminado",
+      "source": "Eurogamer.es",
+      "when": "2026-09-22 08:19",
+      "hot": true
+    },
+    {
+      "title": "Bungie aclara su futuro: aseguran que Destiny seguirá vivo, admiten errores y explican qué harán con Marathon",
+      "url": "https://vandal.elespanol.com/noticia/2026264032/bungie-aclara-su-futuro-aseguran-que-destiny-seguira-vivo-admiten-errores-y-explican-que-haran-con-marathon/",
+      "source": "Vandal",
+      "when": "2026-09-21 17:19",
+      "hot": true
+    },
+    {
+      "title": "Bungie to restore vaulted Destiny 2 content, evolve Marathon",
+      "url": "https://www.gematsu.com/2026/09/bungie-to-restore-vaulted-destiny-2-content-evolve-marathon",
+      "source": "Gematsu",
+      "when": "2026-09-21 16:36",
+      "hot": true
+    },
+    {
+      "title": "Avance y entrevista: Virtue and a Sledgehammer promete ser devastador como un golpe de almádena",
+      "url": "https://www.eurogamer.es/avance-y-entrevista-virtue-and-a-sledgehammer-promete-ser-devastador-como-un-golpe-de-almadena",
+      "source": "Eurogamer.es",
+      "when": "2026-09-21 16:12",
+      "hot": true
+    },
+    {
+      "title": "¿Qué opina la crítica de Silent Hill Townfall? Nota media en Metacritic del nuevo Silent Hill de Konami",
+      "url": "https://vandal.elespanol.com/noticia/2026264026/que-opina-la-critica-de-silent-hill-townfall-nota-media-en-metacritic-del-nuevo-silent-hill-de-konami/",
+      "source": "Vandal",
+      "when": "2026-09-21 13:31",
+      "hot": true
+    },
+    {
+      "title": "DualSense Wireless Controller – LISA Limited Edition announced alongside new merchandise",
+      "url": "https://www.gematsu.com/2026/09/dualsense-wireless-controller-lisa-limited-edition-announced-alongside-new-merchandise",
+      "source": "Gematsu",
+      "when": "2026-09-21 12:05",
+      "hot": true
+    },
+    {
+      "title": "LISA x PlayStation llega este octubre: primer vistazo al mando inalámbrico DualSense: edición limitada Lisa",
+      "url": "https://blog.es.playstation.com/2026/09/21/lisa-x-playstation-llega-este-octubre-primer-vistazo-al-mando-inalambrico-dualsense-edicion-limitada-lisa/",
+      "source": "PlayStation Blog",
+      "when": "2026-09-21 12:02",
+      "hot": true
+    },
+    {
+      "title": "¿Cuánto dura Silent Hill Townfall? Esta es la duración de la historia y el 100 % del nuevo Silent Hill",
+      "url": "https://vandal.elespanol.com/noticia/2026264023/cuanto-dura-silent-hill-townfall-esta-es-la-duracion-de-la-historia-y-el-100-del-nuevo-silent-hill/",
+      "source": "Vandal",
+      "when": "2026-09-21 11:53",
+      "hot": true
+    },
+    {
+      "title": "Uno de los shooters cooperativos más originales de Steam pone fecha a su versión 1.0 y llega a PlayStation Plus",
+      "url": "https://vandal.elespanol.com/noticia/2026264013/uno-de-los-shooters-cooperativos-mas-originales-de-steam-pone-fecha-a-su-version-10-y-llega-a-playstation-plus/",
+      "source": "Vandal",
+      "when": "2026-09-21 08:53",
+      "hot": true
+    },
+    {
+      "title": "Silent Hill: Townfall: 9 formas en las que la perspectiva en primera persona cambia la icónica fórmula de terror",
+      "url": "https://blog.es.playstation.com/2026/09/21/silent-hill-townfall-9-formas-en-las-que-la-perspectiva-en-primera-persona-cambia-la-iconica-formula-de-terror/",
+      "source": "PlayStation Blog",
+      "when": "2026-09-21 08:40",
+      "hot": true
+    },
+    {
+      "title": "Vuelve otra saga clásica de Super Nintendo: Lufia I & II regresan en 2027 con textos en español",
+      "url": "https://vandal.elespanol.com/noticia/2026264011/vuelve-otra-saga-clasica-de-super-nintendo-lufia-i-ii-regresan-en-2027-con-textos-en-espanol/",
+      "source": "Vandal",
+      "when": "2026-09-21 08:30",
+      "hot": true
+    },
+    {
+      "title": "Limpiar casas nunca había dado tanto miedo: anuncian Dust till Dawn, un juego inspirado en Junji Ito",
+      "url": "https://vandal.elespanol.com/noticia/2026264010/limpiar-casas-nunca-habia-dado-tanto-miedo-anuncian-dust-till-dawn-un-juego-inspirado-en-junji-ito/",
+      "source": "Vandal",
+      "when": "2026-09-21 08:13",
+      "hot": true
+    },
+    {
+      "title": "Castlevania Belmont's Curse confirma demo: podrás probar gratis el nuevo 'metroidvania' de la saga",
+      "url": "https://vandal.elespanol.com/noticia/2026264008/castlevania-belmonts-curse-confirma-demo-podras-probar-gratis-el-nuevo-metroidvania-de-la-saga/",
+      "source": "Vandal",
+      "when": "2026-09-21 07:29",
+      "hot": true
+    },
     {
       "title": "Análisis de Silent Hill Townfall - Una mirada más terrorífica que culmina la nueva etapa de la saga",
       "url": "https://www.eurogamer.es/silent-hill-townfall-analisis-review",
@@ -44,6 +135,13 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
+      "title": "Junji Ito-inspired cozy paranormal cleaning game Dust till Dawn announced for PC",
+      "url": "https://www.gematsu.com/2026/09/junji-ito-inspired-cozy-paranormal-cleaning-game-dust-till-dawn-announced-for-pc",
+      "source": "Gematsu",
+      "when": "2026-09-20 16:43",
+      "hot": true
+    },
+    {
       "title": "Lufia I & II: The Sinistrals Saga announced for PS5, Switch 2, Switch, and PC",
       "url": "https://www.gematsu.com/2026/09/lufia-i-ii-the-sinistrals-saga-announced-for-ps5-switch-2-switch-and-pc",
       "source": "Gematsu",
@@ -51,129 +149,31 @@ window.T2P_TEMAS = {
       "hot": true
     },
     {
-      "title": "Nitro 1x04: Tokyo Game Show, BlizzCon, Resident Evil, Control Resonant, Fire Emblem...",
-      "url": "https://www.eurogamer.es/nitro-1x04-tokyo-game-show-blizzcon-resident-evil-control-resonant-fire-emblem",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 10:11",
-      "hot": true
-    },
-    {
-      "title": "Castlevania: Belmont’s Curse demo launches October 1",
-      "url": "https://www.gematsu.com/2026/09/castlevania-belmonts-curse-demo-launches-october-1",
+      "title": "The Information: Xbox to cut “hundreds” of jobs, consolidate game studios",
+      "url": "https://www.gematsu.com/2026/09/the-information-xbox-to-cut-hundreds-of-jobs-consolidate-game-studios",
       "source": "Gematsu",
-      "when": "2026-09-20 06:35",
-      "hot": true
+      "when": "2026-09-22 03:49",
+      "hot": false
     },
     {
-      "title": "Es como un Resident Evil clásico pero ambientado en la Edad Media: así es el juego español False Oath",
-      "url": "https://vandal.elespanol.com/noticia/2026262013/es-como-un-resident-evil-clasico-pero-ambientado-en-la-edad-media-asi-es-el-juego-espanol-false-oath/",
+      "title": "Legacy of Kain: Defiance Remastered physical editions launch November 13",
+      "url": "https://www.gematsu.com/2026/09/legacy-of-kain-defiance-remastered-physical-editions-launch-november-13",
+      "source": "Gematsu",
+      "when": "2026-09-21 16:47",
+      "hot": false
+    },
+    {
+      "title": "La actriz de Ghost of Yotei colaborará en lo nuevo de Double Fine si el Kickstarter supera los 600.000 dólares",
+      "url": "https://vandal.elespanol.com/noticia/2026264031/la-actriz-de-ghost-of-yotei-colaborara-en-lo-nuevo-de-double-fine-si-el-kickstarter-supera-los-600000-dolares/",
       "source": "Vandal",
-      "when": "2026-09-19 14:45",
-      "hot": true
-    },
-    {
-      "title": "Conseguir que el sonido te rodee en el salón ya no va de instalar cinco cajas y esconder cables",
-      "url": "https://www.eurogamer.es/conseguir-que-el-sonido-te-rodee-en-el-salon-ya-no-va-de-instalar-cinco-cajas-y-esconder-cables",
-      "source": "Eurogamer.es",
-      "when": "2026-09-21 06:00",
+      "when": "2026-09-21 16:36",
       "hot": false
     },
     {
-      "title": "Anunciado el primer DLC gratuito para Cairn",
-      "url": "https://www.eurogamer.es/anunciado-el-primer-dlc-gratuito-para-cairn",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 22:00",
-      "hot": false
-    },
-    {
-      "title": "Tropico 7 también tendrá una versión para Nintendo Switch 2",
-      "url": "https://www.eurogamer.es/tropico-7-tambien-tendra-una-version-para-nintendo-switch-2",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 19:49",
-      "hot": false
-    },
-    {
-      "title": "Anunciado Psykio Memories",
-      "url": "https://www.eurogamer.es/anunciado-psykio-memories",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 19:42",
-      "hot": false
-    },
-    {
-      "title": "Amazon saca el WiFi de casa y lleva hasta 2,1 Gbps a la terraza, la piscina y la caseta del fondo",
-      "url": "https://www.eurogamer.es/amazon-saca-el-wifi-de-casa-y-lleva-hasta-21-gbps-a-la-terraza-la-piscina-y-la-caseta-del-fondo",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 18:00",
-      "hot": false
-    },
-    {
-      "title": "Anunciado Toshinden Collection",
-      "url": "https://www.eurogamer.es/anunciado-toshinden-collection",
-      "source": "Eurogamer.es",
-      "when": "2026-09-20 17:40",
-      "hot": false
-    },
-    {
-      "title": "Multiplayer action dungeon runner Marked for Mayhem announced for PC",
-      "url": "https://www.gematsu.com/2026/09/multiplayer-action-dungeon-runner-marked-for-mayhem-announced-for-pc",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:51",
-      "hot": false
-    },
-    {
-      "title": "Mycopunk launches October 20",
-      "url": "https://www.gematsu.com/2026/09/mycopunk-launches-october-20",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:50",
-      "hot": false
-    },
-    {
-      "title": "Cairn free DLC ‘On the Trail: Deep Water’ launches October 29",
-      "url": "https://www.gematsu.com/2026/09/cairn-free-dlc-on-the-trail-deep-water-launches-october-29",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:45",
-      "hot": false
-    },
-    {
-      "title": "Junji Ito-inspired cozy paranormal cleaning game Dust till Dawn announced for PC",
-      "url": "https://www.gematsu.com/2026/09/junji-ito-inspired-cozy-paranormal-cleaning-game-dust-till-dawn-announced-for-pc",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:43",
-      "hot": false
-    },
-    {
-      "title": "Industrial noir occult turn-based RPG WANE announced for PC",
-      "url": "https://www.gematsu.com/2026/09/industrial-noir-occult-turn-based-rpg-wane-announced-for-pc",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:35",
-      "hot": false
-    },
-    {
-      "title": "Neon Abyss 2 launches October 8",
-      "url": "https://www.gematsu.com/2026/09/neon-abyss-2-launches-october-8",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:24",
-      "hot": false
-    },
-    {
-      "title": "BALL x PIT expansion ‘Risen Ballbylon’ announced",
-      "url": "https://www.gematsu.com/2026/09/ball-x-pit-expansion-risen-ballbylon-announced",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:19",
-      "hot": false
-    },
-    {
-      "title": "We Were Here Tomorrow launches October 20",
-      "url": "https://www.gematsu.com/2026/09/we-were-here-tomorrow-launches-october-20",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:14",
-      "hot": false
-    },
-    {
-      "title": "Multiplayer stealth golf game Really Illegal Golf announced for PC",
-      "url": "https://www.gematsu.com/2026/09/multiplayer-stealth-golf-game-really-illegal-golf-announced-for-pc",
-      "source": "Gematsu",
-      "when": "2026-09-20 16:03",
+      "title": "Un nuevo vídeo oficial de Pokémon levanta sospechas: los fans piensan que Rubí y Zafiro llegarán a Switch",
+      "url": "https://vandal.elespanol.com/noticia/2026264030/pokemon-comparte-un-video-de-rubi-y-zafiro-que-ha-generado-teorias-sobre-una-version-para-switch/",
+      "source": "Vandal",
+      "when": "2026-09-21 16:24",
       "hot": false
     }
   ]
