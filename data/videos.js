@@ -5,250 +5,255 @@ window.T2P_DATA = {
     "url": "https://www.youtube.com/@Talk2PlayPodcast",
     "subscribers": ""
   },
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "videos": [
     {
       "id": "3xc-K23uXNw",
       "title": "¡No es lo que esperábamos !| Reaccionamos al Nintendo Direct ",
       "duration": "52:29",
-      "views": "7 visualizaciones",
-      "when": "hace 12 días",
+      "views": "7",
+      "when": "hace 13 d",
       "category": "Directos"
     },
     {
       "id": "6o8uwpB7ftA",
       "title": "Ha SUPERADO nuestras EXPECTATIVAS | Reacción The Legend of Zelda 40 Aniversario Direct",
       "duration": "30:08",
-      "views": "7 visualizaciones",
-      "when": "hace 13 días",
+      "views": "7",
+      "when": "hace 2 sem.",
       "category": "Directos"
     },
     {
       "id": "iBYcTRsD5s4",
       "title": "Semana de NINTENDO y opinamos sobre lo que podríamos ver",
       "duration": "11:38",
-      "views": "11 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "11",
+      "when": "hace 2 sem.",
       "category": "Actualidad"
     },
     {
       "id": "DdEMo29C_EY",
       "title": "UN GAMEPLAY IMPRESIONANTE CON GANAS DEL LORE🧐| REACCIÓN  BLACK MYTH ZHONG KUI",
       "duration": "17:36",
-      "views": "9 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "9",
+      "when": "hace 2 sem.",
       "category": "Gameplays"
     },
     {
       "id": "Sq6Eb6zmxIc",
       "title": "GANAS DE LA NUEVA EXPANSIÓN😏| REACCIÓN TW3 SONGS OF THE PAST",
       "duration": "35:23",
-      "views": "4 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "4",
+      "when": "hace 2 sem.",
       "category": "Reacciones"
     },
     {
       "id": "KAov5qNDgXg",
       "title": "PRIMERA HORA CON LOS SANGREFRIA😱🩸| GAMEPLAY DAWNWALKER PS5 BASE",
       "duration": "1:15:32",
-      "views": "2 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "2",
+      "when": "hace 2 sem.",
       "category": "Gameplays"
     },
     {
       "id": "btLOlqHAfyc",
       "title": "VEMOS ANÁLISIS ONIMUSHA WAY OF THE SWORD 🧐",
       "duration": "14:38",
-      "views": "16 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "16",
+      "when": "hace 2 sem.",
       "category": "Actualidad"
     },
     {
       "id": "roMrzXrUZH0",
       "title": "VEMOS ANÁLISIS THE BLOOD OF DAWNWALKER | QUE BARBARIDAD DE ESPECS PC 😱",
       "duration": "23:58",
-      "views": "33 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "34",
+      "when": "hace 2 sem.",
       "category": "Actualidad"
     },
     {
       "id": "XatKAuW_xCc",
       "title": "GTA 6 ES UNA BARBARIDAD😱 | REACCIÓN E IMPRESIONES MIRADA EXTENDIDA",
       "duration": "54:05",
-      "views": "17 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "17",
+      "when": "hace 2 sem.",
       "category": "Reacciones"
     },
     {
       "id": "hgz2HgTZbZc",
       "title": "UN BUEN CAMBIO DE AIRES A LA SAGA CON RESONANCE A PLAGUE TALE LEGACY",
       "duration": "24:46",
-      "views": "15 visualizaciones",
-      "when": "hace 2 semanas",
+      "views": "15",
+      "when": "hace 3 sem.",
       "category": "Actualidad"
     },
     {
       "id": "19ycwmFz8a4",
       "title": "STRANGER THAN HEAVEN ES GOD🧐 GAMEPLAY Y ENTREVISTA COD: MW4🔫 | XBOX DÍA 2 GAMESCOM 2026",
       "duration": "2:43:02",
-      "views": "3 visualizaciones",
-      "when": "hace 3 semanas",
+      "views": "3",
+      "when": "hace 3 sem.",
       "category": "Directos"
     },
     {
       "id": "yOOgIfa-S94",
       "title": "GAMEPLAY Y ENTREVISTA TIDES OF ANNIHILATION😍 | FUTURE GAMES SHOW GAMESCOM 2026",
       "duration": "1:34:33",
-      "views": "17 visualizaciones",
-      "when": "hace 3 semanas",
+      "views": "17",
+      "when": "hace 3 sem.",
       "category": "Directos"
     },
     {
       "id": "2fmaqp-AklY",
       "title": "GAMEPLAY DE FABLE 😱Y MÁS DE GOW E-DAY💀 | XBOX DIA 1 GAMESCOM 2026",
       "duration": "2:59:55",
-      "views": "18 visualizaciones",
-      "when": "hace 3 semanas",
+      "views": "18",
+      "when": "hace 3 sem.",
       "category": "Directos"
     },
     {
       "id": "7yKaiD8HEGE",
       "title": "SONY ADMITE QUE SUS JUEGOS DIGITALES SON LICENCIAS | HORARIO GAMESCOM 2026",
       "duration": "27:00",
-      "views": "5 visualizaciones",
-      "when": "hace 3 semanas",
+      "views": "5",
+      "when": "hace 3 sem.",
       "category": "Directos"
     },
     {
       "id": "pYUuGADTj24",
       "title": "¡¡VAYA JUEGAZOS, UN PEDAZO DE EVENTO!! 😱 | OPENING NIGHT LIVE GAMESCOM 2026",
       "duration": "2:37:27",
-      "views": "2 visualizaciones",
-      "when": "hace 3 semanas",
+      "views": "2",
+      "when": "hace 4 sem.",
       "category": "Directos"
     },
     {
       "id": "AldEybJsjSw",
       "title": "¡¡VUELVE LA 1060!!😱 ESPECS PC RESONANCE A PLAGUE TALE LEGACY | PUPURRI DE NOTICIAS ✍🏻",
       "duration": "22:10",
-      "views": "13 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "13",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "RhT9e4UKNg0",
       "title": "SONY QUEREMOS FORMATO FÍSICO NO TU PROPIA MONEDA😡 | SQUARE ENIX NÚMEROS FINANCIEROS Y NOTICIAS🧐",
       "duration": "22:47",
-      "views": "22 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "22",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "kx3jeUdyQ5U",
       "title": "GEARS OF WAR E-DAY VIENE PISANDO FUERTE💀 | NOTICIAS XBOX✍🏻",
       "duration": "28:43",
-      "views": "23 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "23",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "CFAs3TjrVGs",
       "title": "DUSKFADE OPINIÓN PRIMERAS HORAS 🤔| LO COMENTAMOS 🤓",
       "duration": "9:22",
-      "views": "29 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "29",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "sxazs3wZzyI",
       "title": "🏰REACCIONAMOS KINGDOM HEARTS IV🗝️¡EL REGRESO DE LA MEJOR SAGA DE LA HISTORIA!😱",
       "duration": "31:27",
-      "views": "51 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "51",
+      "when": "hace 1 m",
       "category": "Reacciones"
     },
     {
       "id": "qzNGF7pk-ZY",
       "title": "EL KINGDOM HEARTS INDIE ESPAÑOL | GAMEPLAY DUSKFADE",
       "duration": "1:08:18",
-      "views": "6 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "6",
+      "when": "hace 1 m",
       "category": "Gameplays"
     },
     {
       "id": "w5Sl8bWRqHw",
       "title": "PRÓXIMO EVENTO KINGDOM HEARTS EN EL D23 | PUPURRI DE NOTICIAS",
       "duration": "42:06",
-      "views": "15 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "15",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "W4kXN3UYzjM",
       "title": "25 ANIVERSARIO GHOST RECON, OCTOPATH TRAVELER 3 CONFIRMADO... | PUPURRI DE NOTICIAS",
       "duration": "50:40",
-      "views": "18 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "18",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "TXU5bxjFur4",
       "title": "REACCIONAMOS AL ADELANTO PHANTOM BLADE 0 | PRECIO EDICIONES",
       "duration": "13:10",
-      "views": "21 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "21",
+      "when": "hace 1 m",
       "category": "Reacciones"
     },
     {
       "id": "C-YOTgrxqnU",
       "title": "ANTES SABÍAN RETRACTARSE, AHORA TIENEN UNA FUERTE CONVICCIÓN | NOTICIAS SONY",
       "duration": "34:00",
-      "views": "23 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "23",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "lSEKXROyU1g",
       "title": "ONIMUSHA CON EFECTOS DE SONIDO REALISTAS | GTA 6 MIRADA EXTENDIDA EN NETFLIX",
       "duration": "16:41",
-      "views": "13 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "13",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "gle8Jc_sU2M",
       "title": "EA ES COMPRADA POR ARABIA SAUDITA | XBOX ESTARÁ EN TOKYO GAMES SHOW 2026",
       "duration": "24:29",
-      "views": "30 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "31",
+      "when": "hace 1 m",
       "category": "Actualidad"
     },
     {
       "id": "hzRLuYWF1XM",
       "title": "DIRECTITO CHILL MINECRAFT | TARDE ABURRIDA",
       "duration": "1:21:56",
-      "views": "18 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "18",
+      "when": "hace 1 m",
       "category": "Directos"
     },
     {
       "id": "fe4kzKe0CpQ",
       "title": "JUGAMOS BEAST OF REINCARNATION | PRIMERAS IMPRESIONES",
       "duration": "3:12:12",
-      "views": "11 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "11",
+      "when": "hace 1 m",
       "category": "Gameplays"
     },
     {
       "id": "IeKINw6EF6c",
       "title": "PRAGMATA 2 ENTRA EN PREPRODUCCIÓN | PUPURRI DE NOTICIAS",
       "duration": "27:15",
-      "views": "10 visualizaciones",
-      "when": "hace 1 mes",
+      "views": "10",
+      "when": "hace 1 m",
       "category": "Actualidad"
     }
   ],
   "shorts": [
+    {
+      "id": "8SIg7KDE3zA",
+      "title": "El fin del doom scrolling: ¿La UE lo prohibirá? 🚫",
+      "views": "5 visualizaciones"
+    },
     {
       "id": "LAfB7crbnCc",
       "title": "STARCRAFT CONVENCE ? #shorts",
@@ -483,11 +488,6 @@ window.T2P_DATA = {
       "id": "1wruw0kXrGc",
       "title": "Cyberpunk:  La Lección Que Salvó los Videojuegos !!#VIRAL #cyberpunk2077",
       "views": "907 visualizaciones"
-    },
-    {
-      "id": "j_p40yWcbzA",
-      "title": "Un remake de Lara croft que nadie se esperaba!!! #videojuegos #viral",
-      "views": "7 visualizaciones"
     }
   ]
 };
